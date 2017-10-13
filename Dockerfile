@@ -1,8 +1,8 @@
 FROM tomcat:8.0-jre8
 
-ENV KJWIKIDOCKER_VERSION build323
-ENV KJWIKIDOCKER_VERSION latest
-ENV KJWIKIDOCKER_IMAGE kjwikidocker
+ENV KJWIKIGDOCKER_VERSION build323
+ENV KJWIKIGDOCKER_VERSION latest
+ENV KJWIKIGDOCKER_IMAGE kjwikidocker
 
 COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war
 
