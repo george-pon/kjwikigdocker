@@ -18,11 +18,15 @@ ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:jp
 ENV LC_ALL ja_JP.UTF-8
 
-RUN /bin/mkdir -p /var/kjwiki
+RUN mkdir -p /var/kjwiki
 
-RUN useradd tomcat8
-RUN chown -R tomcat8 /var/kjwiki /usr/local/tomcat
-USER tomcat8
+# for OpenShift not to run root.
+# RUN useradd tomcat8
+# RUN chown -R tomcat8 /var/kjwiki /usr/local/tomcat
+# USER tomcat8
 
 EXPOSE 8080
+
+VOLUME /var/kjwiki
+
 CMD ["catalina.sh", "run"]
