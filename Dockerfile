@@ -1,8 +1,8 @@
 FROM tomcat:8.0-jre8
 
-ENV KJWIKIGDOCKER_VERSION build326
+ENV KJWIKIGDOCKER_VERSION build327
 ENV KJWIKIGDOCKER_VERSION latest
-ENV KJWIKIGDOCKER_VERSION build326
+ENV KJWIKIGDOCKER_VERSION build327
 ENV KJWIKIGDOCKER_IMAGE kjwikigdocker
 
 COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war
@@ -18,15 +18,15 @@ ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:jp
 ENV LC_ALL ja_JP.UTF-8
 
-RUN mkdir -p /var/kjwiki
+RUN mkdir -p /var/kjwikigdocker
 
 # for OpenShift not to run root.
 # RUN useradd tomcat8
-# RUN chown -R tomcat8 /var/kjwiki /usr/local/tomcat
+# RUN chown -R tomcat8 /var/kjwikigdocker /usr/local/tomcat
 # USER tomcat8
 
 EXPOSE 8080
 
-VOLUME /var/kjwiki
+VOLUME /var/kjwikigdocker
 
 CMD ["catalina.sh", "run"]
