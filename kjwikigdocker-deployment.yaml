@@ -1,0 +1,25 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: kjwikigdocker-deployment
+  labels:
+    app: kjwiwikigdocker
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: kjwikigdocker
+    spec:
+      containers:
+      - name: kjwikigdocker-container
+        image: georgesan/kjwikigdocker:latest
+        ports:
+        - containerPort: 8080
+        volumeMounts:
+        - name: kjwikig-data-volume
+          mountPath: /var/kjwikigdocker
+      volumes:
+        - name: kjwikig-data-volume
+          persistentVolumeClaim:
+            claimName: claim-kjwikigdocker
