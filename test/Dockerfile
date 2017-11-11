@@ -19,14 +19,14 @@ ENV LC_ALL ja_JP.UTF-8
 
 RUN mkdir -p /var/kjwikigdocker
 
-# for OpenShift not to run root.
-RUN useradd tomcat8
-RUN chown -R tomcat8 /var/kjwikigdocker /usr/local/tomcat
-USER tomcat8
+RUN apt-get install -y procps
+
+# for OpenShift. uid is random.
+RUN chmod -R 0777 /var/kjwikigdocker /usr/local/tomcat 
 
 EXPOSE 8080
 
 VOLUME /var/kjwikigdocker
 
-CMD ["sh", "-c", "tail -f /dev/null"]
+CMD ["catalina.sh", "run"]
 
