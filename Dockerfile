@@ -20,10 +20,10 @@ ENV LC_ALL ja_JP.UTF-8
 
 RUN mkdir -p /var/kjwikigdocker
 
-# for OpenShift not to run root.
-RUN useradd tomcat8
-RUN chown -R tomcat8 /var/kjwikigdocker /usr/local/tomcat
-USER tomcat8
+# for run tomcat8 user, uncomment below lines.
+# RUN useradd tomcat8
+# RUN chown -R tomcat8 /var/kjwikigdocker /usr/local/tomcat
+# USER tomcat8
 
 EXPOSE 8080
 
