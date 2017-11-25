@@ -20,6 +20,14 @@ ENV LC_ALL ja_JP.UTF-8
 
 RUN mkdir -p /var/kjwikigdocker
 
+# top, ps
+RUN apt-get install -y procps
+
+# remove tomcat default contents
+RUN rm -rf /usr/local/tomcat/webapps/docs /usr/local/tomcat/webapps/examples /usr/local/tomcat/webapps/host-manager /usr/local/tomcat/webapps/manager
+RUN rm -rf  /usr/local/tomcat/webapps/ROOT/*
+COPY index.jsp /usr/local/tomcat/webapps/ROOT/
+
 # for run tomcat8 user, uncomment below lines.
 # RUN useradd tomcat8
 # RUN chown -R tomcat8 /var/kjwikigdocker /usr/local/tomcat
@@ -30,3 +38,4 @@ EXPOSE 8080
 VOLUME /var/kjwikigdocker
 
 CMD ["catalina.sh", "run"]
+
