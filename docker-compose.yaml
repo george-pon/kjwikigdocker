@@ -6,4 +6,4 @@ kjwikigdocker:
   environment:
     - CATALINA_OPTS=-Xms300m -Xmx600m
   volumes:
-    - /var/kjwikigdocker:/var/kjwikigdocker
+    - /var/lib/kjwikigdocker:/var/lib/kjwikigdocker

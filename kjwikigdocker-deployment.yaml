@@ -18,7 +18,7 @@ spec:
         - containerPort: 8080
         volumeMounts:
         - name: kjwikig-data-volume
-          mountPath: /var/kjwikigdocker
+          mountPath: /var/lib/kjwikigdocker
       volumes:
         - name: kjwikig-data-volume
           persistentVolumeClaim:
