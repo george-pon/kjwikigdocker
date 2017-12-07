@@ -1,7 +1,7 @@
 FROM tomcat:8.0-jre8
 
 ENV KJWIKIGDOCKER_VERSION test
-ENV KJWIKIGDOCKER_VERSION testbuild337
+ENV KJWIKIGDOCKER_VERSION testbuild338
 ENV KJWIKIGDOCKER_IMAGE kjwikigdocker
 
 COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war

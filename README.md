@@ -8,7 +8,8 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build337 , latest : nearname, recent plugin supports wiki name prefix
+* build338 , latest : big fix. write check: support unicode surrogate pair
+* build337 : nearname, recent plugin supports wiki name prefix
 * build335 : volume path modified : /var/lib/kjwikigdocker
 * build332 : new file.encoding is set to UTF-8. volume path : /var/kjwikigdocker
 * build331 : display charset=UTF-8.
