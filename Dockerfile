@@ -1,8 +1,8 @@
 FROM tomcat:8.0-jre8
 
-ENV KJWIKIGDOCKER_VERSION build338
+ENV KJWIKIGDOCKER_VERSION build-target
 ENV KJWIKIGDOCKER_VERSION latest
-ENV KJWIKIGDOCKER_VERSION build338
+ENV KJWIKIGDOCKER_VERSION build339
 ENV KJWIKIGDOCKER_IMAGE kjwikigdocker
 
 COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war
@@ -21,7 +21,7 @@ ENV LC_ALL ja_JP.UTF-8
 RUN mkdir -p /var/lib/kjwikigdocker
 
 # top, ps
-RUN apt-get install -y procps
+# RUN apt-get install -y procps
 
 # remove tomcat default contents
 RUN rm -rf /usr/local/tomcat/webapps/docs /usr/local/tomcat/webapps/examples /usr/local/tomcat/webapps/host-manager /usr/local/tomcat/webapps/manager
@@ -38,4 +38,3 @@ EXPOSE 8080
 VOLUME /var/lib/kjwikigdocker
 
 CMD ["catalina.sh", "run"]
-
