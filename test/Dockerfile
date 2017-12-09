@@ -6,8 +6,11 @@ ENV KJWIKIGDOCKER_IMAGE kjwikigdocker
 
 COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war
 
+RUN apt-get clean
+RUN gpg --keyserver keyserver.ubuntu.com --recv-keys 8B48AD6246925553 
 RUN apt-get update
-RUN apt-get -y upgrade
+RUN apt-get install -y apt-utils --allow-unauthenticated
+RUN apt-get -y upgrade  --allow-unauthenticated
 
 RUN apt-get install -y locales
 RUN locale-gen ja_JP.UTF-8
@@ -17,18 +20,19 @@ ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:jp
 ENV LC_ALL ja_JP.UTF-8
 
-RUN mkdir -p /var/lib/kjwikigdocker
-
 # top, ps
 # RUN apt-get install -y procps
+
+# for volume
+RUN mkdir -p /var/lib/kjwikigdocker
+
+# for OpenShift. uid is random. so volume and tomcat dir chmod 0777
+RUN chmod -R 0777 /var/lib/kjwikigdocker /usr/local/tomcat 
 
 # remove tomcat default contents
 RUN rm -rf /usr/local/tomcat/webapps/docs /usr/local/tomcat/webapps/examples /usr/local/tomcat/webapps/host-manager /usr/local/tomcat/webapps/manager
 RUN rm -rf  /usr/local/tomcat/webapps/ROOT/*
 COPY index.jsp /usr/local/tomcat/webapps/ROOT/
-
-# for OpenShift. uid is random.
-RUN chmod -R 0777 /var/ilb/kjwikigdocker /usr/local/tomcat 
 
 EXPOSE 8080
 

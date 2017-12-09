@@ -16,8 +16,12 @@ function f_docker_build() {
     echo $TAG_CDR
     IMAGE_NAME=$(awk '/^ENV KJWIKIGDOCKER_IMAGE/ {print $3;}' Dockerfile)
 
+    if [ ! -z "$no_cache" ]; then
+        BUILD_OPT="$BUILD_OPT --no-cache"
+    fi
+
     echo docker build -t ${IMAGE_NAME}:${TAG_CAR} .
-    $SUDO_DOCKER docker build -t ${IMAGE_NAME}:${TAG_CAR} .
+    $SUDO_DOCKER docker build $BUILD_OPT -t ${IMAGE_NAME}:${TAG_CAR} .
     RC=$?
     if [ $RC -ne 0 ]; then
         echo "ERROR: docker build failed."
