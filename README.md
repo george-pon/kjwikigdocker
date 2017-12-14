@@ -8,7 +8,8 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build339 , latest : tag support. tag search support. when write tag:keyword,keyword2 in wiki text, create tag search link.
+* build340 , latest : fix search result line. hiki formatter: in block quote, do not replace string modifier(italic, bold, strike)
+* build339 : tag support. tag search support. when write tag:keyword,keyword2 in wiki text, create tag search link.
 * build338 : big fix. write check: support unicode surrogate pair
 * build337 : nearname, recent plugin supports wiki name prefix
 * build335 : volume path modified : /var/lib/kjwikigdocker
