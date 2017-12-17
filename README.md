@@ -14,5 +14,4 @@ and require Java heap memory 600MB+.
 * build337 : nearname, recent plugin supports wiki name prefix
 * build335 : volume path modified : /var/lib/kjwikigdocker
 * build332 : new file.encoding is set to UTF-8. volume path : /var/kjwikigdocker
-* build331 : display charset=UTF-8.
 
