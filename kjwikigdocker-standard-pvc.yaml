@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: claim-kjwikigdocker
+  # if you want set default storageClassName, un-comment below
+  # annotations:
+  #   volume.beta.kubernetes.io/storage-class: "standard"
+spec:
+  # if you ommit storageClassName, standard is default.
+  # storageClassName: standard
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi

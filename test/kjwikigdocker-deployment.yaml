@@ -6,6 +6,9 @@ metadata:
     app: kjwiwikigdocker
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: kjwikigdocker
   template:
     metadata:
       labels:
@@ -15,7 +18,8 @@ spec:
       - name: kjwikigdocker-container
         image: georgesan/kjwikigdocker:test
         ports:
-        - containerPort: 8080
+        - name: kjwikigdocker
+          containerPort: 8080
         volumeMounts:
         - name: kjwikig-data-volume
           mountPath: /var/lib/kjwikigdocker

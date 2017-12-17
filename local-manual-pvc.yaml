@@ -6,6 +6,7 @@ metadata:
   # annotations:
   #  volume.beta.kubernetes.io/storage-class: "standard"
 spec:
+  # if you want to use persistent volume created manually, uncomment below line.
   storageClassName: manual
   accessModes:
     - ReadWriteOnce
