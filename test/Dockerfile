@@ -2,7 +2,7 @@ FROM tomcat:8.0-jre8
 
 ENV KJWIKIGDOCKER_VERSION test-build-target
 ENV KJWIKIGDOCKER_VERSION test
-ENV KJWIKIGDOCKER_VERSION test-build340
+ENV KJWIKIGDOCKER_VERSION test-build342
 ENV KJWIKIGDOCKER_IMAGE kjwikigdocker
 
 COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war
