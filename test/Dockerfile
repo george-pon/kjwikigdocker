@@ -2,13 +2,13 @@ FROM tomcat:8.0-jre8
 
 ENV KJWIKIGDOCKER_VERSION test-build-target
 ENV KJWIKIGDOCKER_VERSION test
-ENV KJWIKIGDOCKER_VERSION test-build342
+ENV KJWIKIGDOCKER_VERSION test-build343
 ENV KJWIKIGDOCKER_IMAGE kjwikigdocker
 
 COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war
 
 RUN apt-get clean
-RUN gpg --keyserver keyserver.ubuntu.com --recv-keys 8B48AD6246925553 
+RUN gpg --keyserver keyserver.ubuntu.com --recv-keys 8B48AD6246925553
 RUN apt-get update
 RUN apt-get install -y apt-utils --allow-unauthenticated
 RUN apt-get -y upgrade  --allow-unauthenticated
@@ -28,7 +28,7 @@ ENV LC_ALL ja_JP.UTF-8
 RUN mkdir -p /var/lib/kjwikigdocker
 
 # for OpenShift. uid is random. so volume and tomcat dir chmod 0777
-RUN chmod -R 0777 /var/lib/kjwikigdocker /usr/local/tomcat 
+RUN chmod -R 0777 /var/lib/kjwikigdocker /usr/local/tomcat
 
 # remove tomcat default contents
 RUN rm -rf /usr/local/tomcat/webapps/docs /usr/local/tomcat/webapps/examples /usr/local/tomcat/webapps/host-manager /usr/local/tomcat/webapps/manager

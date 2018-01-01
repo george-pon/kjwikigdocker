@@ -2,13 +2,13 @@ FROM tomcat:8.0-jre8
 
 ENV KJWIKIGDOCKER_VERSION build-target
 ENV KJWIKIGDOCKER_VERSION latest
-ENV KJWIKIGDOCKER_VERSION build342
+ENV KJWIKIGDOCKER_VERSION build343
 ENV KJWIKIGDOCKER_IMAGE kjwikigdocker
 
 COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war
 
 RUN apt-get clean
-RUN gpg --keyserver keyserver.ubuntu.com --recv-keys 8B48AD6246925553 
+RUN gpg --keyserver keyserver.ubuntu.com --recv-keys 8B48AD6246925553
 RUN apt-get update
 RUN apt-get install -y apt-utils --allow-unauthenticated
 RUN apt-get -y upgrade  --allow-unauthenticated
