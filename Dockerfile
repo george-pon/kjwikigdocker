@@ -2,13 +2,13 @@ FROM tomcat:8.0-jre8
 
 ENV KJWIKIGDOCKER_VERSION build-target
 ENV KJWIKIGDOCKER_VERSION latest
-ENV KJWIKIGDOCKER_VERSION build342
+ENV KJWIKIGDOCKER_VERSION build346
 ENV KJWIKIGDOCKER_IMAGE kjwikigdocker
 
 COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war
 
 RUN apt-get clean
-RUN gpg --keyserver keyserver.ubuntu.com --recv-keys 8B48AD6246925553 
+RUN gpg --keyserver keyserver.ubuntu.com --recv-keys 8B48AD6246925553
 RUN apt-get update
 RUN apt-get install -y apt-utils --allow-unauthenticated
 RUN apt-get -y upgrade  --allow-unauthenticated
@@ -31,6 +31,12 @@ RUN mkdir -p /var/lib/kjwikigdocker
 RUN rm -rf /usr/local/tomcat/webapps/docs /usr/local/tomcat/webapps/examples /usr/local/tomcat/webapps/host-manager /usr/local/tomcat/webapps/manager
 RUN rm -rf  /usr/local/tomcat/webapps/ROOT/*
 COPY index.jsp /usr/local/tomcat/webapps/ROOT/
+
+RUN cp -p /usr/local/tomcat/conf/logging.properties /usr/local/tomcat/conf/logging.properties.orig
+COPY logging.properties /usr/local/tomcat/conf/logging.properties
+
+RUN cp -p /usr/local/tomcat/conf/server.xml /usr/local/tomcat/conf/server.xml.orig
+COPY server.xml /usr/local/tomcat/conf/server.xml
 
 EXPOSE 8080
 
