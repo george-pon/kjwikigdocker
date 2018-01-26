@@ -20,3 +20,7 @@ and require Java heap memory 600MB+.
 
 ### enviroment variables
 
+* KJWikiG_dataStorePath
+    wiki data saved into. default value is /var/lib/kjwikigdocker/.
+* KJWikiG_defaultWord
+    default wiki page name. default value is WelcomeVisitors.
