@@ -8,7 +8,8 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build343 , latest : enable partial pre division edit link in markdown format.
+* build346 , latest : correct file charset auto detect routine.
+* build343 : enable partial pre division edit link in markdown format.
 * build342 : add ! mark to URL pattern.
 * build340 : fix search result line. hiki formatter: in block quote, do not replace string modifier(italic, bold, strike)
 * build339 : tag support. tag search support. when write tag:keyword,keyword2 in wiki text, create tag search link.
@@ -16,3 +17,6 @@ and require Java heap memory 600MB+.
 * build337 : nearname, recent plugin supports wiki name prefix
 * build335 : volume path changed to /var/lib/kjwikigdocker
 * build332 : new file.encoding is set to UTF-8. volume path : /var/kjwikigdocker
+
+### enviroment variables
+
