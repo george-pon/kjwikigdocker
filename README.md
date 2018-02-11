@@ -8,7 +8,8 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build346 , latest : correct file charset auto detect routine.
+* build349 , latest : add url input to PictBBS form.
+* build346 : correct file charset auto detect routine.
 * build343 : enable partial pre division edit link in markdown format.
 * build342 : add ! mark to URL pattern.
 * build340 : fix search result line. hiki formatter: in block quote, do not replace string modifier(italic, bold, strike)
