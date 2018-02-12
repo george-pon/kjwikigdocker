@@ -8,7 +8,8 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build350 , latest : add bookmarklet link to PictBBS and BBS.
+* build351 , latest : fix encoding when new file create.
+* build350 : add bookmarklet link to PictBBS and BBS.
 * build349 : add url input to PictBBS form.
 * build346 : correct file charset auto detect routine.
 * build343 : enable partial pre division edit link in markdown format.
