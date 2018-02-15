@@ -8,7 +8,8 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build351 , latest : fix encoding when new file create.
+* build352 , latest : fix iCab Mobile bookmarklet link.
+* build351 : fix encoding when new file create.
 * build350 : add bookmarklet link to PictBBS and BBS.
 * build349 : add url input to PictBBS form.
 * build346 : correct file charset auto detect routine.
