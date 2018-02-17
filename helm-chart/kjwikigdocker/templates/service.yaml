@@ -3,17 +3,24 @@ kind: Service
 metadata:
   name: {{ template "kjwikigdocker.fullname" . }}
   labels:
-    app: {{ template "kjwikigdocker.name" . }}
+    app: {{ template "kjwikigdocker.fullname" . }}
     chart: {{ template "kjwikigdocker.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
-      protocol: TCP
-      name: http
+  - name: kjwikigdocker
+    port: {{ .Values.service.port }}
+    targetPort: kjwikigdocker
+    protocol: TCP
+  {{- if (and (eq .Values.service.type "NodePort") (not (empty .Values.service.nodePort))) }}
+    nodePort: {{ .Values.service.nodePort }}
+  {{- end }}
+{{- if .Values.service.externalIPs }}
+  externalIPs:
+{{ toYaml .Values.service.externalIPs | indent 4 }}
+{{- end }}
   selector:
-    app: {{ template "kjwikigdocker.name" . }}
+    app: {{ template "kjwikigdocker.fullname" . }}
     release: {{ .Release.Name }}

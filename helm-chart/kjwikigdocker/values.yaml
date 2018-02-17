@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: georgesan/kjwikigdocker
-  tag: build346
+  tag: build352
   pullPolicy: IfNotPresent
 
 service:
@@ -26,6 +26,28 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
+## Persist data to a persitent volume
+persistence:
+  enabled: true
+
+  ## A manually managed Persistent Volume and Claim
+  ## Requires persistence.enabled: true
+  ## If defined, PVC must be created manually before volume will be bound
+  # existingClaim:
+
+  ## database data Persistent Volume Storage Class
+  ## If defined, storageClassName: <storageClass>
+  ## If set to "-", storageClassName: "", which disables dynamic provisioning
+  ## If undefined (the default) or set to null, no storageClassName spec is
+  ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
+  ##   GKE, AWS & OpenStack)
+  ##
+  # storageClass: "-"
+  accessMode: ReadWriteOnce
+  size: 3Gi
+  subPath:
+  mountPath: /var/lib/kjwikigdocker
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious

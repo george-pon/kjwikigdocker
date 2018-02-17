@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: {{ template "kjwikigdocker.fullname" . }}
   labels:
-    app: {{ template "kjwikigdocker.name" . }}
+    app: {{ template "kjwikigdocker.fullname" . }}
     chart: {{ template "kjwikigdocker.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
@@ -11,16 +11,16 @@ spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ template "kjwikigdocker.name" . }}
+      app: {{ template "kjwikigdocker.fullname" . }}
       release: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app: {{ template "kjwikigdocker.name" . }}
+        app: {{ template "kjwikigdocker.fullname" . }}
         release: {{ .Release.Name }}
     spec:
       containers:
-        - name: {{ .Chart.Name }}
+        - name: {{ .Chart.Name }}-container
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
@@ -35,6 +35,10 @@ spec:
             httpGet:
               path: /
               port: http
+          volumeMounts:
+          - name: data
+            mountPath: {{ .Values.persistence.mountPath }}
+            subPath: {{ .Values.persistence.subPath }}
           resources:
 {{ toYaml .Values.resources | indent 12 }}
     {{- with .Values.nodeSelector }}
@@ -49,3 +53,15 @@ spec:
       tolerations:
 {{ toYaml . | indent 8 }}
     {{- end }}
+      volumes:
+      - name: data
+      {{- if .Values.persistence.enabled }}
+        persistentVolumeClaim:
+          claimName: {{ .Values.persistence.existingClaim | default (include "kjwikigdocker.fullname" .) }}
+      {{- else }}
+        emptyDir: {}
+      {{- end }}
+      {{- if .Values.imagePullSecrets }}
+      imagePullSecrets:
+        - name: {{ .Values.imagePullSecrets }}
+      {{- end }}
