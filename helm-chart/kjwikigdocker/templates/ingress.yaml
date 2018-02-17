@@ -7,7 +7,7 @@ kind: Ingress
 metadata:
   name: {{ $fullName }}
   labels:
-    app: {{ template "kjwikigdocker.name" . }}
+    app: {{ template "kjwikigdocker.fullname" . }}
     chart: {{ template "kjwikigdocker.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
