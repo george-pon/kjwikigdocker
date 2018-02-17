@@ -24,17 +24,17 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
-            - name: http
+            - name: kjwikigdocker
               containerPort: 8080
               protocol: TCP
           livenessProbe:
             httpGet:
               path: /
-              port: http
+              port: kjwikigdocker
           readinessProbe:
             httpGet:
               path: /
-              port: http
+              port: kjwikigdocker
           volumeMounts:
           - name: data
             mountPath: {{ .Values.persistence.mountPath }}
