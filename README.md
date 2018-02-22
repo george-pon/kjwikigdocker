@@ -1,14 +1,16 @@
 # kjwikigdocker
 A docker image for kjwikig , wiki system written by JSP/Servlet (Tomcat8).
 
-Wiki data are saved as text files, into volume path /var/lib/kjwikigdocker/.
+Wiki data are saved as-is text files, into volume path /var/lib/kjwikigdocker/.
 
 Note: When you upload xxx.jpg file which size 10 MB, kjwikig uses /tmp,
 and require Java heap memory 600MB+.
 
 ### tags
 
-* build352 , latest : fix iCab Mobile bookmarklet link.
+* build364 , latest : add filesizesort plugin to wikiformatter usemodwiki.
+    it displays image files in directory order by file size desc.
+* build352 : fix iCab Mobile bookmarklet link.
 * build351 : fix encoding when new file create.
 * build350 : add bookmarklet link to PictBBS and BBS.
 * build349 : add url input to PictBBS form.
