@@ -2,8 +2,9 @@
 #
 # start kjwikigdocker for minikube
 #
-set -xe
+set -x
 kubectl delete svc/kjwikigdocker
-kubectl delete deploy/kjwikigdocker-deployment
+kubectl delete deploy/kjwikigdocker
+kubectl delete ingress/kjwikigdocker
 # kubectl delete pvc/claim-kjwikigdocker
-set +xe
+set +x
