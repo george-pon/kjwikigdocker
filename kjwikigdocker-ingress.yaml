@@ -2,6 +2,11 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: kjwikigdocker
+  annotations:
+    # for accept large file post
+    # see https://github.com/kubernetes/ingress-nginx
+    # see https://github.com/kubernetes/ingress-nginx/blob/master/docs/user-guide/annotations.md
+    nginx.ingress.kubernetes.io/proxy-body-size: 1560m
   labels:
     app: kjwikigdocker
 spec:
