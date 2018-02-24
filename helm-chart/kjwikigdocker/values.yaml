@@ -6,22 +6,28 @@ replicaCount: 1
 
 image:
   repository: georgesan/kjwikigdocker
-  tag: build352
-  pullPolicy: IfNotPresent
+  tag: latest
+  # pullPolicy: Always
+  # pullPolicy: IfNotPresent
 
 service:
-  type: NodePort
-  #type: ClusterIP
+  # type: NodePort
+  type: ClusterIP
   port: 8080
 
 ingress:
-  enabled: false
-  annotations: {}
+  enabled: true
+  annotations:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
-  path: /
+    # for accept large file post
+    # see https://github.com/kubernetes/ingress-nginx
+    # see https://github.com/kubernetes/ingress-nginx/blob/master/docs/user-guide/annotations.md
+    nginx.ingress.kubernetes.io/proxy-body-size: 1560m
+
+  path: /kjwikigdocker
   hosts:
-    - chart-example.local
+    - kjwikigdocker.minikube.local
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:
