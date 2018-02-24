@@ -8,7 +8,9 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build364 , latest : add filesizesort plugin to wikiformatter usemodwiki.
+* build366 , latest : filesizesort plugin outputs html table format.
+    * helm-chart ingress sample. add annotation nginx.ingress.kubernetes.io/proxy-body-size: 1560m 
+* build364 : add filesizesort plugin to wikiformatter usemodwiki.
     it displays image files in directory order by file size desc.
 * build352 : fix iCab Mobile bookmarklet link.
 * build351 : fix encoding when new file create.
