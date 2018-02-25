@@ -8,7 +8,8 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build366 , latest : filesizesort plugin outputs html table format.
+* build367 , latest : fetch text word wrap width is now 65536x2.
+* build366 : filesizesort plugin outputs html table format.
     * helm-chart ingress sample. add annotation nginx.ingress.kubernetes.io/proxy-body-size: 1560m 
 * build364 : add filesizesort plugin to wikiformatter usemodwiki.
     it displays image files in directory order by file size desc.
