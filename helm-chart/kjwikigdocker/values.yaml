@@ -25,7 +25,7 @@ ingress:
     # see https://github.com/kubernetes/ingress-nginx/blob/master/docs/user-guide/annotations.md
     nginx.ingress.kubernetes.io/proxy-body-size: 1560m
 
-  path: /kjwikigdocker
+  path: /
   hosts:
     - kjwikigdocker.minikube.local
   tls: []
