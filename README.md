@@ -8,7 +8,10 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build367 , latest : fetch text word wrap width is now 65536x2.
+* build376 , latest
+    * update template page. add markdown template text.
+    * .login file support. To use authentication, write "username-sample password-sample" line into .login file.
+* build367 : fetch text word wrap width is now 65536x2.
 * build366 : filesizesort plugin outputs html table format.
     * helm-chart ingress sample. add annotation nginx.ingress.kubernetes.io/proxy-body-size: 1560m 
 * build364 : add filesizesort plugin to wikiformatter usemodwiki.
