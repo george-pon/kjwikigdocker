@@ -11,7 +11,7 @@ metadata:
     app: kjwikigdocker
 spec:
   rules:
-  - host: kjwikigdocker.minikube.test
+  - host: kjwikigdocker.minikube.local
     http:
       paths:
       - backend:
