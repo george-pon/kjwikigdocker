@@ -8,7 +8,9 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build378 , latest
+* build381 , latest
+    * add self link to h1 - h6 headding line.
+* build378
     * add digest search. search result page is rendered HTML format by original wiki format
 * build376
     * update template page. add markdown template text.
