@@ -8,7 +8,9 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build376 , latest
+* build378 , latest
+    * add digest search. search result page is rendered HTML format by original wiki format
+* build376
     * update template page. add markdown template text.
     * .login file support. To use authentication, write "username-sample password-sample" line into .login file.
 * build367 : fetch text word wrap width is now 65536x2.
