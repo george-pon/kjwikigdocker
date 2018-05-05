@@ -8,10 +8,13 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build381 , latest
+* build384 , latest
+    * wiki name link of the Reserved Words are normal link ( not edit link ).
+    * digest search allows normal word search and tag search.
+* build381
     * add self link to h1 - h6 headding line.
 * build378
-    * add digest search. search result page is rendered HTML format by original wiki format
+    * add digest search. search result page is rendered HTML format by original wiki format.
 * build376
     * update template page. add markdown template text.
     * .login file support. To use authentication, write "username-sample password-sample" line into .login file.
