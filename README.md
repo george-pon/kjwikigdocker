@@ -8,7 +8,10 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build384 , latest
+* build398 , latest
+    * latest output servlet supported.
+    * blog post template added.
+* build384
     * wiki name link of the Reserved Words are normal link ( not edit link ).
     * digest search allows normal word search and tag search.
 * build381
