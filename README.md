@@ -8,7 +8,11 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build401 , latest
+* build407 , latest
+    * add searchlink plug in
+    * rename digest plug in to digestlink
+    * rename latest plug in to latestlink
+* build401
     * fix digest servlet. call search word.
 * build400
     * fix tag search result. when tag search , output is digest mode.
