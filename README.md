@@ -8,7 +8,9 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build400 , latest
+* build401 , latest
+    * fix digest servlet. call search word.
+* build400
     * fix tag search result. when tag search , output is digest mode.
     * edit link of digest search result is corrected.
 * build398
