@@ -8,7 +8,10 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build407 , latest
+* build410 , latest
+    * add taglist servlet
+    * correct relative link address of digest output ( i.e. archive mode page )
+* build407
     * add searchlink plug in
     * rename digest plug in to digestlink
     * rename latest plug in to latestlink
