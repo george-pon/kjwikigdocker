@@ -8,7 +8,9 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build411 , latest
+* build412 , latest
+    * support ul check format ( usemodwiki / markdown )
+* build411
     * add taglistlink plugin.
 * build410
     * add taglist servlet
