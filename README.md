@@ -8,7 +8,9 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build412 , latest
+* build413 , latest
+    * support pre partial edit link ( usemodwiki / markdown )
+* build412
     * support ul check format ( usemodwiki / markdown )
 * build411
     * add taglistlink plugin.
