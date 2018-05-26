@@ -8,7 +8,9 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build413 , latest
+* build415 , latest
+    * bug fix pre partial edit link ( usemodwiki / markdown )
+* build413
     * support pre partial edit link ( usemodwiki / markdown )
 * build412
     * support ul check format ( usemodwiki / markdown )
