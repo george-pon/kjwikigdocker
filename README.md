@@ -8,7 +8,11 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build415 , latest
+* build418 , latest
+    * pre partial edit link is now shown upside and right edge of pre format area ( usemodwiki / markdown )
+    * set Content-Length header on download servlet
+    * support Range header on download servlet
+* build415
     * bug fix pre partial edit link ( usemodwiki / markdown )
 * build413
     * support pre partial edit link ( usemodwiki / markdown )
