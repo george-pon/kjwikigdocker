@@ -8,7 +8,10 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build418 , latest
+* build419 , latest
+    * fix image thumb nail proc
+    * fix Range header proc. when invalid Range header is requested, just ignore it. ( not return error )
+* build418
     * pre partial edit link is now shown upside and right edge of pre format area ( usemodwiki / markdown )
     * set Content-Length header on download servlet
     * support Range header on download servlet
