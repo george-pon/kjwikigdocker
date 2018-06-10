@@ -8,7 +8,9 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build419 , latest , stable
+* build422 , latest , stable
+    * fix tag list encount number
+* build419
     * fix image thumb nail proc
     * fix Range header proc. when invalid Range header is requested, just ignore it. ( not return error )
 * build418
