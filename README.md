@@ -8,7 +8,9 @@ and require Java heap memory 600MB+.
 
 ### tags
 
-* build422 , latest , stable
+* build423 , latest , stable
+    * fix table for markdown formatter
+* build422
     * fix tag list encount number
 * build419
     * fix image thumb nail proc
