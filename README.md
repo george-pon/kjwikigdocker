@@ -8,6 +8,8 @@ and require Java heap memory 600MB+.
 
 ### tags
 
+* build427 , latest , stable
+    * fix filesizesort plugin. file data which has same name is now also updated.
 * build423 , latest , stable
     * fix table for markdown formatter
 * build422
@@ -77,3 +79,16 @@ and require Java heap memory 600MB+.
     wiki data saved into. default value is /var/lib/kjwikigdocker/.
 * KJWikiG_defaultWord
     default wiki page name. default value is WelcomeVisitors.
+
+### how to run
+
+* docker run and visit http://localhost:8080/kjwikigdocker/
+```
+docker run -d -p 8080:8080 georgesan/kjwikigdocker:stable
+```
+
+* The wiki data stored in volume, so if you want to save wiki data, run below
+```
+docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker georgesan/kjwikigdocker:stable
+```
+
