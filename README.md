@@ -6,11 +6,28 @@ Wiki data are saved as-is text files, into volume path /var/lib/kjwikigdocker/.
 Note: When you upload xxx.jpg file which size 10 MB, kjwikig uses /tmp,
 and require Java heap memory 600MB+.
 
+
+### how to run
+
+* docker run and visit http://localhost:8080/kjwikigdocker/
+```
+docker run -d -p 8080:8080 georgesan/kjwikigdocker:stable
+```
+
+* The wiki data stored in volume, so if you want to save wiki data, run below
+```
+docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker georgesan/kjwikigdocker:stable
+```
+
+
 ### tags
 
-* build427 , latest , stable
+* build428 , latest , stable
+    * fix library ant task javac option. now use release="8"
+* build427
     * fix filesizesort plugin. file data which has same name is now also updated.
-* build423 , latest , stable
+    * use openjdk-10 compiler, but target = "1.8"
+* build423
     * fix table for markdown formatter
 * build422
     * fix tag list encount number
@@ -79,16 +96,3 @@ and require Java heap memory 600MB+.
     wiki data saved into. default value is /var/lib/kjwikigdocker/.
 * KJWikiG_defaultWord
     default wiki page name. default value is WelcomeVisitors.
-
-### how to run
-
-* docker run and visit http://localhost:8080/kjwikigdocker/
-```
-docker run -d -p 8080:8080 georgesan/kjwikigdocker:stable
-```
-
-* The wiki data stored in volume, so if you want to save wiki data, run below
-```
-docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker georgesan/kjwikigdocker:stable
-```
-
