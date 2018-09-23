@@ -14,7 +14,7 @@ and require Java heap memory 600MB+.
 docker run -d -p 8080:8080 georgesan/kjwikigdocker:stable
 ```
 
-* The wiki data stored in volume, so if you want to save wiki data, run below
+* KJWikiG's wiki data stored in volume, so if you want to save wiki data, run below
 ```
 docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker georgesan/kjwikigdocker:stable
 ```
@@ -22,7 +22,10 @@ docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker geor
 
 ### tags
 
-* build428 , latest , stable
+* build436 , latest , stable
+    * war file is now build by gradle 4.10.2.
+    * directory cache file (*.fcd) is now created in fcd directory.
+* build428
     * fix library ant task javac option. now use release="8"
 * build427
     * fix filesizesort plugin. file data which has same name is now also updated.
