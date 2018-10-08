@@ -22,7 +22,9 @@ docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker geor
 
 ### tags
 
-* build436 , latest , stable
+* build437 , latest
+    * tag list is now cached on memory.
+* build436 , stable
     * war file is now build by gradle 4.10.2.
     * directory cache file (*.fcd) is now created in fcd directory.
 * build428
