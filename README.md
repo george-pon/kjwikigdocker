@@ -22,7 +22,9 @@ docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker geor
 
 ### tags
 
-* build437 , latest
+* build438 , latest
+    * fix file cache null check.
+* build437
     * tag list is now cached on memory.
 * build436 , stable
     * war file is now build by gradle 4.10.2.
