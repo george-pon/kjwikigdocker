@@ -22,11 +22,13 @@ docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker geor
 
 ### tags
 
-* build441 , stable , latest
+* build442 , stable , latest
+    * fix tag cache for bbs, pictbbs.
+* build441
     * fix file cache null check.
 * build437
     * tag list is now cached on memory.
-* build436 , stable
+* build436
     * war file is now build by gradle 4.10.2.
     * directory cache file (*.fcd) is now created in fcd directory.
 * build428
