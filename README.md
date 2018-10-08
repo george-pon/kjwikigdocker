@@ -22,7 +22,7 @@ docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker geor
 
 ### tags
 
-* build438 , latest
+* build441 , stable , latest
     * fix file cache null check.
 * build437
     * tag list is now cached on memory.
