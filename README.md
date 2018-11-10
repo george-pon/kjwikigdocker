@@ -22,7 +22,11 @@ docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker geor
 
 ### tags
 
-* build442 , stable , latest
+* build444 , stable , latest
+    * filesizesort plugin improovement. offset link add.
+    * jpg/png image size is now cached into atr file.
+    * parameter is read from Java System Property. see environment variables.
+* build442
     * fix tag cache for bbs, pictbbs.
 * build441
     * fix file cache null check.
@@ -101,7 +105,17 @@ docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker geor
 
 ### enviroment variables
 
+the parameters are read from
+1. read from resource bundle 'kjwikig' in war file.  ( ex key:dataStorePath )
+2. overwirte when there is environment variable. ( ex key:KJWikiG_dataStorePath )
+3. overwirte when there is Java System Properties. ( ex key:KJWikiG_dataStorePath )
+
 * KJWikiG_dataStorePath
-    wiki data saved into. default value is /var/lib/kjwikigdocker/.
+    wiki data saved into. default value is /var/lib/kjwikigdocker/
 * KJWikiG_defaultWord
-    default wiki page name. default value is WelcomeVisitors.
+    default wiki page name. default value is WelcomeVisitors
+* KJWikiG_maxFileUploadSize
+    max file upload size. default value is 768000000
+* KJWikiG_uploadFileTemporaryPath
+    temporary file path to recieve large upload file. default value is /tmp
+
