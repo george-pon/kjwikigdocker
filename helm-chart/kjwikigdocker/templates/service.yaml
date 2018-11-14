@@ -14,7 +14,7 @@ spec:
     port: {{ .Values.service.port }}
     targetPort: kjwikigdocker
     protocol: TCP
-  {{- if haskey .Values.service "nodePort" }}
+  {{- if hasKey .Values.service "nodePort" }}
     nodePort: {{ .Values.service.nodePort }}
   {{- end }}
 {{- if .Values.service.externalIPs }}
