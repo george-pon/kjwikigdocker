@@ -12,6 +12,7 @@ image:
 
 service:
   # type: NodePort
+  # nodePort: 31234
   type: ClusterIP
   port: 8080
 
