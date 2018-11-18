@@ -119,3 +119,29 @@ the parameters are read from
 * KJWikiG_uploadFileTemporaryPath
     temporary file path to recieve large upload file. default value is /tmp
 
+### other tips
+
+#### run kjwikigdocker via helm chart
+
+```
+# helm repo add for kjwikigdocker
+helm repo add kjwikigdockerrepo  https://raw.githubusercontent.com/george-pon/kjwikigdocker/master/helm-chart/charts
+
+# helm install for kjwikigdocker
+helm install kjwikigdockerrepo/kjwikigdocker --name kjwikigdocker
+
+# wait until deploy complete
+RC=1
+for i in 3 2 1
+do
+    if kubectl rollout status deploy/kjwikigdocker ; then
+        RC=0
+        break
+    fi
+done
+
+if [ $RC -ne 0 ]; then
+    echo "deploy failed."
+    force_command_error_deploy_failed
+fi
+```
