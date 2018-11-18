@@ -3,13 +3,13 @@ entries:
   kjwikigdocker:
   - apiVersion: v1
     appVersion: 0.0.444
-    created: 2018-11-18T13:22:46.9574239+09:00
+    created: 2018-11-18T17:37:41.5498192+09:00
     description: wiki on Tomcat8 files stores into PVC
-    digest: 7f7ae54f02880f8e5b027eb1481ff522cf6ed49190501b3a89702c7cbb2c6d95
+    digest: dff0b172a368b82567455fca6a51930afa18945f9eb7ee0f046eea0198d1872f
     keywords:
     - wiki
     name: kjwikigdocker
     urls:
     - kjwikigdocker-0.0.444.tgz
     version: 0.0.444
-generated: 2018-11-18T13:22:46.9564072+09:00
+generated: 2018-11-18T17:37:41.5457966+09:00
