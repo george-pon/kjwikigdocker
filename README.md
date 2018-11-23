@@ -22,7 +22,9 @@ docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker geor
 
 ### tags
 
-* build445 , stable , latest
+* build447 , stable , latest
+    * markdown format. emphasis _emphasis_ is now need to white space left and right.
+* build445
     * build by openjdk 11 with --release 8 option
     * kjwikigdocker/ping servlet is now available.  It returns HTTP Status 200 : "OK"  or HTTP Status 503 : Temporarily Unavailable.
 * build444
@@ -134,17 +136,5 @@ helm repo add kjwikigdockerrepo  https://raw.githubusercontent.com/george-pon/kj
 helm install kjwikigdockerrepo/kjwikigdocker --name kjwikigdocker
 
 # wait until deploy complete
-RC=1
-for i in 3 2 1
-do
-    if kubectl rollout status deploy/kjwikigdocker ; then
-        RC=0
-        break
-    fi
-done
-
-if [ $RC -ne 0 ]; then
-    echo "deploy failed."
-    force_command_error_deploy_failed
-fi
+kubectl rollout status deploy/kjwikigdocker
 ```
