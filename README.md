@@ -22,7 +22,10 @@ docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker geor
 
 ### tags
 
-* build444 , stable , latest
+* build445 , stable , latest
+    * build by openjdk 11 with --release 8 option
+    * kjwikigdocker/ping servlet is now available.  It returns HTTP Status 200 : "OK"  or HTTP Status 503 : Temporarily Unavailable.
+* build444
     * filesizesort plugin improovement. offset link add.
     * jpg/png image size is now cached into atr file.
     * parameter is read from Java System Property. see environment variables.

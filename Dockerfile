@@ -1,9 +1,9 @@
-FROM tomcat:8.0-jre8
+FROM tomcat:8.5-jre11
 
 ENV KJWIKIGDOCKER_VERSION build-target
 ENV KJWIKIGDOCKER_VERSION latest
 ENV KJWIKIGDOCKER_VERSION stable
-ENV KJWIKIGDOCKER_VERSION build444
+ENV KJWIKIGDOCKER_VERSION build445
 ENV KJWIKIGDOCKER_IMAGE kjwikigdocker
 
 COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war

@@ -2,8 +2,19 @@ apiVersion: v1
 entries:
   kjwikigdocker:
   - apiVersion: v1
+    appVersion: 0.0.445
+    created: 2018-11-23T15:17:50.9184717+09:00
+    description: wiki on Tomcat8 files stores into PVC
+    digest: e0486d110e13d040755905b7c6487cc8091c6a9d6cb0d3199f581526d315550a
+    keywords:
+    - wiki
+    name: kjwikigdocker
+    urls:
+    - https://raw.githubusercontent.com/george-pon/kjwikigdocker/master/helm-chart/charts/kjwikigdocker-0.0.445.tgz
+    version: 0.0.445
+  - apiVersion: v1
     appVersion: 0.0.444
-    created: 2018-11-18T17:42:20.5461671+09:00
+    created: 2018-11-23T15:17:50.9154411+09:00
     description: wiki on Tomcat8 files stores into PVC
     digest: 9dbf02315be2ef49a45909ed0a9b5b89a839ab18f0f2ab5d98a3cc244171efe8
     keywords:
@@ -12,4 +23,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/george-pon/kjwikigdocker/master/helm-chart/charts/kjwikigdocker-0.0.444.tgz
     version: 0.0.444
-generated: 2018-11-18T17:42:20.5431376+09:00
+generated: 2018-11-23T15:17:50.9154411+09:00

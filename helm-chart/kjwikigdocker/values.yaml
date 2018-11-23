@@ -6,9 +6,9 @@ replicaCount: 1
 
 image:
   repository: georgesan/kjwikigdocker
-  tag: latest
+  tag: stable
   # pullPolicy: Always
-  # pullPolicy: IfNotPresent
+  pullPolicy: IfNotPresent
 
 service:
   # type: NodePort
@@ -26,7 +26,7 @@ ingress:
     # see https://github.com/kubernetes/ingress-nginx/blob/master/docs/user-guide/annotations.md
     nginx.ingress.kubernetes.io/proxy-body-size: 1560m
 
-  path: /
+  path: /kjwikigdocker/
   hosts:
     - kjwikigdocker.minikube.local
   tls: []

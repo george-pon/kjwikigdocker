@@ -14,11 +14,11 @@ spec:
       app: {{ template "kjwikigdocker.fullname" . }}
       release: {{ .Release.Name }}
 
-  # pod が ready 判定前に待機する秒数。tomcat上のアプリとかは起動が遅いので長めに待ってあげる。
-  minReadySeconds: 60
+  # pod が ready 判定前に待機する秒数。tomcat上のJavaアプリとかは起動が遅いので長めに待ってあげる。
+  minReadySeconds: 30
 
-  # deployment controler が pod 起動 stalled と判定するまでの秒数。10分。stalledになったPodは再起動される。
-  progressDeadlineSeconds: 600
+  # deployment controler が pod 起動 stalled と判定するまでの秒数。stalledになったPodは再起動される。
+  progressDeadlineSeconds: 360
 
   # Rolling updateする場合の設定。
   strategy:
@@ -38,24 +38,24 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           # 終了時、pod内プロセスに SIGTERM を送信してからリソース削除まで待機する秒数。PVに最後のファイルを書いているかもしれないので待ってあげる。
-          terminationGracePeriodSeconds: 60
+          terminationGracePeriodSeconds: 30
           ports:
             - name: kjwikigdocker
               containerPort: 8080
               protocol: TCP
           livenessProbe:
             httpGet:
-              path: /
+              path: /kjwikigdocker/ping
               port: kjwikigdocker
-            initialDelaySeconds: 120
+            initialDelaySeconds: 60
             timeoutSeconds: 5
             periodSeconds: 10
             failureThreshold: 3
           readinessProbe:
             httpGet:
-              path: /
+              path: /kjwikigdocker/ping
               port: kjwikigdocker
-            initialDelaySeconds: 120
+            initialDelaySeconds: 60
             timeoutSeconds: 5
             periodSeconds: 10
             failureThreshold: 3
