@@ -8,24 +8,22 @@ ENV KJWIKIGDOCKER_IMAGE kjwikigdocker
 
 COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war
 
-RUN apt-get clean
-RUN gpg --keyserver keyserver.ubuntu.com --recv-keys 8B48AD6246925553
-RUN apt-get update
-RUN apt-get install -y apt-utils --allow-unauthenticated
-RUN apt-get -y upgrade  --allow-unauthenticated
-
-RUN apt-get install -y locales
-RUN locale-gen ja_JP.UTF-8
-RUN localedef -f UTF-8 -i ja_JP ja_JP
+RUN apt-get clean && \
+    gpg --keyserver keyserver.ubuntu.com --recv-keys 8B48AD6246925553 && \
+    apt-get update && \
+    apt-get install -y apt-utils --allow-unauthenticated && \
+    apt-get -y upgrade  --allow-unauthenticated && \
+    apt-get install -y locales && \
+    locale-gen ja_JP.UTF-8 && \
+    localedef -f UTF-8 -i ja_JP ja_JP && \
+    apt-get install -y procps && \
+    apt-get clean
 
 ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:jp
 ENV LC_ALL ja_JP.UTF-8
 
-# top, ps
-# RUN apt-get install -y procps
-
-# for volume
+# for volume mount
 RUN mkdir -p /var/lib/kjwikigdocker
 
 # remove tomcat default contents
@@ -34,6 +32,10 @@ RUN rm -rf  /usr/local/tomcat/webapps/ROOT/*
 
 # install default index page
 COPY index.jsp /usr/local/tomcat/webapps/ROOT/
+
+# copy env file
+COPY setenv.sh /usr/local/tomcat/bin/
+RUN chmod +x /usr/local/tomcat/bin/setenv.sh
 
 # log to stderr/stdout
 RUN cp -p /usr/local/tomcat/conf/logging.properties /usr/local/tomcat/conf/logging.properties.orig

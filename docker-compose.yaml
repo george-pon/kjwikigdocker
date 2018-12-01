@@ -1,9 +1,9 @@
 kjwikigdocker:
-  image: georgesan/kjwikigdocker
+  image: georgesan/kjwikigdocker:latest
   restart: always
   ports:
-    - "8080"
+    - "8080:8080"
   environment:
-    - CATALINA_OPTS=-Xms300m -Xmx600m
+    - CATALINA_OPTS=-Xms300m -Xmx700m
   volumes:
     - /var/lib/kjwikigdocker:/var/lib/kjwikigdocker
