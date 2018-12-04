@@ -19,6 +19,19 @@ docker run -d -p 8080:8080 georgesan/kjwikigdocker:stable
 docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker georgesan/kjwikigdocker:stable
 ```
 
+#### run kjwikigdocker via helm chart
+
+```
+# helm repo add for kjwikigdocker
+helm repo add kjwikigdockerrepo  https://raw.githubusercontent.com/george-pon/kjwikigdocker/master/helm-chart/charts
+
+# helm install for kjwikigdocker
+helm install kjwikigdockerrepo/kjwikigdocker --name kjwikigdocker --set ingress.hosts="{kjwikigdocker.default.svc.k8s.local}"
+
+# wait until deploy complete
+kubectl rollout status deploy/kjwikigdocker
+```
+
 
 ### tags
 
@@ -124,17 +137,3 @@ the parameters are read from
 * KJWikiG_uploadFileTemporaryPath
     temporary file path to recieve large upload file. default value is /tmp
 
-### other tips
-
-#### run kjwikigdocker via helm chart
-
-```
-# helm repo add for kjwikigdocker
-helm repo add kjwikigdockerrepo  https://raw.githubusercontent.com/george-pon/kjwikigdocker/master/helm-chart/charts
-
-# helm install for kjwikigdocker
-helm install kjwikigdockerrepo/kjwikigdocker --name kjwikigdocker
-
-# wait until deploy complete
-kubectl rollout status deploy/kjwikigdocker
-```
