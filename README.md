@@ -35,7 +35,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build447 , stable , latest
+* build448 , stable , latest
+    * when login failed, sleep 3 seconds.
+* build447
     * markdown format. emphasis _emphasis_ is now need to white space left and right.
 * build445
     * build by openjdk 11 with --release 8 option
