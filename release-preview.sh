@@ -7,8 +7,8 @@ echo EDITOR is $EDITOR
 $EDITOR Dockerfile README.md helm-chart/kjwikigdocker/Chart.yaml
 
 # build image
-export IMAGE_PREFIX=
-# export IMAGE_PREFIX=georgesan/
+# export IMAGE_PREFIX=
+export IMAGE_PREFIX=georgesan/
 export no_cache=
 # export no_cache=true
 bash build-image.sh
