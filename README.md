@@ -1,4 +1,5 @@
 # kjwikigdocker
+
 A docker image for kjwikig , wiki system written by JSP/Servlet (Tomcat8).
 
 Wiki data are saved as-is text files, into volume path /var/lib/kjwikigdocker/.
@@ -35,7 +36,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build448 , stable , latest
+* build449, latest
+    * add Vue.js + axios
+    * when edit whole wiki page or edit sub wiki page or upload plugin, supports automatic image upload from clipboard by press Ctrl-V in textarea.
+* build448, stable
     * when login failed, sleep 3 seconds.
 * build447
     * markdown format. emphasis _emphasis_ is now need to white space left and right.
@@ -54,7 +58,7 @@ kubectl rollout status deploy/kjwikigdocker
     * tag list is now cached on memory.
 * build436
     * war file is now build by gradle 4.10.2.
-    * directory cache file (*.fcd) is now created in fcd directory.
+    * directory cache file (.fcd) is now created in fcd directory.
 * build428
     * fix library ant task javac option. now use release="8"
 * build427
@@ -138,4 +142,5 @@ the parameters are read from
     max file upload size. default value is 768000000
 * KJWikiG_uploadFileTemporaryPath
     temporary file path to recieve large upload file. default value is /tmp
+
 

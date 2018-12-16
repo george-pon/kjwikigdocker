@@ -2,8 +2,19 @@ apiVersion: v1
 entries:
   kjwikigdocker:
   - apiVersion: v1
+    appVersion: 0.0.449
+    created: 2018-12-16T17:05:16.2639334+09:00
+    description: wiki on Tomcat8 files stores into PVC
+    digest: 2c216785c0b4d1727f9f26afa2bce7f9d106cfed2d74d6cdc70f26e08d32c5af
+    keywords:
+    - wiki
+    name: kjwikigdocker
+    urls:
+    - https://raw.githubusercontent.com/george-pon/kjwikigdocker/master/helm-chart/charts/kjwikigdocker-0.0.449.tgz
+    version: 0.0.449
+  - apiVersion: v1
     appVersion: 0.0.448
-    created: 2018-12-08T18:08:38.1889699+09:00
+    created: 2018-12-16T17:05:16.2609595+09:00
     description: wiki on Tomcat8 files stores into PVC
     digest: aa29ab58fc933bd7ba86a5c8bd1328fc437d1f6a7dc8f310b388fee01c606483
     keywords:
@@ -14,7 +25,7 @@ entries:
     version: 0.0.448
   - apiVersion: v1
     appVersion: 0.0.447
-    created: 2018-12-08T18:08:38.18497+09:00
+    created: 2018-12-16T17:05:16.259962+09:00
     description: wiki on Tomcat8 files stores into PVC
     digest: cd5ad34bf2cdab4672ad95bbd64e8e349965abf4c003649026dad78b0ce839f1
     keywords:
@@ -23,26 +34,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/george-pon/kjwikigdocker/master/helm-chart/charts/kjwikigdocker-0.0.447.tgz
     version: 0.0.447
-  - apiVersion: v1
-    appVersion: 0.0.445
-    created: 2018-12-08T18:08:38.18497+09:00
-    description: wiki on Tomcat8 files stores into PVC
-    digest: e0486d110e13d040755905b7c6487cc8091c6a9d6cb0d3199f581526d315550a
-    keywords:
-    - wiki
-    name: kjwikigdocker
-    urls:
-    - https://raw.githubusercontent.com/george-pon/kjwikigdocker/master/helm-chart/charts/kjwikigdocker-0.0.445.tgz
-    version: 0.0.445
-  - apiVersion: v1
-    appVersion: 0.0.444
-    created: 2018-12-08T18:08:38.1839716+09:00
-    description: wiki on Tomcat8 files stores into PVC
-    digest: 9dbf02315be2ef49a45909ed0a9b5b89a839ab18f0f2ab5d98a3cc244171efe8
-    keywords:
-    - wiki
-    name: kjwikigdocker
-    urls:
-    - https://raw.githubusercontent.com/george-pon/kjwikigdocker/master/helm-chart/charts/kjwikigdocker-0.0.444.tgz
-    version: 0.0.444
-generated: 2018-12-08T18:08:38.1829729+09:00
+generated: 2018-12-16T17:05:16.259962+09:00

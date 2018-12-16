@@ -22,10 +22,10 @@ pushd helm-chart
     PRESENT=$( helm list kjwikigdocker )
     if [ -z "$PRESENT" ] ; then
         # use local image name
-        helm install kjwikigdocker --name kjwikigdocker --set image.repository=kjwikigdocker --set image.tag=stable --set image.pullPolicy=Never
+        helm install kjwikigdocker --name kjwikigdocker --set image.repository=${IMAGE_PREFIX}kjwikigdocker --set image.tag=stable --set image.pullPolicy=Never
     else
         # use local image name
-        helm upgrade kjwikigdocker kjwikigdocker --set image.repository=kjwikigdocker --set image.tag=stable --set image.pullPolicy=Never
+        helm upgrade kjwikigdocker kjwikigdocker --set image.repository=${IMAGE_PREFIX}kjwikigdocker --set image.tag=stable --set image.pullPolicy=Never
     fi
     # wait for deploy
     kubectl rollout status deploy/kjwikigdocker
