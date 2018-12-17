@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build449, stable, latest
+* build450, stable, latest
+    * Vue.js debug display enabled.
+* build449
     * add Vue.js + axios
     * when edit whole wiki page or edit sub wiki page or upload plugin, supports automatic image upload from clipboard by press Ctrl-V in textarea.
 * build448
