@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build450, stable, latest
+* build451, stable, latest
+    * Vue.js 2.5.21
+* build450
     * Vue.js debug display enabled.
 * build449
     * add Vue.js + axios
