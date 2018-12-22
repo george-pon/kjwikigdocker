@@ -2,8 +2,19 @@ apiVersion: v1
 entries:
   kjwikigdocker:
   - apiVersion: v1
+    appVersion: 0.0.452
+    created: 2018-12-22T23:34:09.1954305+09:00
+    description: wiki on Tomcat8 files stores into PVC
+    digest: 7585faba60b9525a3dacde2ce886a8ca1a7f5b0bc92a21fd376bfc00515c883d
+    keywords:
+    - wiki
+    name: kjwikigdocker
+    urls:
+    - https://raw.githubusercontent.com/george-pon/kjwikigdocker/master/helm-chart/charts/kjwikigdocker-0.0.452.tgz
+    version: 0.0.452
+  - apiVersion: v1
     appVersion: 0.0.451
-    created: 2018-12-17T16:07:50.6867486+09:00
+    created: 2018-12-22T23:34:09.1923993+09:00
     description: wiki on Tomcat8 files stores into PVC
     digest: 50e7493e3ef94f8000a25154572fcdfe2fb6b9a59590aafaaa446db95d648ebc
     keywords:
@@ -14,7 +25,7 @@ entries:
     version: 0.0.451
   - apiVersion: v1
     appVersion: 0.0.450
-    created: 2018-12-17T16:07:50.683778+09:00
+    created: 2018-12-22T23:34:09.1923993+09:00
     description: wiki on Tomcat8 files stores into PVC
     digest: fb7c6799b7382f8d4f7e2d29a63c383a8f24cd373ba4e168eba1dd2829da9a32
     keywords:
@@ -25,7 +36,7 @@ entries:
     version: 0.0.450
   - apiVersion: v1
     appVersion: 0.0.449
-    created: 2018-12-17T16:07:50.683778+09:00
+    created: 2018-12-22T23:34:09.1923993+09:00
     description: wiki on Tomcat8 files stores into PVC
     digest: 2c216785c0b4d1727f9f26afa2bce7f9d106cfed2d74d6cdc70f26e08d32c5af
     keywords:
@@ -36,7 +47,7 @@ entries:
     version: 0.0.449
   - apiVersion: v1
     appVersion: 0.0.448
-    created: 2018-12-17T16:07:50.6827927+09:00
+    created: 2018-12-22T23:34:09.1913991+09:00
     description: wiki on Tomcat8 files stores into PVC
     digest: aa29ab58fc933bd7ba86a5c8bd1328fc437d1f6a7dc8f310b388fee01c606483
     keywords:
@@ -47,7 +58,7 @@ entries:
     version: 0.0.448
   - apiVersion: v1
     appVersion: 0.0.447
-    created: 2018-12-17T16:07:50.6827927+09:00
+    created: 2018-12-22T23:34:09.1913991+09:00
     description: wiki on Tomcat8 files stores into PVC
     digest: cd5ad34bf2cdab4672ad95bbd64e8e349965abf4c003649026dad78b0ce839f1
     keywords:
@@ -56,4 +67,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/george-pon/kjwikigdocker/master/helm-chart/charts/kjwikigdocker-0.0.447.tgz
     version: 0.0.447
-generated: 2018-12-17T16:07:50.6817783+09:00
+generated: 2018-12-22T23:34:09.1903981+09:00

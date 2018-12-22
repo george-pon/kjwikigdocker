@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build451, stable, latest
+* build452, stable, latest
+    * when Ctrl-V image paste, auto uploaded image file prefixed base wiki name
+* build451
     * Vue.js 2.5.21
 * build450
     * Vue.js debug display enabled.
