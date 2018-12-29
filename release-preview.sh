@@ -3,6 +3,12 @@
 EDITOR=${EDITOR:-vi}
 echo EDITOR is $EDITOR
 
+set -eux
+docker version
+kubectl version
+helm version
+set +eux
+
 # edit version number
 $EDITOR Dockerfile README.md helm-chart/kjwikigdocker/Chart.yaml
 
