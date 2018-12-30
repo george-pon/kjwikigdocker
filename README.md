@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build453, stable, latest
+* build455, stable, latest
+    * {{recent_tag(tag,10)}} plugin add. It displays tag name link updated recent.
+* build453
     * add sub-title of wiki (h1-h6) to result list of digest search.
 * build452
     * when Ctrl-V image paste, auto uploaded image file prefixed base wiki name
