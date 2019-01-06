@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build456, stable, latest
+* build457, stable, latest
+    * fix all wiki files into HTML convert mode.
+* build456
     * add desc|url link check to hiki formatter.
 * build455
     * {{recent_tag(tag,10)}} plugin add. It displays tag name link updated recent.
