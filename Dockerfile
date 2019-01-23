@@ -8,17 +8,27 @@ ENV KJWIKIGDOCKER_IMAGE kjwikigdocker
 
 COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war
 
-RUN apt-get clean && \
-    gpg --keyserver keyserver.ubuntu.com --recv-keys 8B48AD6246925553 && \
-    apt-get update && \
+# update
+RUN apt-get update && apt-get clean
+
+# install apt-utils
+RUN gpg --keyserver keyserver.ubuntu.com --recv-keys 8B48AD6246925553 && \
     apt-get install -y apt-utils --allow-unauthenticated && \
-    apt-get -y upgrade  --allow-unauthenticated && \
-    apt-get install -y locales && \
-    locale-gen ja_JP.UTF-8 && \
-    localedef -f UTF-8 -i ja_JP ja_JP && \
-    apt-get install -y procps && \
     apt-get clean
 
+# upgrade
+RUN apt-get -y upgrade  --allow-unauthenticated
+
+# install locales
+RUN apt-get install -y locales && \
+    locale-gen ja_JP.UTF-8 && \
+    localedef -f UTF-8 -i ja_JP ja_JP && \
+    apt-get clean
+
+# install ps command
+RUN apt-get install -y procps && apt-get clean
+
+# set locale
 ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:jp
 ENV LC_ALL ja_JP.UTF-8
