@@ -12,14 +12,14 @@ COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war
 RUN apt-get update && apt-get clean
 
 # install GPG key
-RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 8B48AD6246925553
+# RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 8B48AD6246925553
 # RUN gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 8B48AD6246925553
-
 # install apt-utils
-RUN apt-get install -y apt-utils --allow-unauthenticated && apt-get clean
+# RUN apt-get install -y apt-utils --allow-unauthenticated && apt-get clean
 
 # upgrade
-RUN apt-get -y upgrade  --allow-unauthenticated
+# RUN apt-get -y upgrade  --allow-unauthenticated
+RUN apt-get -y upgrade && apt-get clean
 
 # install locales
 RUN apt-get install -y locales && \
@@ -27,13 +27,13 @@ RUN apt-get install -y locales && \
     localedef -f UTF-8 -i ja_JP ja_JP && \
     apt-get clean
 
-# install ps command
-RUN apt-get install -y procps && apt-get clean
-
 # set locale
 ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:jp
 ENV LC_ALL ja_JP.UTF-8
+
+# install ps command
+RUN apt-get install -y procps && apt-get clean
 
 # for volume mount
 RUN mkdir -p /var/lib/kjwikigdocker
