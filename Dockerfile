@@ -16,9 +16,10 @@ RUN apt-get update && apt-get clean
 # RUN gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 8B48AD6246925553
 # install apt-utils
 # RUN apt-get install -y apt-utils --allow-unauthenticated && apt-get clean
-
 # upgrade
 # RUN apt-get -y upgrade  --allow-unauthenticated
+
+# upgrade
 RUN apt-get -y upgrade && apt-get clean
 
 # install locales
