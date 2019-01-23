@@ -11,10 +11,12 @@ COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war
 # update
 RUN apt-get update && apt-get clean
 
+# install GPG key
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 8B48AD6246925553
+# RUN gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 8B48AD6246925553
+
 # install apt-utils
-RUN gpg --keyserver keyserver.ubuntu.com --recv-keys 8B48AD6246925553 && \
-    apt-get install -y apt-utils --allow-unauthenticated && \
-    apt-get clean
+RUN apt-get install -y apt-utils --allow-unauthenticated && apt-get clean
 
 # upgrade
 RUN apt-get -y upgrade  --allow-unauthenticated
