@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build462, stable, latest
+* build469, stable, latest
+    * fix web socket url via SSL/TLS terminated reverse proxy.
+* build462
     * add webchat servlet (Experimental) ( use Web Socket )
 * build457
     * fix all wiki files into HTML convert mode.
