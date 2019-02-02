@@ -36,7 +36,11 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build471, stable, latest
+* build472, stable, latest
+    * improve: /webchat allows multi line text. ctrl + enter is submit.
+    * improve: /webchat allows image ctrl + v paste.
+    * improve: pictbbs and webchat displays number link.
+* build471
     * fix: zero data pictbbs creation and display in webchat.
     * improve: ACL check log
 * build470
