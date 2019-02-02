@@ -36,7 +36,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build470, stable, latest
+* build471, stable, latest
+    * fix: zero data pictbbs creation and display in webchat.
+    * improve: ACL check log
+* build470
     * fix css
 * build469
     * fix web socket url via SSL/TLS terminated reverse proxy.
@@ -73,18 +76,14 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### enviroment variables
 
-The parameters are read from below.
+* KJWikiG_dataStorePath : wiki data saved into. default value is /var/lib/kjwikigdocker
+* KJWikiG_defaultWord : default wiki page name. default value is WelcomeVisitors
+* KJWikiG_maxFileUploadSize : max file upload size in bytes. default value is 768000000
+* KJWikiG_uploadFileTemporaryPath : temporary file path to recieve large upload file. default value is /tmp
+
+### parameter override order
+
+The parameters are read from below order.
 1. read from resource bundle 'kjwikig' in war file.  ( ex key:dataStorePath )
-2. overwirte when there is environment variable. ( ex key:KJWikiG_dataStorePath )
-3. overwirte when there is Java System Properties. ( ex key:KJWikiG_dataStorePath )
-
-* KJWikiG_dataStorePath
-    wiki data saved into. default value is /var/lib/kjwikigdocker/
-* KJWikiG_defaultWord
-    default wiki page name. default value is WelcomeVisitors
-* KJWikiG_maxFileUploadSize
-    max file upload size in bytes. default value is 768000000
-* KJWikiG_uploadFileTemporaryPath
-    temporary file path to recieve large upload file. default value is /tmp
-
-
+2. override when there is environment variable. ( ex key:KJWikiG_dataStorePath )
+3. override when there is Java System Properties. ( ex key:KJWikiG_dataStorePath )

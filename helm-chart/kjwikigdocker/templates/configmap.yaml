@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "kjwikigdocker.fullname" . }}
+  labels:
+    app: {{ template "kjwikigdocker.fullname" . }}
+    chart: {{ template "kjwikigdocker.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+data:
+  defaultWord: {{ .Values.configmap.defaultWord | quote }}
+  dataStorePath: {{ .Values.configmap.dataStorePath | quote }}

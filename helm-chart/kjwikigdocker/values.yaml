@@ -4,6 +4,10 @@
 
 replicaCount: 1
 
+configmap:
+  defaultWord: WelcomeVisitors
+  dataStorePath: /var/lib/kjwikigdocker
+
 image:
   repository: georgesan/kjwikigdocker
   tag: stable
@@ -63,10 +67,10 @@ resources: {}
   # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
   # limits:
   #  cpu: 100m
-  #  memory: 128Mi
+  #  memory: 900Mi
   # requests:
   #  cpu: 100m
-  #  memory: 128Mi
+  #  memory: 300Mi
 
 nodeSelector: {}
 
