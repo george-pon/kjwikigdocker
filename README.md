@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build473, stable, latest
+* build474, stable, latest
+    * improve: create page usees vue.js, assist input
+* build473
     * improve: tag in 2chbbs has now lastUpdate
     * fix: tag lastUpdate in pictbbs in cache
 * build472
