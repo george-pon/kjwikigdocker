@@ -36,7 +36,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build475, stable, latest
+* build476, stable, latest
+    * fix: remove jquery-3.3.1.js
+    * fix: compile error in webchat
+* build475
     * improve: create page , assist category input.
     * improve: hiki formatter allows ul/ol level to 12.
     * improve: hiki formatter supports recent_tag plugin.
