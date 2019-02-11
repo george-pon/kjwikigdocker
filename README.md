@@ -36,7 +36,12 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build474, stable, latest
+* build475, stable, latest
+    * improve: create page , assist category input.
+    * improve: hiki formatter allows ul/ol level to 12.
+    * improve: hiki formatter supports recent_tag plugin.
+    * improve: digest search get update date from wiki title (h1-h6) YYYY/MM/DD string pattern.
+* build474
     * improve: create page usees vue.js, assist input
 * build473
     * improve: tag in 2chbbs has now lastUpdate
