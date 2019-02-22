@@ -36,7 +36,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build476, stable, latest
+* build478, stable, latest
+    * improve: add full display link to history page.
+    * improve: add create page link to pictbbs page.
+* build476
     * fix: remove jquery-3.3.1.js
     * fix: compile error in webchat
 * build475
