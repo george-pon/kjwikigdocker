@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build478, stable, latest
+* build479, stable, latest
+    * improve: add recent_tag plugin sample to template page.
+* build478
     * improve: add full display link to history page.
     * improve: add create page link to pictbbs page.
 * build476
