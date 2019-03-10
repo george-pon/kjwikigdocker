@@ -18,7 +18,7 @@ spec:
   minReadySeconds: 15
 
   # deployment controler が pod 起動 stalled と判定するまでの秒数。stalledになったPodは再起動される。
-  progressDeadlineSeconds: 480
+  progressDeadlineSeconds: 300
 
   # Rolling updateする場合の設定。
   strategy:
@@ -37,8 +37,8 @@ spec:
       - name: {{ .Chart.Name }}-container
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
-        # pod終了時、preStop処理+SIGTERM処理の時間(秒)。デフォルト30秒。この後SIGKILL処理になる。
-        terminationGracePeriodSeconds: 35
+        # pod終了時、preStop処理+SIGTERM処理の時間(秒)。デフォルト30秒。この後SIGKILL処理になる。このアプリの場合はSIGTERMを受信してから保存する動作は無いので短くて良い。
+        terminationGracePeriodSeconds: 5
         ports:
         - name: kjwikigdocker
           containerPort: 8080
@@ -58,17 +58,19 @@ spec:
           httpGet:
             path: /kjwikigdocker/ping
             port: kjwikigdocker
-          initialDelaySeconds: 60
+          initialDelaySeconds: 30
           timeoutSeconds: 5
           periodSeconds: 10
+          successThreshold: 1
           failureThreshold: 3
         readinessProbe:
           httpGet:
             path: /kjwikigdocker/ping
             port: kjwikigdocker
-          initialDelaySeconds: 60
+          initialDelaySeconds: 30
           timeoutSeconds: 5
           periodSeconds: 10
+          successThreshold: 1
           failureThreshold: 3
         volumeMounts:
         - name: data
