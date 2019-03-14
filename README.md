@@ -36,8 +36,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build480, stable, latest
+* build481, stable, latest
     * modify: tag: links to digest tag search
+* build480
+    * modify: tag: links to digest search
 * build479
     * improve: add recent_tag plugin sample to template page.
 * build478
