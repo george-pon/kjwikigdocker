@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build481, stable, latest
+* build483, stable, latest
+    * modify: css: change background-color of table tr even/odd line.
+* build481
     * modify: tag: links to digest tag search
 * build480
     * modify: tag: links to digest search
