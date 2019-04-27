@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build483, stable, latest
+* build484, stable, latest
+    * fix: tag: digest search link in sub directory.
+* build483
     * modify: css: change background-color of table tr even/odd line.
 * build481
     * modify: tag: links to digest tag search
