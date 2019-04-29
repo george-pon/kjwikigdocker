@@ -36,8 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build484, stable, latest
+* build485, stable, latest
     * fix: tag: digest search link in sub directory.
+    * fix: catch image loader runtime exception.
 * build483
     * modify: css: change background-color of table tr even/odd line.
 * build481
