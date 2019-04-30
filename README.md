@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build485, stable, latest
+* build486, stable, latest
+    * improve: web chat displays date, time, name
+* build485
     * fix: tag: digest search link in sub directory.
     * fix: catch image loader runtime exception.
 * build483
