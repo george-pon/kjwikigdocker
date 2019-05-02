@@ -36,9 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build487, stable, latest
-    * Vue 2.6.10
-    * add file upload by drug and drop to webchat, wiki edit, wiki edit sub
+* build489, stable, latest
+* build487
+    * add file upload by drug and drop to pictbbs
 * build486
     * improve: web chat displays date, time, name
 * build485
