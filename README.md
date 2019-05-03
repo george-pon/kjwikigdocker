@@ -37,8 +37,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 * build489, stable, latest
-* build487
     * add file upload by drug and drop to pictbbs
+* build487
+    * add file upload by drug and drop to wiki, webchat
 * build486
     * improve: web chat displays date, time, name
 * build485

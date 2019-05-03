@@ -40,7 +40,7 @@ spec:
         # pod終了時、preStop処理+SIGTERM処理の時間(秒)。デフォルト30秒。この後SIGKILL処理になる。このアプリの場合はSIGTERMを受信してから保存する動作は無いので短くて良い。
         terminationGracePeriodSeconds: 5
         ports:
-        - name: kjwikigdocker
+        - name: port8080
           containerPort: 8080
           protocol: TCP
         env:
@@ -57,21 +57,21 @@ spec:
         livenessProbe:
           httpGet:
             path: /kjwikigdocker/ping
-            port: kjwikigdocker
-          initialDelaySeconds: 30
+            port: port8080
+          initialDelaySeconds: 300
           timeoutSeconds: 5
           periodSeconds: 10
           successThreshold: 1
-          failureThreshold: 3
+          failureThreshold: 30
         readinessProbe:
           httpGet:
             path: /kjwikigdocker/ping
-            port: kjwikigdocker
-          initialDelaySeconds: 30
+            port: port8080
+          initialDelaySeconds: 10
           timeoutSeconds: 5
           periodSeconds: 10
           successThreshold: 1
-          failureThreshold: 3
+          failureThreshold: 30
         volumeMounts:
         - name: data
           mountPath: {{ .Values.persistence.mountPath }}

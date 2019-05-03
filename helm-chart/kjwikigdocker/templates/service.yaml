@@ -12,7 +12,7 @@ spec:
   ports:
   - name: kjwikigdocker
     port: {{ .Values.service.port }}
-    targetPort: kjwikigdocker
+    targetPort: port8080
     protocol: TCP
   {{- if (and (eq .Values.service.type "NodePort") (not (empty .Values.service.nodePort))) }}
     nodePort: {{ .Values.service.nodePort }}
