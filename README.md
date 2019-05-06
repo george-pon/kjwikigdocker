@@ -36,6 +36,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build490, stable, latest
+    * fix: url generator for image ctrl-v and file drug and drop upload.
 * build489, stable, latest
     * add file upload by drug and drop to pictbbs
 * build487
