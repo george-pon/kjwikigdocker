@@ -37,8 +37,6 @@ spec:
       - name: {{ .Chart.Name }}-container
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
-        # pod終了時、preStop処理+SIGTERM処理の時間(秒)。デフォルト30秒。この後SIGKILL処理になる。このアプリの場合はSIGTERMを受信してから保存する動作は無いので短くて良い。
-        terminationGracePeriodSeconds: 5
         ports:
         - name: port8080
           containerPort: 8080
@@ -78,6 +76,8 @@ spec:
           subPath: {{ .Values.persistence.subPath }}
         resources:
 {{ toYaml .Values.resources | indent 10 }}
+      # pod終了時、preStop処理+SIGTERM処理の時間(秒)。デフォルト30秒。この後SIGKILL処理になる。このアプリの場合はSIGTERMを受信してから保存する動作は無いので短くて良い。
+      terminationGracePeriodSeconds: 5
     {{- with .Values.nodeSelector }}
       nodeSelector:
 {{ toYaml . | indent 8 }}
