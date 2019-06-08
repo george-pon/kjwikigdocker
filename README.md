@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build492, stable, latest
+* build497, stable, latest
+    * modify: edit log output.
+* build492
     * fix: ping servlet: always log warning.
 * build491
     * fix: url generator for image ctrl-v and file drug and drop upload. part2.
