@@ -52,6 +52,11 @@ spec:
             configMapKeyRef:
               name: {{ template "kjwikigdocker.fullname" . }}
               key: dataStorePath
+        - name: JAVA_OPTS
+          valueFrom:
+            configMapKeyRef:
+              name: {{ template "kjwikigdocker.fullname" . }}
+              key: javaOpts
         livenessProbe:
           httpGet:
             path: /kjwikigdocker/ping

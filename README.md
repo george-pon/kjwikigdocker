@@ -36,6 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build498, stable, latest
+    * add: add topic path link to word.jsp
+    * modify: from tomcat:9-jdk11
 * build497, stable, latest
     * modify: edit log output.
 * build492

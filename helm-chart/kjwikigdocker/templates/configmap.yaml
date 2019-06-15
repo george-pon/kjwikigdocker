@@ -10,3 +10,4 @@ metadata:
 data:
   defaultWord: {{ .Values.configmap.defaultWord | quote }}
   dataStorePath: {{ .Values.configmap.dataStorePath | quote }}
+  javaOpts: {{ .Values.configmap.javaOpts | quote }}
