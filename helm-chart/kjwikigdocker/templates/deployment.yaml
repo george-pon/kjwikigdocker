@@ -15,7 +15,7 @@ spec:
       release: {{ .Release.Name }}
 
   # pod が ready 判定前に待機する秒数。tomcat上のJavaアプリとかは起動が遅いので長めに待ってあげる。
-  minReadySeconds: 15
+  minReadySeconds: 10
 
   # deployment controler が pod 起動 stalled と判定するまでの秒数。stalledになったPodは再起動される。
   progressDeadlineSeconds: 300

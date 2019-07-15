@@ -36,6 +36,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build501, stable, latest
+    * update: tag cache updates when wiki updated.
 * build499, stable, latest
     * fix: topic path link search.
 * build498
