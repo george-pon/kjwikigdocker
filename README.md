@@ -36,6 +36,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build504, stable, latest
+    * fix: fix: Range Header 0- . set range ends filesize - 1.
 * build502, stable, latest
     * fix: tag cache updates when wiki updated.
 * build501, stable, latest
