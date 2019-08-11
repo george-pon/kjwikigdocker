@@ -36,6 +36,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build507, stable, latest
+    * build by openjdk 12
 * build506, stable, latest
     * fix: 2ch dat , pictbbs , webchat format. fix 2ch res link regex.
 * build505, stable, latest
