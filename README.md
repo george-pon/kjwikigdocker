@@ -36,6 +36,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build506, stable, latest
+    * fix: 2ch dat , pictbbs , webchat format. fix 2ch res link regex.
 * build505, stable, latest
     * add: rendering HTML in WebChat is now Java Servlet.
 * build504
