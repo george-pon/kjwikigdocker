@@ -7,7 +7,10 @@ replicaCount: 1
 configmap:
   defaultWord: WelcomeVisitors
   dataStorePath: /var/lib/kjwikigdocker
-  javaOpts: "-Xmx800m"
+  # for JDK 1.8
+  # javaOpts: "-Xmx800m"
+  # for openJDK 11
+  javaOpts: "-XX:+UseContainerSupport  -XX:MaxRAMPercentage=75 -XX:+PrintFlagsFinal"
 
 image:
   repository: georgesan/kjwikigdocker
@@ -69,10 +72,10 @@ resources:
   {}
   #limits:
   # cpu: 2500m
-  # memory: 1600Mi
+  # memory: 1500Mi
   #requests:
   # cpu: 300m
-  # memory: 1100Mi
+  # memory: 1000Mi
 
 nodeSelector: {}
 
