@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build507, stable, latest
+* build508, stable, latest
+    * add: HttpServletRequestDummy for command line convert markdown to html.
+* build507
     * build by openjdk 12
 * build506, stable, latest
     * fix: 2ch dat , pictbbs , webchat format. fix 2ch res link regex.
