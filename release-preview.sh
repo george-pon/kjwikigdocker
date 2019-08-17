@@ -15,7 +15,7 @@ $EDITOR Dockerfile README.md helm-chart/kjwikigdocker/Chart.yaml
 export IMAGE_BUILD_TAG=$( cat Dockerfile | grep ENV | grep  KJWIKIGDOCKER_VERSION | egrep -e  'build[0-9]+' | awk '{print $3}' )
 export IMAGE_PREFIX=
 # export IMAGE_PREFIX=georgesan/
-export no_cache=
+# export no_cache=
 # export no_cache=true
 
 # build image

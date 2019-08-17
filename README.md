@@ -36,7 +36,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build508, stable, latest
+* build509, stable, latest
+    * add: add pan-kuzu link ( topic path link ) to pictbbs, 2chbbs.
+    * add: add createpage link to 2chbbs.
+* build508
     * add: HttpServletRequestDummy for command line convert markdown to html.
 * build507
     * build by openjdk 12
