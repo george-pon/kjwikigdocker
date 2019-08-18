@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build509, stable, latest
+* build510, stable, latest
+    * add: webchat image size set to 240 px
+* build509
     * add: add pan-kuzu link ( topic path link ) to pictbbs, 2chbbs.
     * add: add createpage link to 2chbbs.
 * build508
