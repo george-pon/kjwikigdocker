@@ -17,6 +17,25 @@ function f_docker_build() {
     echo TAG_CDR is $TAG_CDR
     IMAGE_NAME=${IMAGE_PREFIX}$(awk '/^ENV KJWIKIGDOCKER_IMAGE/ {print $3;}' Dockerfile)
 
+    if [ ! -z "$HTTP_PROXY" ]; then
+        BUILD_OPT="$BUILD_OPT  --build-arg HTTP_PROXY=$HTTP_PROXY"
+    fi
+    if [ ! -z "$HTTPS_PROXY" ]; then
+        BUILD_OPT="$BUILD_OPT  --build-arg HTTPS_PROXY=$HTTPS_PROXY"
+    fi
+    if [ ! -z "$http_proxy" ]; then
+        BUILD_OPT="$BUILD_OPT  --build-arg http_proxy=$http_proxy"
+    fi
+    if [ ! -z "$https_proxy" ]; then
+        BUILD_OPT="$BUILD_OPT  --build-arg https_proxy=$https_proxy"
+    fi
+    if [ ! -z "$NO_PROXY" ]; then
+        BUILD_OPT="$BUILD_OPT  --build-arg NO_PROXY=$NO_PROXY"
+    fi
+    if [ ! -z "$no_proxy" ]; then
+        BUILD_OPT="$BUILD_OPT  --build-arg no_proxy=$no_proxy"
+    fi
+
     if [ ! -z "$no_cache" ]; then
         BUILD_OPT="$BUILD_OPT --no-cache"
     fi
