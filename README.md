@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build510, stable, latest
+* build511, stable, latest
+    * modify: javafetch.jar library update.
+* build510
     * add: webchat image size set to 240 px
 * build509
     * add: add pan-kuzu link ( topic path link ) to pictbbs, 2chbbs.
