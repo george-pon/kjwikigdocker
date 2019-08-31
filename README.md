@@ -36,6 +36,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build512, stable, latest
+    * modify: javafetch.jar library update.
 * build511, stable, latest
     * modify: javafetch.jar library update.
 * build510
