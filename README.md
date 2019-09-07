@@ -36,6 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build514, stable, latest
+    * improve: add web chat write number.
+    * imporve: web chat: display old history log.
 * build512, stable, latest
     * modify: javafetch.jar library update.
 * build511, stable, latest
