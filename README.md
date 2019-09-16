@@ -36,14 +36,16 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build516, stable, latest
+* build517, stable, latest
+    * imporve: web chat: display image now 200px.
+* build516
     * imporve: web chat: display old history log (infinite scroll).
-* build514, stable, latest
+* build514
     * improve: add web chat write number.
     * imporve: web chat: display old history log.
-* build512, stable, latest
+* build512
     * modify: javafetch.jar library update.
-* build511, stable, latest
+* build511
     * modify: javafetch.jar library update.
 * build510
     * add: webchat image size set to 240 px
