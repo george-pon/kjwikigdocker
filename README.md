@@ -36,6 +36,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build516, stable, latest
+    * imporve: web chat: display old history log (infinite scroll).
 * build514, stable, latest
     * improve: add web chat write number.
     * imporve: web chat: display old history log.
