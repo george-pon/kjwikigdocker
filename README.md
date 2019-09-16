@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build517, stable, latest
+* build518, stable, latest
+    * add: pictbbs and webchat: add header link, to show pictbbs view / webchat view.
+* build517
     * imporve: web chat: display image now 200px.
 * build516
     * imporve: web chat: display old history log (infinite scroll).
@@ -56,22 +58,22 @@ kubectl rollout status deploy/kjwikigdocker
     * add: HttpServletRequestDummy for command line convert markdown to html.
 * build507
     * build by openjdk 12
-* build506, stable, latest
+* build506
     * fix: 2ch dat , pictbbs , webchat format. fix 2ch res link regex.
-* build505, stable, latest
+* build505
     * add: rendering HTML in WebChat is now Java Servlet.
 * build504
     * fix: fix: Range Header 0- . set range ends filesize - 1.
-* build502, stable, latest
+* build502
     * fix: tag cache updates when wiki updated.
-* build501, stable, latest
+* build501
     * update: tag cache updates when wiki updated.
-* build499, stable, latest
+* build499
     * fix: topic path link search.
 * build498
     * add: add topic path link to word.jsp
     * modify: from tomcat:9-jdk11
-* build497, stable, latest
+* build497
     * modify: edit log output.
 * build492
     * fix: ping servlet: always log warning.
