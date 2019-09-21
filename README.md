@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build518, stable, latest
+* build519, stable, latest
+    * add: add plugin webchatlink(wikiname) , pictbbslink(wikiname) to display webchat / pictbbs selective.
+* build518
     * add: pictbbs and webchat: add header link, to show pictbbs view / webchat view.
 * build517
     * imporve: web chat: display image now 200px.
