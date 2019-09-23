@@ -1,16 +1,40 @@
 #!/bin/bash
+#
+#
+#
+while [ $# -gt 0 ]
+do
+    if [ x"$1"x = x"--help"x ]; then
+        echo "release-preview  [options]"
+        echo "  options:"
+        echo "    --help      print this."
+        echo "    --no-edit   skip edit Dockerfile, etc."
+        exit 0
+    fi
+    if [ x"$1"x = x"--no-edit"x ]; then
+        NO_EDIT=true
+        shift
+        continue
+    fi
+done
+
 
 EDITOR=${EDITOR:-vi}
 echo EDITOR is $EDITOR
 
 set -eux
+echo "check docker / kubectl / helm"
 docker version
 kubectl version
 helm version
 set +eux
 
-# edit version number
-$EDITOR Dockerfile README.md helm-chart/kjwikigdocker/Chart.yaml
+if [ x"$NO_EDIT"x = x"true"x ] ; then
+    echo "skip edit Dockerfile README.md helm-chart/kjwikigdocker/Chart.yaml"
+else
+    # edit version number
+    $EDITOR Dockerfile README.md helm-chart/kjwikigdocker/Chart.yaml
+fi
 
 export IMAGE_BUILD_TAG=$( cat Dockerfile | grep ENV | grep  KJWIKIGDOCKER_VERSION | egrep -e  'build[0-9]+' | awk '{print $3}' )
 export IMAGE_PREFIX=

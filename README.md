@@ -36,7 +36,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build519, stable, latest
+* build520, stable, latest
+    * for Kubernetes v1.16 : kind: Deployment , apiVersion apps/v1 .
+    * add: webchat page unit is now set to 25.
+* build519
     * add: add plugin webchatlink(wikiname) , pictbbslink(wikiname) to display webchat / pictbbs selective.
 * build518
     * add: pictbbs and webchat: add header link, to show pictbbs view / webchat view.
