@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build520, stable, latest
+* build524, stable, latest
+    * add: date and time string to web chat error message.
+* build520
     * for Kubernetes v1.16 : kind: Deployment , apiVersion apps/v1 .
     * add: webchat page unit is now set to 25.
 * build519
