@@ -3,7 +3,7 @@ FROM tomcat:9-jdk11
 ENV KJWIKIGDOCKER_VERSION build-target
 ENV KJWIKIGDOCKER_VERSION latest
 ENV KJWIKIGDOCKER_VERSION stable
-ENV KJWIKIGDOCKER_VERSION build524
+ENV KJWIKIGDOCKER_VERSION build525
 ENV KJWIKIGDOCKER_IMAGE kjwikigdocker
 
 COPY ./kjwikigdocker.war /usr/local/tomcat/webapps/kjwikigdocker.war

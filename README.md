@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build524, stable, latest
+* build525, stable, latest
+    * fix: web chat: on web socket open, not to request last 25 to optimize.
+* build524
     * add: date and time string to web chat error message.
 * build520
     * for Kubernetes v1.16 : kind: Deployment , apiVersion apps/v1 .
