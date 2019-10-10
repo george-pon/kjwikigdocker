@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build527, stable, latest
+* build528, stable, latest
+    * fix: markdown and hiki formatter: correct nested ul/ol html tag.
+* build527
     * fix: web chat: on web socket open, not to request last 25 to optimize.
 * build524
     * add: date and time string to web chat error message.
