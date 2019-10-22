@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build528, stable, latest
+* build529, stable, latest
+    * fix: zip file drag and drop upload
+* build528
     * fix: markdown and hiki formatter: correct nested ul/ol html tag.
 * build527
     * fix: web chat: on web socket open, not to request last 25 to optimize.
