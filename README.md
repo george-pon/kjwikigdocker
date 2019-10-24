@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build529, stable, latest
+* build531, stable, latest
+    * fix: pictbbs drug & drop file edit link is now available.
+* build529
     * fix: zip file drag and drop upload
 * build528
     * fix: markdown and hiki formatter: correct nested ul/ol html tag.
