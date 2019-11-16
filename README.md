@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build531, stable, latest
+* build535, stable, latest
+    * add: WebChat: when closed WebSocket , post message via axios POST.
+* build531
     * fix: pictbbs drug & drop file edit link is now available.
 * build529
     * fix: zip file drag and drop upload

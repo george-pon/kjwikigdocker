@@ -12,3 +12,5 @@ helm repo index  --url=https://raw.githubusercontent.com/george-pon/kjwikigdocke
 popd
 
 set +ex
+
+echo "package-helm-chart.sh done"
