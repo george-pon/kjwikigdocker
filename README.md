@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build535, stable, latest
+* build537, stable, latest
+    * fix: WebChat: image drug and drop upload is now available. broken in build353.
+* build535 broken
     * add: WebChat: when closed WebSocket , post message via axios POST.
 * build531
     * fix: pictbbs drug & drop file edit link is now available.
