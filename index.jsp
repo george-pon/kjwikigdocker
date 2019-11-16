@@ -2,7 +2,7 @@
 <%@ page pageEncoding="UTF-8" %>
 
 <%
-    response.sendRedirect("/kjwikigdocker");
+    response.sendRedirect("/kjwikigdocker/");
 %>
 
 <html>
