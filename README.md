@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build538, stable, latest
+* build539, stable, latest
+    fix: WebChat: when WebSocket is failed, messages get via axios API post. add username same to self check.
+* build538
     * add: WebChat: when WebSocket is failed, messages get via axios API post.
 * build537
     * fix: WebChat: image drug and drop upload is now available. broken in build353.
