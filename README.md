@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build539, stable, latest
+* build540, stable, latest
+    fix: Bbs, PictBbs: see X-Forwarded-Proto HTTP Header for bookmarklet link protocol scheme.
+* build539
     fix: WebChat: when WebSocket is failed, messages get via axios API post. add username same to self check.
 * build538
     * add: WebChat: when WebSocket is failed, messages get via axios API post.
