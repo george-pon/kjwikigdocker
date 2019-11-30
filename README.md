@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build540, stable, latest
+* build541, stable, latest
+    fix: X-Forwarded-xxxx HTTP Header value to lower case.
+* build540
     fix: Bbs, PictBbs: see X-Forwarded-Proto HTTP Header for bookmarklet link protocol scheme.
 * build539
     fix: WebChat: when WebSocket is failed, messages get via axios API post. add username same to self check.
