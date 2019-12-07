@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build541, stable, latest
+* build542, stable, latest
+    fix: wiki / pictbbs image upload.
+* build541
     fix: X-Forwarded-xxxx HTTP Header value to lower case.
 * build540
     fix: Bbs, PictBbs: see X-Forwarded-Proto HTTP Header for bookmarklet link protocol scheme.
