@@ -12,7 +12,7 @@ COPY ./kjwikigdocker.war $CATALINA_BASE/webapps/kjwikigdocker.war
 USER root
 
 # for volume mount
-RUN mkdir -p /var/lib/kjwikigdocker
+RUN mkdir -p /var/lib/kjwikigdocker && chown -R tomcat:tomcat /var/lib/kjwikigdocker
 
 # copy env file
 COPY setenv.sh $CATALINA_HOME/bin/
