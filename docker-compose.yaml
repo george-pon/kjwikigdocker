@@ -15,7 +15,5 @@ services:
       - KJWikiG_defaultImagePixel=320
       - KJWikiG_defaultTextWidth=-1
     volumes:
-      - databolume01:/var/lib/kjwikigdocker
+      - /var/lib/kjwikigdocker:/var/lib/kjwikigdocker
 
-volumes:
-  datavolume01: /var/lib/kjwikigdocker
