@@ -10,6 +10,10 @@ services:
       - CATALINA_OPTS=-Xmx750m
       - KJWikiG_dataStorePath=/var/lib/kjwikigdocker
       - KJWikiG_defaultWord=WelcomeVisitors
+      - KJWikiG_authenticationMode=AuthenticationModeMust
+      - KJWikiG_uploadEnableURLOfOtherSite=uploadEnableURLOfOtherSite
+      - KJWikiG_defaultImagePixel=320
+      - KJWikiG_defaultTextWidth=-1
     volumes:
       - databolume01:/var/lib/kjwikigdocker
 
