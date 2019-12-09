@@ -1,9 +1,17 @@
-kjwikigdocker:
-  image: georgesan/kjwikigdocker:latest
-  restart: always
-  ports:
-    - "8080:8080"
-  environment:
-    - CATALINA_OPTS=-Xms300m -Xmx700m
-  volumes:
-    - /var/lib/kjwikigdocker:/var/lib/kjwikigdocker
+version: '3.3'
+
+services:
+  kjwikigdocker:
+    image: georgesan/kjwikigdocker:latest
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      - CATALINA_OPTS=-Xmx750m
+      - KJWikiG_dataStorePath=/var/lib/kjwikigdocker
+      - KJWikiG_defaultWord=WelcomeVisitors
+    volumes:
+      - databolume01:/var/lib/kjwikigdocker
+
+volumes:
+  datavolume01: /var/lib/kjwikigdocker
