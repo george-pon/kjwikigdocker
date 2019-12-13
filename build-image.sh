@@ -9,22 +9,8 @@ function cdr() {
     echo "$@"
 }
 
-function add-machine-suffix() {
-    local i=
-    local MACHINE=$( uname -m )
-    for i in "$@"
-    do
-	if [ x"$MACHINE"x = x"x86_64"x ]; then
-	    echo $i
-	else
-	    echo $i-$MACHINE
-	fi
-    done
-}
-
 function f_docker_build() {
     TAG_LIST=$(awk '/^ENV KJWIKIGDOCKER_VERSION/ {print $3;}' Dockerfile)
-    TAG_LIST=$( add-machine-suffix $TAG_LIST )
     TAG_CAR=$(car $TAG_LIST)
     TAG_CDR=$(cdr $TAG_LIST)
     echo IMAGE_PREFIX is $IMAGE_PREFIX
@@ -53,7 +39,7 @@ function f_docker_build() {
     fi
 
     if [ ! -z "$no_cache" ]; then
-        BUILD_OPT="$BUILD_OPT --no-cache"
+        BUILD_OPT="$BUILD_OPT  --no-cache=$no_cache"
     fi
 
     if docker buildx ls 1>/dev/null 2>/dev/null ; then
@@ -61,29 +47,36 @@ function f_docker_build() {
         PLATOPT=
         MACHINE=$( uname -m )
         case $MACHINE in
-	 x86_64) PLATOPT='--platform=linux/amd64' ;;
-	 armv7l) PLATOPT='--platform=linux/arm/v7' ;;
+	 x86_64) PLATOPT='--platform=linux/amd64,linux/arm/v7' ;;
+	 armv7l) PLATOPT='--platform=linux/amd64,linux/arm/v7' ;;
         esac
-        export DOCKER_BUILDKIT=1
-        echo $SUDO_DOCKER docker buildx build $BUILD_OPT -t ${IMAGE_NAME}:${TAG_CAR} $PLATOPT  .
-        $SUDO_DOCKER docker buildx build $BUILD_OPT -t ${IMAGE_NAME}:${TAG_CAR} $PLATOPT  .
-        RC=$?
+        for TAG_CAR in $TAG_LIST
+        do
+            export DOCKER_BUILDKIT=1
+            echo $SUDO_DOCKER docker buildx build $BUILD_OPT -t ${IMAGE_NAME}:${TAG_CAR} $PLATOPT --push  .
+            $SUDO_DOCKER docker buildx build $BUILD_OPT -t ${IMAGE_NAME}:${TAG_CAR} $PLATOPT --push  .
+            RC=$?
+            if [ $RC -ne 0 ]; then
+                echo "ERROR: docker build failed."
+                return 1
+            fi
+	done
     else
         echo $SUDO_DOCKER docker build $BUILD_OPT -t ${IMAGE_NAME}:${TAG_CAR} .
         $SUDO_DOCKER docker build $BUILD_OPT -t ${IMAGE_NAME}:${TAG_CAR} .
         RC=$?
-    fi
-    
-    if [ $RC -ne 0 ]; then
-        echo "ERROR: docker build failed."
-        return 1
+        if [ $RC -ne 0 ]; then
+            echo "ERROR: docker build failed."
+            return 1
+        fi
+        for i in $TAG_CDR
+        do
+            echo docker tag ${IMAGE_NAME}:$TAG_CAR ${IMAGE_NAME}:$i
+            $SUDO_DOCKER docker tag ${IMAGE_NAME}:$TAG_CAR ${IMAGE_NAME}:$i
+        done
     fi
 
-    for i in $TAG_CDR
-    do
-        echo docker tag ${IMAGE_NAME}:$TAG_CAR ${IMAGE_NAME}:$i
-        $SUDO_DOCKER docker tag ${IMAGE_NAME}:$TAG_CAR ${IMAGE_NAME}:$i
-    done
+
 
     return 0
 }

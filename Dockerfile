@@ -1,17 +1,16 @@
 FROM georgesan/debiantomcat:debian10-openjdk11-tomcat9
 
-ENV KJWIKIGDOCKER_VERSION build-target
 ENV KJWIKIGDOCKER_VERSION latest
 ENV KJWIKIGDOCKER_VERSION stable
 ENV KJWIKIGDOCKER_VERSION build543
-ENV KJWIKIGDOCKER_IMAGE kjwikigdocker
+ENV KJWIKIGDOCKER_IMAGE georgesan/kjwikigdocker
 
 # install war file
 COPY ./kjwikigdocker.war $CATALINA_BASE/webapps/kjwikigdocker.war
 
 USER root
 
-# for volume mount
+# for volume mount point
 RUN mkdir -p /var/lib/kjwikigdocker && chown -R tomcat:tomcat /var/lib/kjwikigdocker
 
 # copy env file
