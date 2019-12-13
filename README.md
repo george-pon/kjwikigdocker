@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build542, stable, latest
+* build543, latest
+    fix: sendRedirectWrapper support X-FORWARDED-PROTO HTTP or HTTPS
+* build542, stable
     fix: wiki / pictbbs image upload.
 * build541
     fix: X-Forwarded-xxxx HTTP Header value to lower case.

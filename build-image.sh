@@ -9,12 +9,28 @@ function cdr() {
     echo "$@"
 }
 
+function add-machine-suffix() {
+    local i=
+    local MACHINE=$( uname -m )
+    for i in "$@"
+    do
+	if [ x"$MACHINE"x = x"x86_64"x ]; then
+	    echo $i
+	else
+	    echo $i-$MACHINE
+	fi
+    done
+}
+
 function f_docker_build() {
     TAG_LIST=$(awk '/^ENV KJWIKIGDOCKER_VERSION/ {print $3;}' Dockerfile)
+    TAG_LIST=$( add-machine-suffix $TAG_LIST )
     TAG_CAR=$(car $TAG_LIST)
     TAG_CDR=$(cdr $TAG_LIST)
     echo IMAGE_PREFIX is $IMAGE_PREFIX
     echo TAG_CDR is $TAG_CDR
+    local MACHINE=$( uname -m )
+    echo MACHINE is $MACHINE
     IMAGE_NAME=${IMAGE_PREFIX}$(awk '/^ENV KJWIKIGDOCKER_IMAGE/ {print $3;}' Dockerfile)
 
     if [ ! -z "$HTTP_PROXY" ]; then
