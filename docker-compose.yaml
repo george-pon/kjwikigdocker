@@ -8,8 +8,10 @@ services:
       - "8080:8080"
     environment:
       - CATALINA_OPTS=-Xmx750m
+      - KJWikiG_WarFileName=kjwikigdocker
       - KJWikiG_dataStorePath=/var/lib/kjwikigdocker
       - KJWikiG_defaultWord=WelcomeVisitors
+      - KJWikiG_maxFileUploadSize=1024000000
       - KJWikiG_authenticationMode=AuthenticationModeMust
       - KJWikiG_uploadEnableURLOfOtherSite=uploadEnableURLOfOtherSite
       - KJWikiG_defaultImagePixel=320

@@ -5,23 +5,25 @@ ENV KJWIKIGDOCKER_VERSION stable
 ENV KJWIKIGDOCKER_VERSION build543
 ENV KJWIKIGDOCKER_IMAGE georgesan/kjwikigdocker
 
-# install war file
-COPY ./kjwikigdocker.war $CATALINA_BASE/webapps/kjwikigdocker.war
-
 USER root
-
-# for volume mount point
-RUN mkdir -p /var/lib/kjwikigdocker && chown -R tomcat:tomcat /var/lib/kjwikigdocker
 
 # copy env file
 COPY setenv.sh $CATALINA_HOME/bin/
 RUN chmod +x $CATALINA_HOME/bin/setenv.sh
 
+# copy entry shell
+COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+
 # remove tomcat default contents
-RUN rm -rf $CATALINA_BASE/webapps/docs $CATALINA_BASE/webapps/examples $CATALINA_BASE/webapps/host-manager $CATALINA_BASE/webapps/manager
-RUN rm -rf  $CATALINA_BASE/webapps/ROOT/*
+RUN rm -rf $CATALINA_BASE/webapps/docs $CATALINA_BASE/webapps/examples $CATALINA_BASE/webapps/host-manager $CATALINA_BASE/webapps/manager $CATALINA_BASE/webapps/ROOT/*
+
+# for volume mount point
+RUN mkdir -p /var/lib/kjwikigdocker && chown -R tomcat:tomcat /var/lib/kjwikigdocker
 
 USER tomcat
+
+# install war file
+COPY ./kjwikigdocker.war $CATALINA_BASE/webapps/kjwikigdocker.war
 
 # install default index page
 COPY index.jsp $CATALINA_BASE/webapps/ROOT/
@@ -29,4 +31,8 @@ COPY index.jsp $CATALINA_BASE/webapps/ROOT/
 EXPOSE 8080
 
 VOLUME /var/lib/kjwikigdocker
+
+# CMD ["/usr/libexec/tomcat9/tomcat-start.sh"]
+
+CMD ["/usr/local/bin/docker-entrypoint.sh"]
 
