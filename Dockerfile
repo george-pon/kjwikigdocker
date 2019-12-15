@@ -13,6 +13,7 @@ RUN chmod +x $CATALINA_HOME/bin/setenv.sh
 
 # copy entry shell
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 # remove tomcat default contents
 RUN rm -rf $CATALINA_BASE/webapps/docs $CATALINA_BASE/webapps/examples $CATALINA_BASE/webapps/host-manager $CATALINA_BASE/webapps/manager $CATALINA_BASE/webapps/ROOT/*
