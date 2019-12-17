@@ -38,6 +38,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 * build543, latest
     fix: sendRedirectWrapper support X-FORWARDED-PROTO HTTP or HTTPS
+    change: container run with uid:998, gid:998. (debian tomcat:tomcat)
+    change: base image from debian:buster. (debian10, openjdk11, tomcat9)
+    change: platform linux/x86_64, linux/arm/v7 (raspberrypi4)
 * build542, stable
     fix: wiki / pictbbs image upload.
 * build541
