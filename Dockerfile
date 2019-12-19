@@ -21,13 +21,16 @@ RUN rm -rf $CATALINA_BASE/webapps/docs $CATALINA_BASE/webapps/examples $CATALINA
 # for volume mount point
 RUN mkdir -p /var/lib/kjwikigdocker && chown -R tomcat:tomcat /var/lib/kjwikigdocker
 
-USER tomcat
-
 # install war file
 COPY ./kjwikigdocker.war $CATALINA_BASE/webapps/kjwikigdocker.war
 
 # install default index page
 COPY index.jsp $CATALINA_BASE/webapps/ROOT/
+
+# change owner
+RUN chown -R tomcat:tomcat $CATALINA_BASE/webapps
+
+USER tomcat
 
 EXPOSE 8080
 
