@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build545, stable, latest
+* build546, stable, latest
+    modify: blog mode title includes hh:mm:ss. wiki mode uploadform writes information(random-id, date-time) to html comment.
+* build545
     add: log initial file loader time and file count.
 * build543
     fix: sendRedirectWrapper support X-FORWARDED-PROTO HTTP or HTTPS
