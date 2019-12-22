@@ -36,12 +36,14 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build543, latest
+* build545, stable, latest
+    add: log initial file loader time and file count.
+* build543
     fix: sendRedirectWrapper support X-FORWARDED-PROTO HTTP or HTTPS
     change: container run with uid:998, gid:998. (debian tomcat:tomcat)
     change: base image from debian:buster. (debian10, openjdk11, tomcat9)
     change: platform linux/x86_64, linux/arm/v7 (raspberrypi4)
-* build542, stable
+* build542
     fix: wiki / pictbbs image upload.
 * build541
     fix: X-Forwarded-xxxx HTTP Header value to lower case.
