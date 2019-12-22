@@ -1,5 +1,6 @@
 FROM georgesan/debiantomcat:debian10-openjdk11-tomcat9
 
+ENV KJWIKIGDOCKER_VERSION build-target
 ENV KJWIKIGDOCKER_VERSION latest
 ENV KJWIKIGDOCKER_VERSION stable
 ENV KJWIKIGDOCKER_VERSION build545
