@@ -36,23 +36,25 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build546, stable, latest
-    modify: blog mode title includes hh:mm:ss. wiki mode uploadform writes information(random-id, date-time) to html comment.
+* build547, stable, latest
+    * fix: webchat: set username when post via API.
+* build546
+    * modify: blog mode title includes hh:mm:ss. wiki mode uploadform writes information(random-id, date-time) to html comment.
 * build545
-    add: log initial file loader time and file count.
+    * add: log initial file loader time and file count.
 * build543
-    fix: sendRedirectWrapper support X-FORWARDED-PROTO HTTP or HTTPS
-    change: container run with uid:998, gid:998. (debian tomcat:tomcat)
-    change: base image from debian:buster. (debian10, openjdk11, tomcat9)
-    change: platform linux/x86_64, linux/arm/v7 (raspberrypi4)
+    * fix: sendRedirectWrapper support X-FORWARDED-PROTO HTTP or HTTPS
+    * change: container run with uid:998, gid:998. (debian tomcat:tomcat)
+    * change: base image from debian:buster. (debian10, openjdk11, tomcat9)
+    * change: platform linux/x86_64, linux/arm/v7 (raspberrypi4)
 * build542
-    fix: wiki / pictbbs image upload.
+    * fix: wiki / pictbbs image upload.
 * build541
-    fix: X-Forwarded-xxxx HTTP Header value to lower case.
+    * fix: X-Forwarded-xxxx HTTP Header value to lower case.
 * build540
-    fix: Bbs, PictBbs: see X-Forwarded-Proto HTTP Header for bookmarklet link protocol scheme.
+    * fix: Bbs, PictBbs: see X-Forwarded-Proto HTTP Header for bookmarklet link protocol scheme.
 * build539
-    fix: WebChat: when WebSocket is failed, messages get via axios API post. add username same to self check.
+    * fix: WebChat: when WebSocket is failed, messages get via axios API post. add username same to self check.
 * build538
     * add: WebChat: when WebSocket is failed, messages get via axios API post.
 * build537
