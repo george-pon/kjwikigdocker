@@ -36,7 +36,11 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build547, stable, latest
+* build548, stable, latest
+    * fix: url pattern includes '(' and ')'
+    * modify: use ConcurrentHashMap insted of Collections.synchronizedMap
+    * testing: webchat: when websocket is closed, get message via HTTP POST API.
+* build547
     * fix: webchat: set username when post via API.
 * build546
     * modify: blog mode title includes hh:mm:ss. wiki mode uploadform writes information(random-id, date-time) to html comment.
