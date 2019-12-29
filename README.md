@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build548, stable, latest
+* build549, stable, latest
+    * modify: webchat: when websocket is closed, get message via HTTP POST API.
+* build548
     * fix: url pattern includes '(' and ')'
     * modify: use ConcurrentHashMap insted of Collections.synchronizedMap
     * testing: webchat: when websocket is closed, get message via HTTP POST API.
