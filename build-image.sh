@@ -43,13 +43,23 @@ function f_docker_build() {
         BUILD_OPT="$BUILD_OPT  --no-cache=$no_cache"
     fi
 
+    # check use buildx
+    USE_BUILDX=
     if docker buildx ls 1>/dev/null 2>/dev/null ; then
-	# docker buildx is available
+        if docker buildx ls 2>/dev/null | grep linux/arm/v7 ; then
+            if docker buildx ls 2>/dev/null | grep linux/amd64 ; then
+                USE_BUILDX=yes
+            fi
+        fi
+    fi
+
+    if [ x"$USE_BUILDX"x = x"yes"x ]; then
+        # docker buildx is available
         PLATOPT=
         MACHINE=$( uname -m )
         case $MACHINE in
-	 x86_64) PLATOPT='--platform=linux/amd64,linux/arm/v7' ;;
-	 armv7l) PLATOPT='--platform=linux/amd64,linux/arm/v7' ;;
+            x86_64) PLATOPT='--platform=linux/amd64,linux/arm/v7' ;;
+            armv7l) PLATOPT='--platform=linux/amd64,linux/arm/v7' ;;
         esac
         for TAG_CAR in $TAG_LIST
         do
@@ -61,8 +71,9 @@ function f_docker_build() {
                 echo "ERROR: docker build failed."
                 return 1
             fi
-	done
+        done
     else
+        export DOCKER_BUILDKIT=1
         echo $SUDO_DOCKER docker build $BUILD_OPT -t ${IMAGE_NAME}:${TAG_CAR} .
         $SUDO_DOCKER docker build $BUILD_OPT -t ${IMAGE_NAME}:${TAG_CAR} .
         RC=$?
@@ -76,8 +87,6 @@ function f_docker_build() {
             $SUDO_DOCKER docker tag ${IMAGE_NAME}:$TAG_CAR ${IMAGE_NAME}:$i
         done
     fi
-
-
 
     return 0
 }
