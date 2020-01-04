@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build549, stable, latest
+* build550, stable, latest
+    * improve: webchat: when websocket is closed, get message via HTTP POST API. part 2.
+* build549
     * modify: webchat: when websocket is closed, get message via HTTP POST API.
 * build548
     * fix: url pattern includes '(' and ')'
