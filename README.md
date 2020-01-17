@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build550, stable, latest
+* build551, stable, latest
+    * improve: access log checks X-FORWARDED-HOST IP address.
+* build550
     * improve: webchat: when websocket is closed, get message via HTTP POST API. part 2.
 * build549
     * modify: webchat: when websocket is closed, get message via HTTP POST API.
