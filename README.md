@@ -1,11 +1,10 @@
 # kjwikigdocker
 
-A docker image for kjwikig , wiki system written by JSP/Servlet (Tomcat8).
+A docker image for kjwikig , which is wiki system written by plain JSP/Servlet (Tomcat8).
 
 Wiki data are saved as-is text files, into volume path /var/lib/kjwikigdocker/.
 
-Note: When you upload xxx.jpg file which size 10 MB, kjwikig uses /tmp,
-and require Java heap memory 600MB+.
+this docker image run as USER uid:998, gid:998.
 
 
 ### how to run
@@ -16,6 +15,7 @@ docker run -d -p 8080:8080 georgesan/kjwikigdocker:stable
 ```
 
 * KJWikiG's wiki data stored in volume, so if you want to save wiki data, run below
+* before docker run, you must set volume owner to uid:998 ( chown -R 998:998 /var/lib/kjwikigdocker )
 ```
 docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker georgesan/kjwikigdocker:stable
 ```
