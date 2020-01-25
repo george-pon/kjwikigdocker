@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build552, stable, latest
+* build553, stable, latest
+    * improve: webchat: insert message only when top element is insight
+* build552
     * update: vue.js 2.6.11
 * build551
     * improve: access log checks X-FORWARDED-HOST IP address.
