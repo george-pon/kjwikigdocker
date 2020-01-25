@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build551, stable, latest
+* build552, stable, latest
+    * update: vue.js 2.6.11
+* build551
     * improve: access log checks X-FORWARDED-HOST IP address.
 * build550
     * improve: webchat: when websocket is closed, get message via HTTP POST API. part 2.
