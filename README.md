@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build553, stable, latest
+* build554, stable, latest
+    * add: nichan, pictbbs, webchat formatter: add '(' and ')' to URL link string pattern.
+* build553
     * improve: webchat: insert message only when top element is insight
 * build552
     * update: vue.js 2.6.11
