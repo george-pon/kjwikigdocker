@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build555, stable, latest
+* build556, stable, latest
+    * fix: webchat: separate message send by channel name.
+* build555
     * add access log to filter.
 * build554
     * add: nichan, pictbbs, webchat formatter: add '(' and ')' to URL link string pattern.
