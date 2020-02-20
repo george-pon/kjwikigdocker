@@ -36,6 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build557, stable, latest
+    * prepair: typescript and webpack.
+    * prepair: functionize createPage.js
 * build556, stable, latest
     * fix: webchat: separate message send by channel name.
 * build555
