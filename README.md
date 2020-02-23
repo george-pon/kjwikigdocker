@@ -36,6 +36,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build558, stable, latest
+    * modify: use webpack output.js
 * build557, stable, latest
     * prepair: typescript and webpack.
     * prepair: functionize createPage.js
