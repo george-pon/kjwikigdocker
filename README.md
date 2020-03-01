@@ -36,6 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build561, stable, latest
+    * prepair: web chat JSON type
+    * compile for tomcat 9 , servlet-api 4.0
 * build558, stable, latest
     * modify: use webpack output.js
 * build557, stable, latest
