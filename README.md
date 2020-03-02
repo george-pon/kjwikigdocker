@@ -36,6 +36,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build562, stable, latest
+    * modify: web chat message format is changed to JSON.
 * build561, stable, latest
     * prepair: web chat JSON type
     * compile for tomcat 9 , servlet-api 4.0
