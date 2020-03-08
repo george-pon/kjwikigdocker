@@ -36,17 +36,20 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build562, stable, latest
+* build563, stable, latest
+    * update: webchat shows short roud message.
+    * fix: cookie tokenid has httpOnly
+* build562
     * modify: web chat message format is changed to JSON.
-* build561, stable, latest
+* build561
     * prepair: web chat JSON type
     * compile for tomcat 9 , servlet-api 4.0
-* build558, stable, latest
+* build558
     * modify: use webpack output.js
-* build557, stable, latest
+* build557
     * prepair: typescript and webpack.
     * prepair: functionize createPage.js
-* build556, stable, latest
+* build556
     * fix: webchat: separate message send by channel name.
 * build555
     * add access log to filter.
