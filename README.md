@@ -36,7 +36,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build563, stable, latest
+* build564, stable, latest
+    * update: add update column into upload form.
+    * update: modify update column when editsub.
+* build563
     * update: webchat shows short roud message.
     * fix: cookie tokenid has httpOnly
 * build562
