@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build564, stable, latest
+* build565, stable, latest
+    * update: insert update column when editsub.
+* build564
     * update: add update column into upload form.
     * update: modify update column when editsub.
 * build563
