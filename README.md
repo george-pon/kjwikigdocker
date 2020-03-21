@@ -36,7 +36,7 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build566, stable, latest
+* build567, stable, latest
     * add: lastupdatelink plugin. read last update time from h1-h6 entry comment , and sort newer last updated entry.
 * build565
     * update: insert update column when editsub.
