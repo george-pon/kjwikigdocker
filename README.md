@@ -36,7 +36,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build567, stable, latest
+* build570, stable, latest
+    * modify: lastupdatelink plugin: modify message.
+    * modify: latestlink plugin: sort key is changed to creation date string in title.
+* build567
     * add: lastupdatelink plugin. read last update time from h1-h6 entry comment , and sort newer last updated entry.
 * build565
     * update: insert update column when editsub.
