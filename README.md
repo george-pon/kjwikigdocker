@@ -36,7 +36,7 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build572, stable, latest
+* build573, stable, latest
     * fix: markdown format: todolist: crashes when include number list without checkbox.
 * build570
     * modify: lastupdatelink plugin: modify message.
