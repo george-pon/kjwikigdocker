@@ -36,9 +36,12 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build573, stable, latest
+* build575, stable, latest
+    * update: tag update date is get from update date comment in wiki block.
+    * update: digest search sort order by update date.
+* build574
     * add: editsub: add duplicate edit link.
-* build573, stable, latest
+* build573
     * fix: markdown format: todolist: crashes when include number list without checkbox.
 * build570
     * modify: lastupdatelink plugin: modify message.
