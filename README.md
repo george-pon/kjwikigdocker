@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build575, stable, latest
+* build576, stable, latest
+    * update: textarea row size set to 4 or 12.
+* build575
     * update: tag update date is get from update date comment in wiki block.
     * update: digest search sort order by update date.
 * build574
