@@ -4,7 +4,7 @@ A docker image for kjwikig , which is wiki system written by plain JSP/Servlet (
 
 Wiki data are saved as-is text files, into volume path /var/lib/kjwikigdocker/.
 
-this docker image run as USER uid:998, gid:998.
+This docker image run as USER uid:998, gid:998.
 
 
 ### how to run
