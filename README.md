@@ -36,7 +36,12 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build577, stable, latest
+* build578, stable, latest
+    * update: build.gradle: copy css files into resources/css
+    * update: generate html mode: copy css files into html folder. ( but can not see it. for test only. )
+    * fix: text convert: defaultTextWidth is now -1 ( no auto wrap )
+    * update: button css has round radix and padding 50px.
+* build577
     * update: textarea row size set to 4 or 16.
 * build576
     * update: textarea row size set to 4 or 12.
