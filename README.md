@@ -36,7 +36,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build578, stable, latest
+* build579, stable, latest
+    * update: webchat: use dummy session id.
+    * update: webchat and pictbbs: new pictbbs post sends to same webchat board , too.
+* build578
     * update: build.gradle: copy css files into resources/css
     * update: generate html mode: copy css files into html folder. ( but can not see it. for test only. )
     * fix: text convert: defaultTextWidth is now -1 ( no auto wrap )
