@@ -36,7 +36,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build579, stable, latest
+* build580, stable, latest
+    * update: prepair for building on Docker image
+    * update: webchat: add check dummy session ID from websocket message.
+* build579
     * update: webchat: use dummy session id.
     * update: webchat and pictbbs: new pictbbs post sends to same webchat board , too.
 * build578
