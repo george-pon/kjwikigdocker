@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build580, stable, latest
+* build581, stable, latest
+    * update: webchat: use window.scrollBy(x,y) when delete message.
+* build580
     * update: prepair for building on Docker image
     * update: webchat: add check dummy session ID from websocket message.
 * build579
