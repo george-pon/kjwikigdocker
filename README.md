@@ -36,6 +36,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build582
+    * update: add display http header
 * build581, stable, latest
     * update: webchat: use window.scrollBy(x,y) when delete message.
 * build580
