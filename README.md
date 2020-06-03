@@ -36,6 +36,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build583
+    * fix: redirect hostport calculate
 * build582
     * update: add display http header
 * build581, stable, latest
