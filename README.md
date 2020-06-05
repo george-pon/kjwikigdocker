@@ -36,11 +36,13 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build585, stable, latest
+    * fix: display http header Reserved Word ( for Debug ) , hide session id.
 * build584
     * fix: redirect hostport calculate
 * build582
     * update: add display http header
-* build581, stable, latest
+* build581
     * update: webchat: use window.scrollBy(x,y) when delete message.
 * build580
     * update: prepair for building on Docker image
