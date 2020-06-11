@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build586, stable, latest
+* build587, stable, latest
+    * prepair: webchat: automatic remove message.
+* build586
     * remove: webchat: automatic remove message is disabled.
 * build585
     * fix: display http header Reserved Word ( for Debug ) , hide session id.
