@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build588, stable, latest
+* build589, stable, latest
+    * fix: webchat: tuning parameter.
+* build588
     * add: webchat: automatic remove message with scroll adjust.
 * build587
     * prepair: webchat: automatic remove message.
