@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build589, stable, latest
+* build590, stable, latest
+    * fix: todolist: form id modified.
+* build589
     * fix: webchat: tuning parameter.
 * build588
     * add: webchat: automatic remove message with scroll adjust.
