@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build590, stable, latest
+* build591, stable, latest
+    * add: webchat: add sticky top view flag.
+* build590
     * fix: todolist: form id modified.
 * build589
     * fix: webchat: tuning parameter.
