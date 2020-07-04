@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build592, stable, latest
+* build593, stable, latest
+    fix: recent_tag: skip urlencode for static html mode.
+* build592
     * fix: digestlink: urlencode without /
 * build591
     * add: webchat: add sticky top view flag.
