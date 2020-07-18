@@ -36,8 +36,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build593, stable, latest
-    fix: recent_tag: skip urlencode for static html mode.
+* build594, stable, latest
+    * fix: plugin: remove encode searchlink, digestlink when static mode
+* build593
+    * fix: recent_tag: skip urlencode for static html mode.
 * build592
     * fix: digestlink: urlencode without /
 * build591
