@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build594, stable, latest
+* build595, stable, latest
+    * fix: word.jsp: add div close tag.
+* build594
     * fix: plugin: remove encode searchlink, digestlink when static mode
 * build593
     * fix: recent_tag: skip urlencode for static html mode.
