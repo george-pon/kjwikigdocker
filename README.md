@@ -36,7 +36,7 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build597, stable, latest
+* build598, stable, latest
     * update: jsoup 1.13.1
 * build596
     * fix: search , latest: fix html tag close, open.
