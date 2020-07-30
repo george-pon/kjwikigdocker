@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build598, stable, latest
+* build599, stable, latest
+    * modify: web chat: remove h1 title
+* build598
     * update: jsoup 1.13.1
 * build596
     * fix: search , latest: fix html tag close, open.
