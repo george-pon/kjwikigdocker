@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build599, stable, latest
+* build600, stable, latest
+    * add: markdown, usemodwiki, hiki: {{upload}} plugin: when input h1-h6 marker into the fist line of textarea, suppress automatic insertion of h4 title marker.
+* build599
     * modify: web chat: remove h1 title
 * build598
     * update: jsoup 1.13.1
