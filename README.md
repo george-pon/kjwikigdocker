@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build602, stable, latest
+* build603, stable, latest
+    * modify: css: modify h1-h6 css color, etc.
+* build602
     * modify: css: modify h1-h6 css color, etc.
 * build601
     * modify: css: modify h1-h6 css color, etc.
