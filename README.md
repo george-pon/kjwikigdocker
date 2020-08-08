@@ -36,7 +36,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build603, stable, latest
+* build605, stable, latest
+    * fix: when post from pictbbs, automatic update to webchat message, correct condition whether self message or not.
+    * add: when post or upload, automatic set user name from session data.
+* build603
     * modify: css: modify h1-h6 css color, etc.
 * build602
     * modify: css: modify h1-h6 css color, etc.
