@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build606, latest
+* build607, latest
+    * webchat: prepair for edit.
+* build606
     * webchat.ts : add type definition to display model messages array
     * webpack.config.js : add single file component (.vue) loader , add css loader
     * update: vue 2.6.12
