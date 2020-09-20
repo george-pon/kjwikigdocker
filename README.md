@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build609, stable, latest
+* build612, stable, latest
+    * webchat: remove delkey input from edit-modal-dialog
+* build609
     * webchat: add edit button.
 * build607
     * webchat: prepair for edit.
