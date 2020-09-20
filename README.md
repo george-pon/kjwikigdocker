@@ -36,13 +36,15 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build607, latest
+* build609, stable, latest
+    * webchat: add edit button.
+* build607
     * webchat: prepair for edit.
 * build606
     * webchat.ts : add type definition to display model messages array
     * webpack.config.js : add single file component (.vue) loader , add css loader
     * update: vue 2.6.12
-* build605, stable
+* build605
     * fix: when post from pictbbs, automatic update to webchat message, correct condition whether self message or not.
     * add: when post or upload, automatic set user name from session data.
 * build603
