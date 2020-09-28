@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build612, stable, latest
+* build613, stable, latest
+    * markdown: image link ![describe](uri) supported.
+* build612
     * webchat: remove delkey input from edit-modal-dialog
 * build609
     * webchat: add edit button.
