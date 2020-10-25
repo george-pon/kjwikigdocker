@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build614, monthly202010, stable, latest
+* build615, monthly202010, stable, latest
+    * webchat: remove edit button when not self message
+* build614
     * webchat: keep show-more-less button status
 * build613, monthly202009
     * markdown: image link ![describe](uri) supported.
