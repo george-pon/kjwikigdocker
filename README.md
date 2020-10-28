@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build615, monthly202010, stable, latest
+* build616, monthly202010, stable, latest
+    * webchat: unescape when edit. lt, gt, amp, quot
+* build615
     * webchat: remove edit button when not self message
 * build614
     * webchat: keep show-more-less button status
