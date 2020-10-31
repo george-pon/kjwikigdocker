@@ -36,7 +36,11 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build616, monthly202010, stable, latest
+* build627, monthly202010, stable, latest
+    * persister: at startup, read file list at once for spped up.
+    * webchat: remove duplicate title line.
+    * webchat: stop interval executor when shutdown.
+* build616
     * webchat: unescape when edit. lt, gt, amp, quot
 * build615
     * webchat: remove edit button when not self message
