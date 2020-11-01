@@ -36,7 +36,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build627, monthly202010, stable, latest
+* build628, monthly202011, stable, latest
+    * persister: at startup, read file list exclude .atr file.
+* build627, monthly202010
     * persister: at startup, read file list at once for spped up.
     * webchat: remove duplicate title line.
     * webchat: stop interval executor when shutdown.
