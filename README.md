@@ -36,7 +36,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build629, monthly202011, stable, latest
+
+* build630, monthly202011, stable, latest
+    * from image: georgesan/debiantomcat:debian10-adoptopenjdk15-tomcat9
+* build629
     * webchat: image link set to target _blank.
 * build628
     * persister: at startup, read file list exclude .atr file.

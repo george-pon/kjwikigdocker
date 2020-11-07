@@ -1,9 +1,9 @@
-FROM georgesan/debiantomcat:debian10-openjdk11-tomcat9
+FROM georgesan/debiantomcat:debian10-adoptopenjdk15-tomcat9
 
 ENV KJWIKIGDOCKER_VERSION build-target
 ENV KJWIKIGDOCKER_VERSION latest
 ENV KJWIKIGDOCKER_VERSION stable
-ENV KJWIKIGDOCKER_VERSION build629
+ENV KJWIKIGDOCKER_VERSION build630
 ENV KJWIKIGDOCKER_IMAGE georgesan/kjwikigdocker
 
 USER root

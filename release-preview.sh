@@ -9,10 +9,16 @@ do
         echo "  options:"
         echo "    --help      print this."
         echo "    --no-edit   skip edit Dockerfile, etc."
+        echo "    --no-chart  skip generate helm chart"
         exit 0
     fi
     if [ x"$1"x = x"--no-edit"x ]; then
         NO_EDIT=true
+        shift
+        continue
+    fi
+    if [ x"$1"x = x"--no-chart"x ]; then
+        NO_CHART=true
         shift
         continue
     fi
@@ -48,8 +54,12 @@ export IMAGE_NAME=${IMAGE_PREFIX}$(awk '/^ENV KJWIKIGDOCKER_IMAGE/ {print $3;}' 
 # build image
 bash build-image.sh
 
-# build helm-chart package
-bash package-helm-chart.sh
+if [ x"$NO_CHART"x = x"true"x ]; then
+    echo "skip helm-chart package"
+else
+    # build helm-chart package
+    bash package-helm-chart.sh
+fi
 
 # test run via helm
 pushd helm-chart
