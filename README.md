@@ -37,7 +37,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build630, monthly202011, stable, latest
+* build631, monthly202011, stable, latest
+    * add sign up page (/signup) , add isAllowAutomaticSignUp flag.
+* build630
     * from image: georgesan/debiantomcat:debian10-adoptopenjdk15-tomcat9
 * build629
     * webchat: image link set to target _blank.
@@ -106,6 +108,7 @@ kubectl rollout status deploy/kjwikigdocker
 * KJWikiG_uploadEnableURLOfOtherSite : set uploadEnableURLOfOtherSite or uploadDisableURLOfOtherSite. default value is uploadDisableURLOfOtherSite
 * KJWikiG_defaultImagePixel : set image size. default value is 960. for smart phone , set to 320 pixel.
 * KJWikiG_defaultTextWidth : set text wrap width. when set -1, no wrap.
+* KJWikiG_isAllowAutomaticSignUp : set true to allow new user sign up. default value is false.
 
 ### parameter override order
 
