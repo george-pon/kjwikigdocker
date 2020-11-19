@@ -37,7 +37,10 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build631, monthly202011, stable, latest
+* build632, monthly202011, stable, latest
+    * signup: add validation check include space character.
+    * webchat: add GPS button. insert GPS location into TEXTAREA when https.
+* build631
     * add sign up page (/signup) , add isAllowAutomaticSignUp flag.
 * build630
     * from image: georgesan/debiantomcat:debian10-adoptopenjdk15-tomcat9
