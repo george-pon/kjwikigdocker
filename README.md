@@ -37,7 +37,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build632, monthly202011, stable, latest
+* build633, monthly202011, stable, latest
+    * webchat: add GPS button option setting.
+* build632
     * signup: add validation check include space character.
     * webchat: add GPS button. insert GPS location into TEXTAREA when https.
 * build631
