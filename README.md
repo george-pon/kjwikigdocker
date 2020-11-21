@@ -37,7 +37,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build633, monthly202011, stable, latest
+* build634, monthly202011, stable, latest
+    * webchat, pictbbs: add {{gpslink(@123,456,17z)}} plugin
+* build633
     * webchat: add GPS button option setting.
 * build632
     * signup: add validation check include space character.
