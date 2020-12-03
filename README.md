@@ -37,7 +37,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build635, monthly202011, stable, latest
+* build636, monthly202012, stable, latest
+    * usemodwiki, markdown: todolist: allow to edit without check OL/UL item.
+* build635, monthly202011
     * usemodwiki, markdown: todolist: add checked1d mode. display to do list item done today.
 * build634
     * webchat, pictbbs: add {{gpslink(@123,456,17z)}} plugin
