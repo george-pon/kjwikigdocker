@@ -37,7 +37,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build639, monthly202012, stable, latest
+* build640, monthly202012, stable, latest
+    * hiki/usemodwiki/markdown: add recent_pictbbs plugin: add /l5 to pictbbs link 
+* build639
     * pictbbs, upload plugin : DELKEY input form: add autocomplete=off
     * hiki/usemodwiki/markdown: add recent_pictbbs plugin
 * build637
