@@ -37,7 +37,10 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build637, monthly202012, stable, latest
+* build639, monthly202012, stable, latest
+    * pictbbs, upload plugin : DELKEY input form: add autocomplete=off
+    * hiki/usemodwiki/markdown: add recent_pictbbs plugin
+* build637
     * webchat: chat edit button is now set in global to avoid close edit dialog when message array is changed.
 * build636
     * usemodwiki, markdown: todolist: allow to edit without check OL/UL item.
