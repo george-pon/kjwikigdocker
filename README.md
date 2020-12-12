@@ -37,7 +37,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build640, monthly202012, stable, latest
+* build641, monthly202012, stable, latest
+    * fix recent_pictbbs plugin: WebChat -> Web Chat to avoid Wiki Name Link.
+* build640
     * hiki/usemodwiki/markdown: add recent_pictbbs plugin: add /l5 to pictbbs link 
 * build639
     * pictbbs, upload plugin : DELKEY input form: add autocomplete=off
