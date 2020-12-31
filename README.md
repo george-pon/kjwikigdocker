@@ -37,6 +37,8 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
+* build642, monthly202012, stable, latest
+    * update npm environment at 2020/12/31.
 * build641, monthly202012, stable, latest
     * fix recent_pictbbs plugin: WebChat -> Web Chat to avoid Wiki Name Link.
 * build640
