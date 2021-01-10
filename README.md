@@ -41,7 +41,7 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build644, monthly202101, stable, latest
+* build645, monthly202101, stable, latest
     * Modify: userAdd: when user add , user name conflict check with ignoreCaseEqual. (because in Windows File System, File name distinguished by ignoreCase.)
     * Modify: property isAllowAutomaticSignUp set by SetAllowAutomaticSignUp / SetDenyAutomaticSignUp / true / false.
     * Add: wiki tag cache to file. directory /var/lib/kjwikigdocker/wcd/
