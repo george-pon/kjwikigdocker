@@ -4,6 +4,10 @@ A docker image for kjwikig , which is wiki system written by plain JSP/Servlet (
 
 Wiki data are saved as-is text files, into volume path /var/lib/kjwikigdocker/.
 
+File Cache Data saved as Java Serialized Object into /var/lib/kjwikigdocker/fcd/.
+
+Tag Cache Data saved as Java Serialized Object into /var/lib/kjwikigdocker/wcd/.
+
 This docker image run as USER uid:998, gid:998.
 
 
@@ -37,7 +41,12 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build642, monthly202012, stable, latest
+* build643, monthly202101, stable, latest
+    * Modify: userAdd: when user add , user name conflict check with ignoreCaseEqual. (because in Windows File System, File name distinguished by ignoreCase.)
+    * Modify: property isAllowAutomaticSignUp set by SetAllowAutomaticSignUp / SetDenyAutomaticSignUp / true / false.
+    * Add: wiki tag cache to file. directory /var/lib/kjwikigdocker/wcd/
+    * Fix: when normal digest search ( it means not tag digest search ) , do not save tag cache data.
+* build642, monthly202012
     * update npm environment at 2020/12/31.
 * build641, monthly202012, stable, latest
     * fix recent_pictbbs plugin: WebChat -> Web Chat to avoid Wiki Name Link.
@@ -130,7 +139,7 @@ kubectl rollout status deploy/kjwikigdocker
 * KJWikiG_uploadEnableURLOfOtherSite : set uploadEnableURLOfOtherSite or uploadDisableURLOfOtherSite. default value is uploadDisableURLOfOtherSite
 * KJWikiG_defaultImagePixel : set image size. default value is 960. for smart phone , set to 320 pixel.
 * KJWikiG_defaultTextWidth : set text wrap width. when set -1, no wrap.
-* KJWikiG_isAllowAutomaticSignUp : set true to allow new user sign up. default value is false.
+* KJWikiG_isAllowAutomaticSignUp : set SetAllowAutomaticSignUp to allow new user sign up. default value is SetDenyAutomaticSignUp.
 
 ### parameter override order
 
