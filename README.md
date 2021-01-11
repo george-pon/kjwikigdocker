@@ -41,10 +41,13 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build645, monthly202101, stable, latest
+* build646, monthly202101, stable, latest
+    * workaroud: because old format attribute file (xxx.atr) can not read, default delete key is set.
+* build645
     * Modify: userAdd: when user add , user name conflict check with ignoreCaseEqual. (because in Windows File System, File name distinguished by ignoreCase.)
     * Modify: property isAllowAutomaticSignUp set by SetAllowAutomaticSignUp / SetDenyAutomaticSignUp / true / false.
     * Add: wiki tag cache to file. directory /var/lib/kjwikigdocker/wcd/
+    * imcopatible change: attribute file of attached file (xxx.atr) is changed. old version format can not read. 
     * Fix: when normal digest search ( it means not tag digest search ) , do not save tag cache data.
 * build642, monthly202012
     * update npm environment at 2020/12/31.
