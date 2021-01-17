@@ -41,7 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build646, monthly202101, stable, latest
+* build647, monthly202101, stable, latest
+    * Add: pictbbs tag cache to file. directory /var/lib/kjwikigdocker/wcd/
+* build646
     * workaroud: because old format attribute file (xxx.atr) can not read, default delete key is set.
 * build645
     * Modify: userAdd: when user add , user name conflict check with ignoreCaseEqual. (because in Windows File System, File name distinguished by ignoreCase.)
