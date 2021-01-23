@@ -66,10 +66,10 @@ pushd helm-chart
     # check if kjwikigdocker is present.
     if helm list | grep kjwikigdocker ; then
         # use local image name
-        helm upgrade kjwikigdocker kjwikigdocker --set image.repository=$IMAGE_NAME --set image.tag=$IMAGE_BUILD_TAG --set image.pullPolicy=IfNotPresent --set ingress.hosts="{kjwikigdocker.hyperv.local}"
+        helm upgrade kjwikigdocker kjwikigdocker --set image.repository=$IMAGE_NAME --set image.tag=$IMAGE_BUILD_TAG --set image.pullPolicy=IfNotPresent --set ingress.hosts="{kjwikigdocker.hyperv.local,debian81.hyperv.local}"
     else
         # use local image name
-        helm install kjwikigdocker kjwikigdocker --set image.repository=$IMAGE_NAME --set image.tag=$IMAGE_BUILD_TAG --set image.pullPolicy=IfNotPresent  --set ingress.hosts="{kjwikigdocker.hyperv.local}"
+        helm install kjwikigdocker kjwikigdocker --set image.repository=$IMAGE_NAME --set image.tag=$IMAGE_BUILD_TAG --set image.pullPolicy=IfNotPresent  --set ingress.hosts="{kjwikigdocker.hyperv.local,debian81.hyperv.local}"
     fi
     # wait for deploy
     kubectl rollout status deploy/kjwikigdocker
