@@ -41,7 +41,10 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build647, monthly202101, stable, latest
+* build648, monthly202101, stable, latest
+    * Fix: webchat: set v-for v-bind:key
+    * Modify: webchat: display 50 message max.
+* build647
     * Add: pictbbs tag cache to file. directory /var/lib/kjwikigdocker/wcd/
 * build646
     * workaroud: because old format attribute file (xxx.atr) can not read, default delete key is set.
