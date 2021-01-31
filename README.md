@@ -41,7 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build648, monthly202101, stable, latest
+* build649, monthly202101, stable, latest
+    * add: template: add next month.
+* build648
     * Fix: webchat: set v-for v-bind:key
     * Modify: webchat: display 50 message max.
 * build647
