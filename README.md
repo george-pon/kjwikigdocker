@@ -41,7 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build650, monthly202102, stable, latest
+* build651, monthly202102, stable, latest
+    * try: webchat: humm? conflict between edit button and image button.
+* build650
     * modify: webchat: system message number is set 'sys' + number.
     * add: webchat: large image is shown in modal-dialog.
     * add: webchat: other site link is shown in _blank target.
