@@ -41,7 +41,11 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build649, monthly202101, stable, latest
+* build650, monthly202102, stable, latest
+    * modify: webchat: system message number is set 'sys' + number.
+    * add: webchat: large image is shown in modal-dialog.
+    * add: webchat: other site link is shown in _blank target.
+* build649, monthly202101
     * add: template: add next month.
 * build648
     * Fix: webchat: set v-for v-bind:key
