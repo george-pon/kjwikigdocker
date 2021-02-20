@@ -41,7 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build657, monthly202102, stable, latest
+* build658, monthly202102, stable, latest
+    * mod: webchat: adjust infinite scroll start position.
+* build657
     * fix: webchat: adjust scroll heigth and scroll top.
 * build656
     * mod: webchat: modify comment.
