@@ -41,8 +41,10 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build655, monthly202102, stable, latest
-    fix: webchat: large image is shown in modal-dialog. fix image url.
+* build656, monthly202102, stable, latest
+    * mod: webchat: modify comment.
+* build655
+    * fix: webchat: large image is shown in modal-dialog. fix image url.
 * build654
     * fix: webchat: large image is shown in modal-dialog. set image size by vw and vh.
 * build652
