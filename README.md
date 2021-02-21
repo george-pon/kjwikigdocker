@@ -41,7 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build658, monthly202102, stable, latest
+* build659, monthly202102, stable, latest
+    * mod: webchat: use lodash.debounce for smart phone browser scroll.
+* build658
     * mod: webchat: adjust infinite scroll start position.
 * build657
     * fix: webchat: adjust scroll heigth and scroll top.
