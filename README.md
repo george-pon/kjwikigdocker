@@ -41,7 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build659, monthly202102, stable, latest
+* build660, monthly202103, stable, latest
+    * add: wiki, bbs, pictbbs, webchat: display login user name.
+* build659, monthly202102
     * mod: webchat: use lodash.debounce for smart phone browser scroll.
 * build658
     * mod: webchat: adjust infinite scroll start position.
