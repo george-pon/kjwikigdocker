@@ -1,0 +1,53 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kjwikigdocker
+  labels:
+    app: kjwikigdocker
+spec:
+  ports:
+  - port: 8080
+    name: kjwikigdockerport
+  clusterIP: None
+  selector:
+    app: kjwikigdocker
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: kjwikigdocker
+  labels:
+    app: kjwiwikigdocker
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kjwikigdocker
+  template:
+    metadata:
+      labels:
+        app: kjwikigdocker
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - name: kjwikigdocker-container
+        image: georgesan/kjwikigdocker:latest
+        ports:
+        - name: kjwikigdockerport
+          containerPort: 8080
+        volumeMounts:
+        - name: kjwikig-data-volume
+          mountPath: /var/lib/kjwikigdocker
+      volumes:
+        - name: kjwikig-data-volume
+          persistentVolumeClaim:
+            claimName: claim-kjwikigdocker
+  volumeClaimTemplates:
+  - metadata:
+      name: kjwikig-data-volume
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      storageClassName: "my-storage-class"
+      resources:
+        requests:
+          storage: 1Gi
