@@ -44,11 +44,12 @@ function f_docker_build() {
     fi
 
     # check use buildx
-    USE_BUILDX=
-    if docker buildx ls 1>/dev/null 2>/dev/null ; then
-        if docker buildx ls 2>/dev/null | grep linux/arm/v7 ; then
-            if docker buildx ls 2>/dev/null | grep linux/amd64 ; then
-                USE_BUILDX=yes
+    if [ x"$USE_BUILDX"x = x""x ] ; then
+        if docker buildx ls 1>/dev/null 2>/dev/null ; then
+            if docker buildx ls 2>/dev/null | grep linux/arm/v7 ; then
+                if docker buildx ls 2>/dev/null | grep linux/amd64 ; then
+                    USE_BUILDX=yes
+                fi
             fi
         fi
     fi
@@ -58,8 +59,8 @@ function f_docker_build() {
         PLATOPT=
         MACHINE=$( uname -m )
         case $MACHINE in
-            x86_64) PLATOPT='--platform=linux/amd64,linux/arm/v7' ;;
-            armv7l) PLATOPT='--platform=linux/amd64,linux/arm/v7' ;;
+            x86_64) PLATOPT='--platform=linux/amd64' ;;
+            armv7l) PLATOPT='--platform=linux/arm/v7' ;;
             aarch64) PLATOPT='--platform=linux/amd64,linux/arm/v7,linux/arm64' ;;
         esac
         for TAG_CAR in $TAG_LIST

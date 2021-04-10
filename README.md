@@ -41,7 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build660, monthly202103, stable, latest
+* build661, monthly202104, stable, latest
+    * add: webchat: display System Time Broadcast in fixed position, not in chat.
+* build660, monthly202103
     * add: wiki, bbs, pictbbs, webchat: display login user name.
 * build659, monthly202102
     * mod: webchat: use lodash.debounce for smart phone browser scroll.

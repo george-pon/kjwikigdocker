@@ -52,6 +52,7 @@ export IMAGE_NAME=${IMAGE_PREFIX}$(awk '/^ENV KJWIKIGDOCKER_IMAGE/ {print $3;}' 
 # export no_cache=true
 
 # build image
+export USE_BUILDX=no
 bash build-image.sh
 
 if [ x"$NO_CHART"x = x"true"x ]; then
