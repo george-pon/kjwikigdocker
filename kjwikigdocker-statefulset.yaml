@@ -5,10 +5,11 @@ metadata:
   labels:
     app: kjwikigdocker
 spec:
+  type: NodePort
   ports:
   - port: 8080
-    name: kjwikigdockerport
-  clusterIP: None
+    name: port8080
+    nodePort: 30080
   selector:
     app: kjwikigdocker
 ---
@@ -19,10 +20,11 @@ metadata:
   labels:
     app: kjwiwikigdocker
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: kjwikigdocker
+  serviceName: kjwikigdocker
   template:
     metadata:
       labels:
@@ -33,21 +35,17 @@ spec:
       - name: kjwikigdocker-container
         image: georgesan/kjwikigdocker:latest
         ports:
-        - name: kjwikigdockerport
+        - name: port8080
           containerPort: 8080
-        volumeMounts:
-        - name: kjwikig-data-volume
-          mountPath: /var/lib/kjwikigdocker
-      volumes:
-        - name: kjwikig-data-volume
-          persistentVolumeClaim:
-            claimName: claim-kjwikigdocker
-  volumeClaimTemplates:
-  - metadata:
-      name: kjwikig-data-volume
-    spec:
-      accessModes: [ "ReadWriteOnce" ]
-      storageClassName: "my-storage-class"
-      resources:
-        requests:
-          storage: 1Gi
+        # volumeMounts:
+        # - name: kjwikig-data-volume
+        #   mountPath: /var/lib/kjwikigdocker
+  # volumeClaimTemplates:
+  # - metadata:
+  #     name: kjwikig-data-volume
+  #   spec:
+  #     accessModes: [ "ReadWriteOnce" ]
+  #     storageClassName: "my-storage-class"
+  #     resources:
+  #       requests:
+  #         storage: 1Gi
