@@ -42,7 +42,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build661, monthly202104, stable, latest
+* build662, monthly202104, stable, latest
+    * add: 2ch bbs: tag search cache.
+* build661
     * add: webchat: display System Time Broadcast in fixed position, not in chat.
 * build660, monthly202103
     * add: wiki, bbs, pictbbs, webchat: display login user name.
