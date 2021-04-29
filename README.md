@@ -42,7 +42,10 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build662, monthly202104, stable, latest
+* build663, monthly202104, stable, latest
+    * add: settings: add radio button of image pixel size 240.
+    * add: webchat: image size calculate 55% size from cookie image_size.
+* build662
     * add: 2ch bbs: tag search cache.
 * build661
     * add: webchat: display System Time Broadcast in fixed position, not in chat.
