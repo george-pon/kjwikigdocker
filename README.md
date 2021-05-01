@@ -42,7 +42,9 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build663, monthly202104, stable, latest
+* build664, monthly202105, stable, latest
+    * add: webchat: image size calculate 55% size from cookie image_size when post.
+* build663, monthly202104
     * add: settings: add radio button of image pixel size 240.
     * add: webchat: image size calculate 55% size from cookie image_size.
 * build662
