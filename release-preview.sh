@@ -29,7 +29,7 @@ EDITOR=${EDITOR:-vi}
 echo EDITOR is $EDITOR
 
 set -eux
-echo "check docker / kubectl / helm"
+echo "check ... docker / kubectl / helm"
 docker version
 kubectl version
 helm version
@@ -67,10 +67,20 @@ pushd helm-chart
     # check if kjwikigdocker is present.
     if helm list | grep kjwikigdocker ; then
         # use local image name
-        helm upgrade kjwikigdocker kjwikigdocker --set image.repository=$IMAGE_NAME --set image.tag=$IMAGE_BUILD_TAG --set image.pullPolicy=IfNotPresent --set ingress.hosts="{host.docker.internal,kjwikigdocker.hyperv.local,debian81.hyperv.local}"
+        helm upgrade kjwikigdocker kjwikigdocker \
+            --set image.repository=$IMAGE_NAME \
+            --set image.tag=$IMAGE_BUILD_TAG \
+            --set image.pullPolicy=IfNotPresent \
+            --set ingress.hosts="{host.docker.internal}" \
+            --set replicaCount=2
     else
         # use local image name
-        helm install kjwikigdocker kjwikigdocker --set image.repository=$IMAGE_NAME --set image.tag=$IMAGE_BUILD_TAG --set image.pullPolicy=IfNotPresent  --set ingress.hosts="{host.docker.internal,kjwikigdocker.hyperv.local,debian81.hyperv.local}"
+        helm install kjwikigdocker kjwikigdocker \
+            --set image.repository=$IMAGE_NAME \
+            --set image.tag=$IMAGE_BUILD_TAG \
+            --set image.pullPolicy=IfNotPresent  \
+            --set ingress.hosts="{host.docker.internal}" \
+            --set replicaCount=2
     fi
     # wait for deploy
     kubectl rollout status deploy/kjwikigdocker
