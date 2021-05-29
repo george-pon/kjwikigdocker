@@ -18,7 +18,9 @@ if [ -n "$KJWikiG_WarFileName" ]; then
     fi
 fi
 
-exec /usr/libexec/tomcat9/tomcat-start.sh
+# exec /usr/libexec/tomcat9/tomcat-start.sh
+
+exec $CATALINA_BASE/bin/catalina.sh run
 
 #
 # end of file

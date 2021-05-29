@@ -42,8 +42,13 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 
-* build664, monthly202105, stable, latest
+* build668, monthly202105, stable, latest
+    * for tomcat10
+    * use jakarta.servlet.http.* for Servlet API 5.0
+    * use jakarta.servlet.http.Part for multipart/form-data
+* build664
     * add: webchat: image size calculate 55% size from cookie image_size when post.
+    * for tomcat 9 final version
 * build663, monthly202104
     * add: settings: add radio button of image pixel size 240.
     * add: webchat: image size calculate 55% size from cookie image_size.

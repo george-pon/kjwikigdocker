@@ -1,9 +1,9 @@
-FROM georgesan/debiantomcat:debian10-adoptopenjdk16-tomcat9
+FROM georgesan/debiantomcat:debian10-adoptopenjdk16-tomcat10
 
 ENV KJWIKIGDOCKER_VERSION build-target
 ENV KJWIKIGDOCKER_VERSION latest
 ENV KJWIKIGDOCKER_VERSION stable
-ENV KJWIKIGDOCKER_VERSION build664
+ENV KJWIKIGDOCKER_VERSION build668
 ENV KJWIKIGDOCKER_IMAGE georgesan/kjwikigdocker
 
 USER root
@@ -36,8 +36,6 @@ USER tomcat
 EXPOSE 8080
 
 VOLUME /var/lib/kjwikigdocker
-
-# CMD ["/usr/libexec/tomcat9/tomcat-start.sh"]
 
 CMD ["/usr/local/bin/docker-entrypoint.sh"]
 
