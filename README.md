@@ -41,8 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-
-* build668, monthly202105, stable, latest
+* build671, monthly202106, stalbe, latest
+    * webchat: fetch URL data when input just URL string.
+* build668, monthly202105
     * for tomcat10
     * use jakarta.servlet.http.* for Servlet API 5.0
     * use jakarta.servlet.http.Part for multipart/form-data
