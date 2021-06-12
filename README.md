@@ -41,6 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build672, monthly202106, stalbe, latest
+    * webchat: fix null pointer exception when null delkey
+    * Vue 2.6.14
 * build671, monthly202106, stalbe, latest
     * webchat: fetch URL data when input just URL string.
 * build668, monthly202105
