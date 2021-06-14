@@ -27,9 +27,21 @@ spec:
   {{- end }}
 {{- end }}
   rules:
+  {{- if .Values.ingress.hosts }}
   {{- range .Values.ingress.hosts }}
     - host: {{ . }}
       http:
+        paths:
+          - path: {{ $ingressPath }}
+            pathType: Prefix
+            backend:
+              service:
+                name: {{ $fullName }}
+                port:
+                  name: port8080
+  {{- end }}
+  {{- else }}
+    - http:
         paths:
           - path: {{ $ingressPath }}
             pathType: Prefix
