@@ -83,9 +83,9 @@ spec:
             port: port8080
           initialDelaySeconds: 300
           timeoutSeconds: 5
-          periodSeconds: 10
+          periodSeconds: 30
           successThreshold: 1
-          failureThreshold: 30
+          failureThreshold: 10
         readinessProbe:
           httpGet:
             path: /kjwikigdocker/ping
