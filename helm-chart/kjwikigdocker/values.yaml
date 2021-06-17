@@ -34,7 +34,7 @@ ingress:
     # see https://kubernetes.github.io/ingress-nginx/examples/affinity/cookie/
     nginx.ingress.kubernetes.io/affinity: cookie
     # see https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/#cookie-affinity
-    nginx.ingress.kubernetes.io/session-cookie-conditional-samesite-none: "true"
+    # nginx.ingress.kubernetes.io/session-cookie-conditional-samesite-none: "true"
     # nginx.ingress.kubernetes.io/session-cookie-samesite: None
     # for accept large file post
     nginx.ingress.kubernetes.io/proxy-body-size: 1560m
