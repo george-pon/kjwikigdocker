@@ -31,11 +31,16 @@ ingress:
     # see https://github.com/kubernetes/ingress-nginx/blob/master/docs/user-guide/annotations.md
     kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
+
+    # sticky session の実現
     # see https://kubernetes.github.io/ingress-nginx/examples/affinity/cookie/
     nginx.ingress.kubernetes.io/affinity: cookie
+    # max-age とかは指定しない。cookieの期間指定をしない場合は、セッションの間だけ保持
+
     # see https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/annotations/#cookie-affinity
+    # https通信の場合のみ SameSite=None などが利用可能なので注意。
     # nginx.ingress.kubernetes.io/session-cookie-conditional-samesite-none: "true"
-    # nginx.ingress.kubernetes.io/session-cookie-samesite: None
+
     # for accept large file post
     nginx.ingress.kubernetes.io/proxy-body-size: 1560m
 
