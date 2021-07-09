@@ -41,7 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build672, monthly202106, stalbe, latest
+* build674, monthly202107, stalbe, latest
+    * add: webchat: add input type=file element.
+* build672, monthly202106
     * webchat: fix null pointer exception when null delkey
     * Vue 2.6.14
 * build671, monthly202106, stalbe, latest
