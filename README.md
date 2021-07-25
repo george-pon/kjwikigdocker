@@ -41,7 +41,7 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build677, monthly202107, stalbe, latest
+* build678, monthly202107, stalbe, latest
     * update: Vue 3.1.5
 * build674
     * add: webchat: add input type=file element.
