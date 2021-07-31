@@ -41,7 +41,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build678, monthly202107, stalbe, latest
+* build679, monthly202107, stalbe, latest
+    * fix: webchat: add nbsp between number, date time and user-name .
+    * fix: webchat: change timimg removal system message.
+* build678
     * update: Vue 3.1.5
 * build674
     * add: webchat: add input type=file element.
