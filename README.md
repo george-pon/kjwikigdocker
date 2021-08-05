@@ -41,6 +41,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build681, monthly202108, stalbe, latest
+    * add: webchat: scan chat message in view or not in view. when insert a message at above of viewing message, adjust scroll offset.
 * build679, monthly202107, stalbe, latest
     * fix: webchat: add nbsp between number, date time and user-name .
     * fix: webchat: change timimg removal system message.
