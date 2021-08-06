@@ -41,9 +41,11 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build681, monthly202108, stalbe, latest
+* build682, monthly202108, stalbe, latest
+    * fix: webchat/pictbbs: update webchat message when post/edit from pictbbs.
+* build681
     * add: webchat: scan chat message in view or not in view. when insert a message at above of viewing message, adjust scroll offset.
-* build679, monthly202107, stalbe, latest
+* build679, monthly202107
     * fix: webchat: add nbsp between number, date time and user-name .
     * fix: webchat: change timimg removal system message.
 * build678
