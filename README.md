@@ -41,7 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build682, monthly202108, stalbe, latest
+* build683, monthly202108, stalbe, latest
+    * remove: webchat: remove onOpen/onClose broad cast message.
+* build682
     * fix: webchat/pictbbs: update webchat message when post/edit from pictbbs.
 * build681
     * add: webchat: scan chat message in view or not in view. when insert a message at above of viewing message, adjust scroll offset.
