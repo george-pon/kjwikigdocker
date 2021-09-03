@@ -41,7 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build683, monthly202108, stalbe, latest
+* build684, monthly202109, stalbe, latest
+    * modify: web.xml DTD declare servlet 5.0
+* build683, monthly202108
     * remove: webchat: remove onOpen/onClose broad cast message.
 * build682
     * fix: webchat/pictbbs: update webchat message when post/edit from pictbbs.
