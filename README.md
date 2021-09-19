@@ -41,7 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build684, monthly202109, stalbe, latest
+* build685, monthly202109, stalbe, latest
+    * add: webchat: jump to message number. link is >>nnn .
+* build684
     * modify: web.xml DTD declare servlet 5.0
 * build683, monthly202108
     * remove: webchat: remove onOpen/onClose broad cast message.
