@@ -41,6 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build686
+    * mod: change base image to docker.io/georgesan/debiantomcat:debian10-adoptiumopenjdk17-tomcat10
+    * add: webchat: add hyper link to message number.
 * build685, monthly202109, stalbe, latest
     * add: webchat: jump to message number. link is >>nnn .
 * build684
