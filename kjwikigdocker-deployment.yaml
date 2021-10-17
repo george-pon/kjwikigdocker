@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: kjwikigdocker
   labels:
-    app: kjwiwikigdocker
+    app: kjwikigdocker
 spec:
   replicas: 1
   selector:
