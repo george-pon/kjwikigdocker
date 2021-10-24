@@ -41,10 +41,13 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build686
+* build687, monthly202110, stalbe, latest
+    * update: vue 3.2.20
+    * update: for node.js v17 OpenSSL3 , add NODE_OPTIONS=--openssl-legacy-provider to build script.
+* build686, monthly202109
     * mod: change base image to docker.io/georgesan/debiantomcat:debian10-adoptiumopenjdk17-tomcat10
     * add: webchat: add hyper link to message number.
-* build685, monthly202109, stalbe, latest
+* build685
     * add: webchat: jump to message number. link is >>nnn .
 * build684
     * modify: web.xml DTD declare servlet 5.0
