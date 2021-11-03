@@ -41,7 +41,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build687, monthly202110, stalbe, latest
+* build688, monthly202111, stalbe, latest
+    * add: webchat: display connecting user name list.
+* build687, monthly202110
     * update: vue 3.2.20
     * update: for node.js v17 OpenSSL3 , add NODE_OPTIONS=--openssl-legacy-provider to build script.
 * build686, monthly202109
