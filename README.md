@@ -41,7 +41,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build688, monthly202111, stalbe, latest
+* build689, monthly202111, stalbe, latest
+    * add: .kjwiki and wiki attribute line: add keyword allow_user_, deny_user_, allow_valid_user for access control.
+    * change: .account file is now incompatible because SerialVersionUID is removed. Login again from a link in error page.
+* build688
     * add: webchat: display connecting user name list.
     * update: AdoptiumOpenJDK 17.0.1
     * update: Debian 11
