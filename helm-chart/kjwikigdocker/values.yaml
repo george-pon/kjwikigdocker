@@ -4,6 +4,11 @@
 
 replicaCount: 1
 
+# set metadata.labels key and value, for istio labeling
+metadata:
+  labels:
+  #  version: v1
+
 configmap:
   defaultWord: WelcomeVisitors
   dataStorePath: /var/lib/kjwikigdocker
