@@ -44,7 +44,7 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build695, monthly202112, stalbe, latest
+* build696, monthly202112, stalbe, latest
     * fix: webchat: fix scroll offset modify when send chat message.
 * build693
     * add: helm chart: add metadata.labels values.yaml for istio labeling. add note.txt.
