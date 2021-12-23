@@ -4,10 +4,13 @@
 
 replicaCount: 1
 
-# set metadata.labels key and value, for istio labeling
+# set key and value in metadata.labels
 metadata:
   labels:
-  #  version: v1
+  #  key: value
+
+# for istio version label (or blue/green deploy), add special suffix to deployment name and pod selector label.
+# istiolabel: "v1"
 
 configmap:
   defaultWord: WelcomeVisitors

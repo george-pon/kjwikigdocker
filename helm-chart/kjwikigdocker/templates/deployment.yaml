@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ template "kjwikigdocker.fullname" . }}
+  name: {{ template "kjwikigdocker.fullname" . }}{{- with .Values.istiolabel }}-{{ . }}{{ end }}
   labels:
     app: {{ template "kjwikigdocker.fullname" . }}
     chart: {{ template "kjwikigdocker.chart" . }}
@@ -16,6 +16,9 @@ spec:
     matchLabels:
       app: {{ template "kjwikigdocker.fullname" . }}
       release: {{ .Release.Name }}
+      {{- with .Values.istiolabel }}
+      version: {{ . }}
+      {{- end }}
 
   # pod が ready 判定前に待機する秒数。tomcat上のJavaアプリとかは起動が遅いので長めに待ってあげる。
   minReadySeconds: 10
@@ -35,6 +38,9 @@ spec:
       labels:
         app: {{ template "kjwikigdocker.fullname" . }}
         release: {{ .Release.Name }}
+        {{- with .Values.istiolabel }}
+        version: {{ . }}
+        {{- end }}
     spec:
       containers:
       - name: {{ .Chart.Name }}-container
