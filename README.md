@@ -44,7 +44,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build699, monthly202112, stalbe, latest
+* build700, monthly202112, stalbe, latest
+    * mod: image draw: remove synchronized mark from generate thumbnail image method. it needs more memory.
+* build699
     * mod: webchat: when display message number between 1 and 7 , set message number to 7 because enabel to infinite scroll. (work around)
 * build698
     * add: Default Word ( Top Page ) file is absent, generate it when first access.
