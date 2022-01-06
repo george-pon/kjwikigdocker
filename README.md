@@ -44,7 +44,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build700, monthly202112, stalbe, latest
+* build700, monthly202201, stalbe, latest
+    * add: add metrics for prometheus, path: /kjwikigdocker/metrics
+* build700, monthly202112
     * mod: image draw: remove synchronized mark from generate thumbnail image method. it needs more memory.
 * build699
     * mod: webchat: when display message number between 1 and 7 , set message number to 7 because enabel to infinite scroll. (work around)
