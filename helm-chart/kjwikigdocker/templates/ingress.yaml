@@ -41,7 +41,7 @@ spec:
               service:
                 name: {{ $fullName }}
                 port:
-                  name: port8080
+                  name: http-port8080
   {{- end }}
   {{- else }}
     - http:
@@ -52,6 +52,6 @@ spec:
               service:
                 name: {{ $fullName }}
                 port:
-                  name: port8080
+                  name: http-port8080
   {{- end }}
 {{- end }}

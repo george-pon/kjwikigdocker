@@ -11,6 +11,6 @@ metadata:
 {{ toYaml . | indent 4 }}
     {{- end }}
 data:
-  defaultWord: {{ .Values.configmap.defaultWord | quote }}
-  dataStorePath: {{ .Values.configmap.dataStorePath | quote }}
-  javaOpts: {{ .Values.configmap.javaOpts | quote }}
+  KJWikiG_defaultWord: {{ .Values.configmap.defaultWord | quote }}
+  KJWikiG_dataStorePath: {{ .Values.configmap.dataStorePath | quote }}
+  JAVA_OPTS: {{ .Values.configmap.javaOpts | quote }}

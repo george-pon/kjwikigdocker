@@ -13,9 +13,9 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-  - name: kjwikigdocker
+  - name: http-kjwikigdocker
     port: {{ .Values.service.port }}
-    targetPort: port8080
+    targetPort: http-port8080
     protocol: TCP
   {{- if (and (eq .Values.service.type "NodePort") (not (empty .Values.service.nodePort))) }}
     nodePort: {{ .Values.service.nodePort }}
