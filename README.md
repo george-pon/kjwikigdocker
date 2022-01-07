@@ -44,7 +44,11 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build700, monthly202201, stalbe, latest
+* build702, monthly202201, stalbe, latest
+    * mod: metrics: add prefix kjwikig_ to metrics key name for prometheus.
+    * mod: Java Compile version is set to --release 8 (JDK 1.8)
+    * update: Vue.js 3.2.26
+* build701
     * add: add metrics for prometheus, path: /kjwikigdocker/metrics
 * build700, monthly202112
     * mod: image draw: remove synchronized mark from generate thumbnail image method. it needs more memory.
