@@ -44,7 +44,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build702, monthly202201, stalbe, latest
+* build708, monthly202201, stalbe, latest
+    * add: add data file type Web Chat Bbs (*.wbb)
+    * mod: create page: change default category name to MemoDir. change directory order. category nmae first. user name second.
+* build702
     * mod: metrics: add prefix kjwikig_ to metrics key name for prometheus.
     * mod: Java Compile version is set to --release 8 (JDK 1.8)
     * update: Vue.js 3.2.26

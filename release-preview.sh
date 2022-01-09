@@ -72,7 +72,7 @@ pushd helm-chart
             --set image.tag=$IMAGE_BUILD_TAG \
             --set image.pullPolicy=IfNotPresent \
             --set ingress.hosts="{host.docker.internal}" \
-            --set replicaCount=2
+            --set replicaCount=1
     else
         # use local image name
         helm install kjwikigdocker kjwikigdocker \
@@ -80,7 +80,7 @@ pushd helm-chart
             --set image.tag=$IMAGE_BUILD_TAG \
             --set image.pullPolicy=IfNotPresent  \
             --set ingress.hosts="{host.docker.internal}" \
-            --set replicaCount=2
+            --set replicaCount=1
     fi
     # wait for deploy
     kubectl rollout status deploy/kjwikigdocker
