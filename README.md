@@ -44,7 +44,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build708, monthly202201, latest
+* build711, monthly202201, latest
+    * add: add toggle child button to markdown/usemodwiki todo-list mode.
+* build708
     * add: add data file type Web Chat Bbs (*.wbb)
     * mod: create page: change default category name to MemoDir. change directory order. category nmae first. user name second.
 * build702, stable
