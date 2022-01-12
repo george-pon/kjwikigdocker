@@ -44,12 +44,16 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build711, monthly202201, latest
+* build713, monthly202201, stable, latest
+    * update: javafetch library compile version is set to --release 8 (JDK 1.8)
+    * mod: mod: modify button css.
+    * add: usemodwiki/markdown: todo list mode: add level mode. toggle level 2 item display.
+* build711
     * add: add toggle child button to markdown/usemodwiki todo-list mode.
 * build708
     * add: add data file type Web Chat Bbs (*.wbb)
     * mod: create page: change default category name to MemoDir. change directory order. category nmae first. user name second.
-* build702, stable
+* build702
     * mod: metrics: add prefix kjwikig_ to metrics key name for prometheus.
     * mod: Java Compile version is set to --release 8 (JDK 1.8)
     * update: Vue.js 3.2.26
