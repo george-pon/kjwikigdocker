@@ -44,7 +44,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build713, monthly202201, stable, latest
+* build714, monthly202201, stable, latest
+    * mod: webchat: twitter like 140 letters short message generator changed. linefeed up to 4. HTML tag does not count.
+    * mod: plugin latestlink, lastupdatelink: argument / is set, displays here.
+* build713
     * update: javafetch library compile version is set to --release 8 (JDK 1.8)
     * mod: mod: modify button css.
     * add: usemodwiki/markdown: todo list mode: add level mode. toggle level 2 item display.

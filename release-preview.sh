@@ -26,7 +26,12 @@ done
 
 
 EDITOR=${EDITOR:-vi}
-echo EDITOR is $EDITOR
+if type $EDITOR ; then
+    echo EDITOR is $EDITOR
+elif type vim ; then
+    EDITOR=vim
+    echo EDITOR is $EDITOR
+fi
 
 set -eux
 echo "check ... docker / kubectl / helm"
