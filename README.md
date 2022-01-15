@@ -44,7 +44,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build714, monthly202201, stable, latest
+* build715, monthly202201, stable, latest
+    * mod: plugin latestlink, lastupdatelink: argument here is set, displays current directory wiki page.
+    * mod: css: modify css for todo-list edit/duplicate/child-toggle-display button.
+* build714
     * mod: webchat: twitter like 140 letters short message generator changed. linefeed up to 4. HTML tag does not count.
     * mod: plugin latestlink, lastupdatelink: argument / is set, displays here.
 * build713
