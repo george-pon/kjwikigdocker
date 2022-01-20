@@ -44,7 +44,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build715, monthly202201, stable, latest
+* build716, monthly202201, stable, latest
+    * fix: webchat: write and display first time, generate short message version after rendering HTML.
+* build715
     * mod: plugin latestlink, lastupdatelink: argument here is set, displays current directory wiki page.
     * mod: css: modify css for todo-list edit/duplicate/child-toggle-display button.
 * build714
