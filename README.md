@@ -44,7 +44,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build716, monthly202201, stable, latest
+* build717, monthly202201, stable, latest
+    * fix: redirect: consider X-FORWARDED-SCHEME, X-FORWARDED-HOST
+* build716
     * fix: webchat: write and display first time, generate short message version after rendering HTML.
 * build715
     * mod: plugin latestlink, lastupdatelink: argument here is set, displays current directory wiki page.
