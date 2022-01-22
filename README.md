@@ -44,7 +44,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build717, monthly202201, stable, latest
+* build718, monthly202201, stable, latest
+    * add: redirect: consider X-FORWARDED-PORT
+* build717
     * fix: redirect: consider X-FORWARDED-SCHEME, X-FORWARDED-HOST
 * build716
     * fix: webchat: write and display first time, generate short message version after rendering HTML.
