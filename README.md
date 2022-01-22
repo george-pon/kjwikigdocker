@@ -44,7 +44,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build718, monthly202201, stable, latest
+* build720, monthly202201, stable, latest
+    * fix: webchatbbs: fix to delete work.
+    * add: default sample top page template: add latestlink and lastupdatelink sample.
+* build718
     * add: redirect: consider X-FORWARDED-PORT
 * build717
     * fix: redirect: consider X-FORWARDED-SCHEME, X-FORWARDED-HOST
