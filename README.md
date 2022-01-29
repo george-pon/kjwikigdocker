@@ -44,7 +44,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build720, monthly202201, stable, latest
+* build722, monthly202201, stable, latest
+    * mod: add url character *
+* build720
     * fix: webchatbbs: fix to delete work.
     * add: default sample top page template: add latestlink and lastupdatelink sample.
 * build718
