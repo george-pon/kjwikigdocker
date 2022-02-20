@@ -44,7 +44,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build723, monthly202202, stable, latest
+* build724, monthly202202, stable, latest
+    * mod: download servlet: enable raw file download
+* build723
     * mod: from webchat, editfile returns to webchat.
 * build722, monthly202201
     * mod: add url character *
