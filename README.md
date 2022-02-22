@@ -44,7 +44,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build724, monthly202202, stable, latest
+* build725, monthly202202, stable, latest
+    * mod: css: set fornt-size 1rem to button class.
+* build724
     * mod: download servlet: enable raw file download
 * build723
     * mod: from webchat, editfile returns to webchat.
