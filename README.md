@@ -44,7 +44,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build725, monthly202202, stable, latest
+* build726, monthly202202, stable, latest
+    * fix: convert HTML: decode getURL() result string.
+* build725
     * mod: css: set fornt-size 1rem to button class.
 * build724
     * mod: download servlet: enable raw file download
