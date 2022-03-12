@@ -44,6 +44,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build727, monthly202203, stable, latest
+    * add: search from webchat bbs file, too.
 * build726, monthly202202, stable, latest
     * fix: convert HTML: decode getURL() result string.
 * build725
