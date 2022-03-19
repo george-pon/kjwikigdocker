@@ -44,7 +44,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build728, monthly202203, stable, latest
+* build729, monthly202203, stable, latest
+    * add: webchat: modal edit: paste image / drag & drop file support.
+* build728
     * add: digest search: search from webchat bbs.
 * build727, monthly202203
     * add: search from webchat bbs file, too.
