@@ -45,7 +45,7 @@ kubectl rollout status deploy/kjwikigdocker
 ### tags
 
 * build730, monthly202204, stable, latest
-    * update: Vue 3.2.26
+    * update: Vue 3.2.31
 * build729, monthly202203
     * add: webchat: modal edit: paste image / drag & drop file support.
 * build728
