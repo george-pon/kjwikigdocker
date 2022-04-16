@@ -44,7 +44,11 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build730, monthly202204, stable, latest
+* build732, monthly202204, stable, latest
+    * modify: add nearname and recent plugin to wiki template data.
+    * modify: webchat: css: message content box css changed to max-width 90%, width auto.
+    * modify: webchat: display image size set by user cookie setting.
+* build730
     * update: Vue 3.2.31
 * build729, monthly202203
     * add: webchat: modal edit: paste image / drag & drop file support.
