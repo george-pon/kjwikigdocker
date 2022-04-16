@@ -44,7 +44,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build732, monthly202204, stable, latest
+* build734, monthly202204, stable, latest
+    * modify: webchat: css: ul offset is set to 0.
+    * modify: webchat: img: image size is set to auto.
+* build732
     * modify: add nearname and recent plugin to wiki template data.
     * modify: webchat: css: message content box css changed to max-width 90%, width auto.
     * modify: webchat: display image size set by user cookie setting.
