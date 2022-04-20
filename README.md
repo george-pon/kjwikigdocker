@@ -44,7 +44,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build734, monthly202204, stable, latest
+* build735, monthly202204, stable, latest
+    * modify: css: img css height auto.
+* build734
     * modify: webchat: css: ul offset is set to 0.
     * modify: webchat: img: image size is set to auto.
 * build732
