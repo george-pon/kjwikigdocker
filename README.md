@@ -44,7 +44,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build735, monthly202204, stable, latest
+* build736, monthly202205, stable, latest
+    * add: ignore .git directory inside wiki data directory.
+* build735, monthly202204
     * modify: css: img css height auto.
 * build734
     * modify: webchat: css: ul offset is set to 0.
