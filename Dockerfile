@@ -1,4 +1,4 @@
-FROM georgesan/debiantomcat:debian11-adoptiumopenjdk17-tomcat10
+FROM georgesan/debiantomcat:debian11-adoptiumopenjdk18-tomcat10
 
 ENV KJWIKIGDOCKER_VERSION build-target
 ENV KJWIKIGDOCKER_VERSION latest
