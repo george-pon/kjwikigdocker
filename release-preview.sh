@@ -47,6 +47,10 @@ else
     $EDITOR Dockerfile README.md helm-chart/kjwikigdocker/Chart.yaml
 fi
 
+# ベースイメージのpull
+export FROM_IMAGE=$( cat Dockerfile | grep FROM | awk '{print $2}' )
+docker pull $FROM_IMAGE
+
 export IMAGE_BUILD_TAG=$( cat Dockerfile | grep ENV | grep  KJWIKIGDOCKER_VERSION | egrep -e  'build[0-9]+' | awk '{print $3}' )
 export IMAGE_PREFIX=
 export IMAGE_NAME=${IMAGE_PREFIX}$(awk '/^ENV KJWIKIGDOCKER_IMAGE/ {print $3;}' Dockerfile)
@@ -58,6 +62,7 @@ export IMAGE_NAME=${IMAGE_PREFIX}$(awk '/^ENV KJWIKIGDOCKER_IMAGE/ {print $3;}' 
 
 # build image
 export USE_BUILDX=no
+export no_cache=true
 bash build-image.sh
 
 if [ x"$NO_CHART"x = x"true"x ]; then

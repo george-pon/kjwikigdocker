@@ -44,7 +44,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build736, monthly202205, stable, latest
+* build738, monthly202205, stable, latest
+    * add: pictbbslink , webchatlink plugin: check bbs file exists.
+    * fix: recent_pictbbs plugin: displays pictbbs and webchatbbs file .
+* build736
     * add: ignore .git directory inside wiki data directory.
 * build735, monthly202204
     * modify: css: img css height auto.
