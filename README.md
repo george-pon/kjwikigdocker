@@ -44,7 +44,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build738, monthly202205, stable, latest
+* build739, monthly202205, stable, latest
+    * mod: webchat: skip null line in shot format.
+    * mod: upload plugin: add placefolder to subtitle.
+* build738
     * add: pictbbslink , webchatlink plugin: check bbs file exists.
     * fix: recent_pictbbs plugin: displays pictbbs and webchatbbs file .
 * build736
