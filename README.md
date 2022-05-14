@@ -29,10 +29,12 @@ docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker geor
 ```
 # helm repo add for kjwikigdocker
 helm repo add kjwikigdockerrepo  https://raw.githubusercontent.com/george-pon/kjwikigdocker/master/helm-chart/charts
+
+# update repo
 helm repo update
 
 # helm install for kjwikigdocker (default: ingress path prefix /kjwikigdocker base)
-helm install kjwikigdocker kjwikigdockerrepo/kjwikigdocker --set ingress.hosts="{kjwikigdocker.default.svc.k8s.local}"
+helm install kjwikigdocker kjwikigdockerrepo/kjwikigdocker
 
 # helm install for kjwikigdocker (ingress Host name base)
 helm install kjwikigdocker kjwikigdockerrepo/kjwikigdocker --set ingress.hosts="{kjwikigdocker.default.svc.k8s.local}"
