@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build739, monthly202205, stable, latest
+* build740, monthly202205, stable, latest
+    * mod: .login file: add 3rd column default delkey: format is now username password delkey.
+* build739
     * mod: webchat: skip null line in shot format.
     * mod: upload plugin: add placefolder to subtitle.
 * build738
