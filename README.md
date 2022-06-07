@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build743, monthly202206, stable, latest
+* build746, monthly202206, stable, latest
+    * fix: bbs, pictbbs, webchatbbs: wiki name match make more strictly.
+* build743
     * add: when access to wiki page , required allow_valid_user and not login , redirect to login page.
 * build740, monthly202205
     * mod: .login file: add 3rd column default delkey: format is now username password delkey.
