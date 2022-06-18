@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build747, monthly202206, stable, latest
+* build749, monthly202206, stable, latest
+    * fix: when 2nd login authentication , username and delkey is null.
+* build747
     * add: 2nd login authentication when .login file has pincode column.
     * add: .login format : username password delkey pincode or username:value password:value delkey:value pincode:value
     * add: when 2nd login authentication failure 6 times , user login check is always fail. (failure count is reset when tomcat reboot)
