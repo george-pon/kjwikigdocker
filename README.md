@@ -46,7 +46,11 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build746, monthly202206, stable, latest
+* build747, monthly202206, stable, latest
+    * add: 2nd login authentication when .login file has pincode column.
+    * add: .login format : username password delkey pincode or username:value password:value delkey:value pincode:value
+    * add: when 2nd login authentication failure 6 times , user login check is always fail. (failure count is reset when tomcat reboot)
+* build746
     * fix: bbs, pictbbs, webchatbbs: wiki name match make more strictly.
 * build743
     * add: when access to wiki page , required allow_valid_user and not login , redirect to login page.
