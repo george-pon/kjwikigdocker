@@ -46,6 +46,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build750, monthly202206, stable, latest
+    * fix: webchat: image width and height is set.
 * build749, monthly202206, stable, latest
     * fix: when 2nd login authentication , username and delkey is null.
 * build747
