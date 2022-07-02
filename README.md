@@ -46,6 +46,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build751, monthly202207, stable, latest
+    * update: vue3.2.37
 * build750, monthly202206, stable, latest
     * fix: webchat: image width and height is set.
 * build749, monthly202206, stable, latest

@@ -16,7 +16,7 @@ configmap:
   defaultWord: WelcomeVisitors
   dataStorePath: /var/lib/kjwikigdocker
   # for JDK 1.8
-  javaOpts: "-Xmx900m -XX:+PrintFlagsFinal"
+  javaOpts: "-Xmx1000m -XX:+PrintFlagsFinal"
   # for openJDK 11
   # javaOpts: "-XX:+UseContainerSupport  -XX:MaxRAMPercentage=75 -XX:+PrintFlagsFinal"
 
