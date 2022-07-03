@@ -46,11 +46,13 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build751, monthly202207, stable, latest
+* build753, monthly202207, stable, latest
+    * update: libraries
+* build751
     * update: vue3.2.37
-* build750, monthly202206, stable, latest
+* build750, monthly202206
     * fix: webchat: image width and height is set.
-* build749, monthly202206, stable, latest
+* build749, monthly202206
     * fix: when 2nd login authentication , username and delkey is null.
 * build747
     * add: 2nd login authentication when .login file has pincode column.
