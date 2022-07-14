@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build753, monthly202207, stable, latest
+* build754, monthly202207, stable, latest
+    * try: webchat: catch runtime exception while interval broadcast.
+* build753
     * update: libraries
 * build751
     * update: vue3.2.37
