@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build755, monthly202207, stable, latest
+* build756, monthly202207, stable, latest
+    * add: webchat: add modal component for image. when click padding area, close modal window.
+* build755
     * fix: redirect: fix when extract web app in ROOT
 * build754
     * try: webchat: catch runtime exception while interval broadcast.
