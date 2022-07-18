@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build754, monthly202207, stable, latest
+* build755, monthly202207, stable, latest
+    * fix: redirect: fix when extract web app in ROOT
+* build754
     * try: webchat: catch runtime exception while interval broadcast.
 * build753
     * update: libraries
