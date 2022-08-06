@@ -46,7 +46,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build756, monthly202207, stable, latest
+* build757, monthly202208, stable, latest
+    * try: webchat: add top and bottom fixed message.
+    * fix: webchat: correct infinite scroll API requesting flag Enter/Leave.
+* build756, monthly202207
     * add: webchat: add modal component for image. when click padding area, close modal window.
 * build755
     * fix: redirect: fix when extract web app in ROOT
