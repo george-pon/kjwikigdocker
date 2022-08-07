@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build757, monthly202208, stable, latest
+* build758, monthly202208, stable, latest
+    * try: webchat: remove image size auto.
+* build757
     * try: webchat: add top and bottom fixed message.
     * fix: webchat: correct infinite scroll API requesting flag Enter/Leave.
 * build756, monthly202207
