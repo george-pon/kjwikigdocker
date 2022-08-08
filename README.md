@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build758, monthly202208, stable, latest
+* build759, monthly202208, stable, latest
+    * try: pictbbs: remove image size auto fit.
+* build758
     * try: webchat: remove image size auto.
 * build757
     * try: webchat: add top and bottom fixed message.
