@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build760, monthly202208, stable, latest
+* build761, monthly202208, stable, latest
+    * try: Login: clear session info when login part 2.
+* build760
     * try: Login: clear session info when login.
 * build759
     * try: pictbbs: remove image size auto fit.
