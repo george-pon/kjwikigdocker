@@ -46,7 +46,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build761, monthly202208, stable, latest
+* build764, monthly202208, stable, latest
+    * add: webchat: add beep play button.
+    * fix: wiki display: get username from session info.
+* build761
     * try: Login: clear session info when login part 2.
 * build760
     * try: Login: clear session info when login.
