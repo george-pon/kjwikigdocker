@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build764, monthly202208, stable, latest
+* build766, monthly202208, stable, latest
+    * add: webhcat, pictbbs: render [[url describe]] mark up.
+* build764
     * add: webchat: add beep play button.
     * fix: wiki display: get username from session info.
 * build761
