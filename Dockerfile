@@ -3,7 +3,7 @@ FROM georgesan/debiantomcat:debian11-adoptiumopenjdk18-tomcat10
 ENV KJWIKIGDOCKER_VERSION build-target
 ENV KJWIKIGDOCKER_VERSION latest
 ENV KJWIKIGDOCKER_VERSION stable
-ENV KJWIKIGDOCKER_VERSION build766
+ENV KJWIKIGDOCKER_VERSION build767
 ENV KJWIKIGDOCKER_IMAGE georgesan/kjwikigdocker
 
 USER root

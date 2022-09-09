@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build766, monthly202208, stable, latest
+* build767, monthly202209, stable, latest
+    * add: markdown: in paragraph , To create a line break (<br>), end a line with two or more spaces.
+* build766, monthly202208
     * add: webhcat, pictbbs: render [[url describe]] mark up.
 * build764
     * add: webchat: add beep play button.
