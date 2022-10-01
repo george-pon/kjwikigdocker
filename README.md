@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build770, monthly202210, stable, latest
+* build771, monthly202210, stable, latest
+    * fix: update javafetch.jar library
+* build770, monthly202210
     * fix: try to unregister executor at WebListener.
 * build767, monthly202209
     * add: markdown: in paragraph , To create a line break (<br>), end a line with two or more spaces.
