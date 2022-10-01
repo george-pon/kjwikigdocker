@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build767, monthly202209, stable, latest
+* build770, monthly202210, stable, latest
+    * fix: try to unregister executor at WebListener.
+* build767, monthly202209
     * add: markdown: in paragraph , To create a line break (<br>), end a line with two or more spaces.
 * build766, monthly202208
     * add: webhcat, pictbbs: render [[url describe]] mark up.
