@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build771, monthly202210, stable, latest
+* build772, monthly202210, stable, latest
+    * fix: change wiki key serialized code.
+* build771
     * fix: update javafetch.jar library
 * build770, monthly202210
     * fix: try to unregister executor at WebListener.
