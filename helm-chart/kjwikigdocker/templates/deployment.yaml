@@ -109,10 +109,28 @@ spec:
       nodeSelector:
 {{ toYaml . | indent 8 }}
     {{- end }}
+
     {{- with .Values.affinity }}
       affinity:
 {{ toYaml . | indent 8 }}
     {{- end }}
+
+    {{- if .Values.podAntiAffinityEnabled }}
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                  - {{ template "kjwikigdocker.fullname" . }}
+              topologyKey: kubernetes.io/hostname
+
+    {{- end }}
+
     {{- with .Values.tolerations }}
       tolerations:
 {{ toYaml . | indent 8 }}

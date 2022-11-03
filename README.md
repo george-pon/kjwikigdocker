@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build772, monthly202210, stable, latest
+* build773, monthly202211, stable, latest
+    * add: webchat: show image post error message.
+* build772, monthly202210
     * fix: change wiki key serialized code.
 * build771
     * fix: update javafetch.jar library

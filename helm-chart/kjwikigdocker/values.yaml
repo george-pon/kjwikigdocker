@@ -100,4 +100,8 @@ nodeSelector: {}
 
 tolerations: []
 
-affinity: {}
+# affinity setting manually
+# affinity: {}
+
+# use pod anti affinity
+podAntiAffinityEnabled: true
