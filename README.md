@@ -46,8 +46,11 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build773, monthly202211, stable, latest
+* build774, monthly202211, stable, latest
+    * mod: for Tomcat 10.1 Servlet API 6.0 WebSocket API 2.1 Java 11 later.
+* build773
     * add: webchat: show image post error message.
+    * info: tomcat 10.0 Java 8 final version
 * build772, monthly202210
     * fix: change wiki key serialized code.
 * build771
