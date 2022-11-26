@@ -46,7 +46,11 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build774, monthly202211, stable, latest
+* build776, monthly202211, stable, latest
+    * fix: correct inFirstView flag.
+    * mod: webchat: use throttle when onScroll.
+    * fix: correct lastCmd flag.
+* build774
     * mod: for Tomcat 10.1 Servlet API 6.0 WebSocket API 2.1 Java 11 later.
 * build773
     * add: webchat: show image post error message.
