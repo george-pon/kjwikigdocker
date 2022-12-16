@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build777, monthly202211, stable, latest
+* build778, monthly202212, stable, latest
+    * add: webhcat: jump to message.
+* build777, monthly202211
     * mod: webchat: first view message count is set to 28.
 * build776
     * fix: correct inFirstView flag.
