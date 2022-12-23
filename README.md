@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build778, monthly202212, stable, latest
+* build779, monthly202212, stable, latest
+    * add: cookie: add pixel size 720, 1920.
+* build778
     * add: webhcat: jump to message.
 * build777, monthly202211
     * mod: webchat: first view message count is set to 28.
