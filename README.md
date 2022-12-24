@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build779, monthly202212, stable, latest
+* build780, monthly202212, stable, latest
+    * add: webchat: automatic image size change from window size.
+* build779
     * add: cookie: add pixel size 720, 1920.
 * build778
     * add: webhcat: jump to message.
