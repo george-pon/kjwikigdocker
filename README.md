@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build781, monthly202212, stable, latest
+* build783, monthly202212, stable, latest
+    * add: upload plugin: add template select form.
+* build781
     * add: recent_wiki_access plugin.
 * build780
     * add: webchat: automatic image size change from window size.
