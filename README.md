@@ -46,7 +46,11 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build783, monthly202212, stable, latest
+* build784, monthly202212, stable, latest
+    * mod: edit new wiki page: add template select form.
+    * add: to register template for edit new wiki page, create wiki page named "TemplateWikiPagexxx"
+    * add: to register snipet for upload form, create wiki page named "TemplateSnipetxxxx"
+* build783
     * add: upload plugin: add template select form.
 * build781
     * add: recent_wiki_access plugin.
