@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build788, monthly202212, stable, latest
+* build789, monthly202301, stable, latest
+    * add: markdown: support header pattern # 1. title , then title with auto generated chapter number.
+* build788, monthly202212
     * add: editsub: add template select form.
 * build787
     * add: recent_wiki_update plugin.
