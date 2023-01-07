@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build789, monthly202301, stable, latest
+* build790, monthly202301, stable, latest
+    * fix: webchat: ignore data.messages is null
+* build789
     * add: markdown: support header pattern # 1. title , then title with auto generated chapter number.
 * build788, monthly202212
     * add: editsub: add template select form.
