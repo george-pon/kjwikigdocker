@@ -46,7 +46,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build790, monthly202301, stable, latest
+* build791, monthly202301, stable, latest
+    * add: cookie: add pixel size 480.
+    * fix: webchat: copy window_image_size session info to correct image size in webchat.
+* build790
     * fix: webchat: ignore data.messages is null
 * build789
     * add: markdown: support header pattern # 1. title , then title with auto generated chapter number.
