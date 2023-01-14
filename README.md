@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build791, monthly202301, stable, latest
+* build792, monthly202301, stable, latest
+    * add: webchat: copy window_image_size session info when api recieve.
+* build791
     * add: cookie: add pixel size 480.
     * fix: webchat: copy window_image_size session info to correct image size in webchat.
 * build790
