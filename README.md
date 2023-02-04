@@ -46,6 +46,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build793, monthly202302, stable, latest
+    * add: webchat: add new message button.
 * build792, monthly202301, stable, latest
     * add: webchat: copy window_image_size session info when api recieve.
 * build791
