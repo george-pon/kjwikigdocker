@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build794, monthly202302, stable, latest
+* build795, monthly202302, stable, latest
+    * update: vue 3.2.47
+* build794
     * modify: webchat: use vue component at textarea.
 * build793
     * add: webchat: add new message button.
