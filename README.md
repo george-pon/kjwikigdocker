@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build796, monthly202303, stable, latest
+* build798, monthly202303, stable, latest
+    * fix: update tag cache file.
+* build796
     * add: template: abstract section.
     * webui-run.ps1 script for git clone and run.
 * build795, monthly202302
