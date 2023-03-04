@@ -46,7 +46,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build795, monthly202302, stable, latest
+* build796, monthly202303, stable, latest
+    * add: template: abstract section.
+    * webui-run.ps1 script for git clone and run.
+* build795, monthly202302
     * update: vue 3.2.47
 * build794
     * modify: webchat: use vue component at textarea.
