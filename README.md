@@ -46,7 +46,11 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build798, monthly202303, stable, latest
+* build800, monthly202303, stable, latest
+    * mod: plugin recent, recent_wiki_access, recent_wiki_update, nearname, recent_pictbbs, filesizesort: prefix is relative name
+* build799
+    * add: hiki: recent_wiki_update, recent_wiki_access plugin: add 2nd arg prefix of wiki word.
+* build798
     * fix: update tag cache file.
 * build796
     * add: template: abstract section.
