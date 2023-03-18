@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build800, monthly202303, stable, latest
+* build801, monthly202303, stable, latest
+    * add: editsub snipet markdown table.
+* build800
     * mod: plugin recent, recent_wiki_access, recent_wiki_update, nearname, recent_pictbbs, filesizesort: prefix is relative name
 * build799
     * add: hiki: recent_wiki_update, recent_wiki_access plugin: add 2nd arg prefix of wiki word.
