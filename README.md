@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build801, monthly202303, stable, latest
+* build802, monthly202303, stable, latest
+    * add: markdown wiki file (.md) is now readable and writable.
+* build801
     * add: editsub snipet markdown table.
 * build800
     * mod: plugin recent, recent_wiki_access, recent_wiki_update, nearname, recent_pictbbs, filesizesort: prefix is relative name
