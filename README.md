@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build802, monthly202303, stable, latest
+* build803, monthly202303, stable, latest
+    * add: markdown wiki file (.md) is now available. automatically add @wikiformatter=markdown at first line.
+* build802
     * add: markdown wiki file (.md) is now readable and writable.
 * build801
     * add: editsub snipet markdown table.
