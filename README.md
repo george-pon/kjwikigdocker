@@ -46,6 +46,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build804, monthly202303, stable, latest
+    * fix: webchat: gps button is now available.
 * build803, monthly202303, stable, latest
     * add: markdown wiki file (.md) is now available. automatically add @wikiformatter=markdown at first line.
 * build802
