@@ -101,7 +101,5 @@ popd
 echo ""
 echo "Note"
 echo ""
-echo "1. add 'xxx.xxx.xxx.xxx  host.docker.internal' to /etc/hosts (when docker desktop for windows)"
-echo "2. add 'host.docker.internal' to browser proxy exclude"
-echo "3. access https://host.docker.internal/kjwikigdocker/"
+echo "1. access https://localhost/kjwikigdocker/"
 echo ""
