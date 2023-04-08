@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build805, monthly202304, stable, latest
+* build806, monthly202304, stable, latest
+    * add: plugin filesizesort: add file delete checkbox and file delete function.
+* build805
     * fix: markdown / usemodwiki: todolist level mode: after edit , jump to parent item.
 * build804, monthly202303
     * fix: webchat: gps button is now available.

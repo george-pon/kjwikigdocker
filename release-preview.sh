@@ -73,6 +73,8 @@ else
 fi
 
 # test run via helm
+# ingress.hosts host.docker.internal ... docker desktop for windows before v4.18.0
+# ingress.hosts localhost ...  docker desktop for windows v4.18.0
 pushd helm-chart
     # check if kjwikigdocker is present.
     if helm list | grep kjwikigdocker ; then
@@ -81,7 +83,7 @@ pushd helm-chart
             --set image.repository=$IMAGE_NAME \
             --set image.tag=$IMAGE_BUILD_TAG \
             --set image.pullPolicy=IfNotPresent \
-            --set ingress.hosts="{host.docker.internal}" \
+            --set ingress.hosts="{localhost}" \
             --set replicaCount=1
     else
         # use local image name
@@ -89,7 +91,7 @@ pushd helm-chart
             --set image.repository=$IMAGE_NAME \
             --set image.tag=$IMAGE_BUILD_TAG \
             --set image.pullPolicy=IfNotPresent  \
-            --set ingress.hosts="{host.docker.internal}" \
+            --set ingress.hosts="{localhost}" \
             --set replicaCount=1
     fi
     # wait for deploy
