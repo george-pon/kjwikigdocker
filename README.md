@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build807, monthly202304, stable, latest
+* build808, monthly202304, stable, latest
+    * fix: upload servlet: stop re-encoding iso8859 to utf8.
+* build807
     * fix: plugin filesizesort: fix error when no attr file delete.
 * build806
     * add: plugin filesizesort: add file delete checkbox and file delete function.

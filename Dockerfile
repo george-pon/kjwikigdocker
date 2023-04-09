@@ -3,7 +3,7 @@ FROM georgesan/debiantomcat:debian11-temurinopenjdk20-tomcat10.1
 ENV KJWIKIGDOCKER_VERSION build-target
 ENV KJWIKIGDOCKER_VERSION latest
 ENV KJWIKIGDOCKER_VERSION stable
-ENV KJWIKIGDOCKER_VERSION build807
+ENV KJWIKIGDOCKER_VERSION build808
 ENV KJWIKIGDOCKER_IMAGE georgesan/kjwikigdocker
 
 USER root
