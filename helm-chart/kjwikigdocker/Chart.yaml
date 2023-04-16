@@ -1,7 +1,7 @@
 apiVersion: v1
-appVersion: "0.0.808"
+appVersion: "0.0.809"
 description: "wiki on Tomcat 10 , data files stores into PVC"
 name: kjwikigdocker
-version: "0.0.808"
+version: "0.0.809"
 keywords:
 - wiki
