@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build809, monthly202304, stable, latest
+* build810, monthly202304, stable, latest
+    * mod: add a.button.active css.
+* build809
     * mod: add button.active css.
 * build808
     * fix: upload servlet: stop re-encoding iso8859 to utf8.
