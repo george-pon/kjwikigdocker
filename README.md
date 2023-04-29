@@ -46,6 +46,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build811, monthly202304, stable, latest
+    * add: webchat: add delete button.
 * build810, monthly202304, stable, latest
     * mod: add a.button.active css.
 * build809
