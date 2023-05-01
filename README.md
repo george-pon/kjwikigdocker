@@ -46,7 +46,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build811, monthly202304, stable, latest
+* build812, monthly202305, stable, latest
+    * mod: webchat: when create/edit/delete post web socket update uses async method.
+    * mod: webchat/pictbbs: gpslink plugin allows minus z axis.
+* build811, monthly202304
     * add: webchat: add delete button.
 * build810, monthly202304, stable, latest
     * mod: add a.button.active css.
