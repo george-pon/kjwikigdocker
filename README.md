@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build813, monthly202306, stable, latest
+* build814, monthly202306, stable, latest
+    * add: all HTML convert: copy wiki config file into html output folder.
+* build813
     * update: vue 3.3.4
 * build812, monthly202305
     * mod: webchat: when create/edit/delete post web socket update uses async method.
