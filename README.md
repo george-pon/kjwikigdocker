@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build812, monthly202305, stable, latest
+* build813, monthly202306, stable, latest
+    * update: vue 3.3.4
+* build812, monthly202305
     * mod: webchat: when create/edit/delete post web socket update uses async method.
     * mod: webchat/pictbbs: gpslink plugin allows minus z axis.
 * build811, monthly202304
