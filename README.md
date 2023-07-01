@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build814, monthly202306, stable, latest
+* build815, monthly202307, stable, latest
+    * build for JDK-17 (changed from JDK-11)
+* build814, monthly202306
     * add: all HTML convert: copy wiki config file into html output folder.
 * build813
     * update: vue 3.3.4
