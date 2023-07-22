@@ -46,7 +46,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build815, monthly202307, stable, latest
+* build816, monthly202307, stable, latest
+    * mod: encode space to %20 when fetch article
+* build815
     * build for JDK-17 (changed from JDK-11)
 * build814, monthly202306
     * add: all HTML convert: copy wiki config file into html output folder.
