@@ -46,7 +46,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build816, monthly202307, stable, latest
+* build817, monthly202307, stable, latest
+    * mod: webchat: add uploadable file type video/mp4.
+    * mod: video tag: add autoplay muted attribute.
+* build816
     * mod: encode space to %20 when fetch article
 * build815
     * build for JDK-17 (changed from JDK-11)
