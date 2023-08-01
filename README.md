@@ -19,7 +19,8 @@ docker run -d -p 8080:8080 georgesan/kjwikigdocker:stable
 ```
 
 * KJWikiG's wiki data stored in volume, so if you want to save wiki data, run below
-* before docker run, you must set volume owner to uid:998 ( chown -R 998:998 /var/lib/kjwikigdocker )
+* for debian:11 before docker run, you must set volume owner to uid:998 ( chown -R 998:998 /var/lib/kjwikigdocker )
+* for debian:12 before docker run, you must set volume owner to uid:995 ( chown -R 995:995 /var/lib/kjwikigdocker )
 ```
 docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker georgesan/kjwikigdocker:stable
 ```
@@ -46,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build817, monthly202307, stable, latest
+* build818, monthly202308, stable, latest
+    * nop: monthly release.
+* build817, monthly202307
     * mod: webchat: add uploadable file type video/mp4.
     * mod: video tag: add autoplay muted attribute.
 * build816
