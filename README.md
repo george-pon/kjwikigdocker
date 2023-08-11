@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build818, monthly202308, stable, latest
+* build819, monthly202308, stable, latest
+    * mod: webchat: short message length is set to 560 chars(half width), 140 chars(full width).
+* build818
     * nop: monthly release.
 * build817, monthly202307
     * mod: webchat: add uploadable file type video/mp4.
