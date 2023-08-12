@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build819, monthly202308, stable, latest
+* build820, monthly202308, stable, latest
+    * mod: markdown format: allow multiple white space between number list period and check box bracket.
+* build819
     * mod: webchat: short message length is set to 560 chars(half width), 140 chars(full width).
 * build818
     * nop: monthly release.
