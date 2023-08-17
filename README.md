@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build820, monthly202308, stable, latest
+* build821, monthly202308, stable, latest
+    * fix: webchat: when GPS button error, insert error message into text area.
+* build820
     * mod: markdown format: allow multiple white space between number list period and check box bracket.
 * build819
     * mod: webchat: short message length is set to 560 chars(half width), 140 chars(full width).
