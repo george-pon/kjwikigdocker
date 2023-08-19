@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build821, monthly202308, stable, latest
+* build822, monthly202308, stable, latest
+    * mod: markdown: todolist: when add message and edit check mark , add space to 4 indents
+* build821
     * fix: webchat: when GPS button error, insert error message into text area.
 * build820
     * mod: markdown format: allow multiple white space between number list period and check box bracket.
