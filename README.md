@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build822, monthly202308, stable, latest
+* build823, monthly202309, stable, latest
+    * add: usemodwiki / markdown: to do list: add up / down button.
+* build822, monthly202308
     * mod: markdown: todolist: when add message and edit check mark , add space to 4 indents
 * build821
     * fix: webchat: when GPS button error, insert error message into text area.
