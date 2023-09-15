@@ -47,7 +47,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build823, monthly202309, stable, latest
+* build824, monthly202309, stable, latest
+    * add: to do list: sub edit: set formatter kind.
+    * fix: pre are edit works.
+* build823
     * add: usemodwiki / markdown: to do list: add up / down button.
 * build822, monthly202308
     * mod: markdown: todolist: when add message and edit check mark , add space to 4 indents
