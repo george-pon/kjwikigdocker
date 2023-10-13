@@ -47,7 +47,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build824, monthly202309, stable, latest
+* build825, monthly202310, stable, latest
+    * mod: webchat: GPS button: modify 3rd param.
+    * mod: use Temurin OpenJDK 21
+* build824, monthly202309
     * add: to do list: sub edit: set formatter kind.
     * fix: pre are edit works.
 * build823
