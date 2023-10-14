@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build825, monthly202310, stable, latest
+* build826, monthly202310, stable, latest
+    * add: to do list: add created_date , due_date, state field for record.
+* build825
     * mod: webchat: GPS button: modify 3rd param.
     * mod: use Temurin OpenJDK 21
 * build824, monthly202309
