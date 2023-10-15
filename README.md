@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build826, monthly202310, stable, latest
+* build827, monthly202310, stable, latest
+    * add: to do list: when check off , date is set from due_date.
+* build826
     * add: to do list: add created_date , due_date, state field for record.
 * build825
     * mod: webchat: GPS button: modify 3rd param.
