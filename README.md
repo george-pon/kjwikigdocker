@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build829, monthly202310, stable, latest
+    * mod: webchat: modify scroll control.
 * build828, monthly202310, stable, latest
     * mod: webchat: modify scroll control.
 * build827
