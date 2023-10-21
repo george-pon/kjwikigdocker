@@ -47,9 +47,11 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build829, monthly202310, stable, latest
+* build830, monthly202310, stable, latest
     * mod: webchat: modify scroll control.
-* build828, monthly202310, stable, latest
+* build829
+    * mod: webchat: modify scroll control.
+* build828
     * mod: webchat: modify scroll control.
 * build827
     * add: to do list: when check off , date is set from due_date.
