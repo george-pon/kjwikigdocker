@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build832, monthly202310, stable, latest
+* build833, monthly202310, stable, latest
+    * mod: update json.org library
+* build832
     * mod: webchat: modify scroll control. check scroll when debounce call.
 * build831
     * mod: webchat: modify scroll control.
