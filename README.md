@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build833, monthly202310, stable, latest
+* build834, monthly202311, stable, latest
+    * mod: add placeholder to form pincode field.
+* build833, monthly202310
     * mod: update json.org library
 * build832
     * mod: webchat: modify scroll control. check scroll when debounce call.
@@ -383,14 +385,14 @@ kubectl rollout status deploy/kjwikigdocker
     * Modify: userAdd: when user add , user name conflict check with ignoreCaseEqual. (because in Windows File System, File name distinguished by ignoreCase.)
     * Modify: property isAllowAutomaticSignUp set by SetAllowAutomaticSignUp / SetDenyAutomaticSignUp / true / false.
     * Add: wiki tag cache to file. directory /var/lib/kjwikigdocker/wcd/
-    * imcopatible change: attribute file of attached file (xxx.atr) is changed. old version format can not read. 
+    * imcopatible change: attribute file of attached file (xxx.atr) is changed. old version format can not read.
     * Fix: when normal digest search ( it means not tag digest search ) , do not save tag cache data.
 * build642, monthly202012
     * update npm environment at 2020/12/31.
 * build641, monthly202012, stable, latest
     * fix recent_pictbbs plugin: WebChat -> Web Chat to avoid Wiki Name Link.
 * build640
-    * hiki/usemodwiki/markdown: add recent_pictbbs plugin: add /l5 to pictbbs link 
+    * hiki/usemodwiki/markdown: add recent_pictbbs plugin: add /l5 to pictbbs link
 * build639
     * pictbbs, upload plugin : DELKEY input form: add autocomplete=off
     * hiki/usemodwiki/markdown: add recent_pictbbs plugin
