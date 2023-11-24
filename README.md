@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build834, monthly202311, stable, latest
+* build835, monthly202311, stable, latest
+    * mod: add autocomplete attribute to login form / pincode form.
+* build834
     * mod: add placeholder to form pincode field.
 * build833, monthly202310
     * mod: update json.org library
