@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build835, monthly202311, stable, latest
+* build836, monthly202312, stable, latest
+    * mod: webchat.jsp: add altanative html when vue.js is not work.
+* build835, monthly202311
     * mod: add autocomplete attribute to login form / pincode form.
 * build834
     * mod: add placeholder to form pincode field.
