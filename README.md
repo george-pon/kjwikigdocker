@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build837, monthly202312, stable, latest
+* build838, monthly202312, stable, latest
+    * fix: webchat: add title string into message area to display title string when not blank string.
+* build837
     * mod: webchat: add title string into message area to display title string.
 * build836
     * mod: webchat.jsp: add altanative html when vue.js is not work.
