@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build838, monthly202312, stable, latest
+* build842, monthly202312, stable, latest
+    * mod: change javascript build system from webpack to vite.
+* build838
     * fix: webchat: add title string into message area to display title string when not blank string.
 * build837
     * mod: webchat: add title string into message area to display title string.
