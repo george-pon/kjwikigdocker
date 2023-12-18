@@ -47,7 +47,11 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build843, monthly202312, stable, latest
+* build845, monthly202312, stable, latest
+    * fix: webchat: set alternative display area to display none in script type text/javascript area.
+* build844
+    * mod: webchat: set alternative display area to display none in script type text/javascript area.
+* build843
     * fix: webchat: javascript function call in ES6 module.
 * build842
     * mod: change javascript build system from webpack to vite.
