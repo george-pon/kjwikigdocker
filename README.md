@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build845, monthly202312, stable, latest
+* build846, monthly202401, stable, latest
+    * del: jsp: remove process time display for web cache.
+* build845, monthly202312
     * fix: webchat: set alternative display area to display none in script type text/javascript area.
 * build844
     * mod: webchat: set alternative display area to display none in script type text/javascript area.
