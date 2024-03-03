@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build847, monthly202403, stable, latest
+    * mod: ts: remove import window from main.ts
 * build846, monthly202401, stable, latest
     * del: jsp: remove process time display for web cache.
 * build845, monthly202312
