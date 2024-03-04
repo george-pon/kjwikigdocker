@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build848, monthly202403, stable, latest
+    * mod: ts: update vue 3.4.21
 * build847, monthly202403, stable, latest
     * mod: ts: remove import window from main.ts
 * build846, monthly202401, stable, latest
