@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build849, monthly202403, stable, latest
+    * mod: webchat: modify scroll get next condition.
 * build848, monthly202403, stable, latest
     * mod: ts: update vue 3.4.21
 * build847, monthly202403, stable, latest
