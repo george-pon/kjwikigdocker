@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build851, monthly202403, stable, latest
+    * fix: css: add sticky top button color css.
 * build850, monthly202403, stable, latest
     * mod: webchat: send system message interval change from 5 to 10 seconds.
     * add: webchat: add sticky top button.
