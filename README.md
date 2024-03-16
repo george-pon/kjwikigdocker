@@ -47,6 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build850, monthly202403, stable, latest
+    * mod: webchat: send system message interval change from 5 to 10 seconds.
+    * add: webchat: add sticky top button.
 * build849, monthly202403, stable, latest
     * mod: webchat: modify scroll get next condition.
 * build848, monthly202403, stable, latest
