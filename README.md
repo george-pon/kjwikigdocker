@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build852, monthly202403, stable, latest
+    * add: webchat2: prepair for tweet deck type inner scroll area.
 * build851, monthly202403, stable, latest
     * fix: css: add sticky top button color css.
 * build850, monthly202403, stable, latest
