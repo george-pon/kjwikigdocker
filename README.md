@@ -47,20 +47,22 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build852, monthly202403, stable, latest
+* build853, monthly202403, stable, latest
+    * fix: css: add webchat top button color css.
+* build852
     * add: webchat2: prepair for tweet deck type inner scroll area.
-* build851, monthly202403, stable, latest
+* build851
     * fix: css: add sticky top button color css.
-* build850, monthly202403, stable, latest
+* build850
     * mod: webchat: send system message interval change from 5 to 10 seconds.
     * add: webchat: add sticky top button.
-* build849, monthly202403, stable, latest
+* build849
     * mod: webchat: modify scroll get next condition.
-* build848, monthly202403, stable, latest
+* build848
     * mod: ts: update vue 3.4.21
-* build847, monthly202403, stable, latest
+* build847
     * mod: ts: remove import window from main.ts
-* build846, monthly202401, stable, latest
+* build846, monthly202401
     * del: jsp: remove process time display for web cache.
 * build845, monthly202312
     * fix: webchat: set alternative display area to display none in script type text/javascript area.
