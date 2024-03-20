@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build856, monthly202403, stable, latest
+    * add: webchat: webchat2link plugin.
 * build855, monthly202403, stable, latest
     * try: webchat: set interval timer to call first api fetch messages.
 * build854, monthly202403, stable, latest
