@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build854, monthly202403, stable, latest
+    * fix: webchat: remove no javascript alternative area because a few image files downloaded before javascript file.
 * build853, monthly202403, stable, latest
     * fix: css: add webchat top button color css.
 * build852
