@@ -47,6 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build857, monthly202403, stable, latest
+    * add: todolist: add pomodoro attribute.
+    * mod: todolist: duplicate / edit lines is normalized.
 * build856, monthly202403, stable, latest
     * add: webchat: webchat2link plugin.
 * build855, monthly202403, stable, latest
