@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build859, monthly202404, stable, latest
+    * add: monthly_calendar plugin.
 * build857, monthly202403, stable, latest
     * add: todolist: add pomodoro attribute.
     * mod: todolist: duplicate / edit lines is normalized.
