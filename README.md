@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build860, monthly202404, stable, latest
+    * mod: monthly_calendar plugin. add before day and after day.
 * build859, monthly202404, stable, latest
     * add: monthly_calendar plugin.
 * build857, monthly202403, stable, latest
