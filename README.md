@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build867, monthly202404, stable, latest
+    * fix: cache file list entry name is checked strictly match in dataStorePath.
 * build860, monthly202404, stable, latest
     * mod: monthly_calendar plugin. add before day and after day.
 * build859, monthly202404, stable, latest
