@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build868, monthly202405, stable, latest
+    * mod: Vue 3.4.26
 * build867, monthly202404, stable, latest
     * fix: cache file list entry name is checked strictly match in dataStorePath.
 * build860, monthly202404, stable, latest
