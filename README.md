@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build869, monthly202405, stable, latest
+    * upload plugin rewrite by Vue 3 composition API
 * build868, monthly202405, stable, latest
     * mod: Vue 3.4.26
 * build867, monthly202404, stable, latest
