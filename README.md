@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build871, monthly202406, stable, latest
+    * mod: webchat, webchat2: convert to Vue 3 composition API.
 * build870, monthly202405, stable, latest
     * webchat2: prepair for multi scroll area like tweet deck. width is 320px.
 * build869, monthly202405, stable, latest
