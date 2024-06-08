@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build872, monthly202406, stable, latest
+    * add: webchat2link plugin: enables displaying multiple webchat bbs in one page , like tweetdeck.
 * build871, monthly202406, stable, latest
     * mod: webchat, webchat2: convert to Vue 3 composition API.
 * build870, monthly202405, stable, latest
