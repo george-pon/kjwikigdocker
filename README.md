@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build873, monthly202406, stable, latest
+    * fix: webchat2: fix tag search link.
 * build872, monthly202406, stable, latest
     * add: webchat2link plugin: enables displaying multiple webchat bbs in one page , like tweetdeck.
 * build871, monthly202406, stable, latest
