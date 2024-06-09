@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build874, monthly202406, stable, latest
+    * mod: webchat2: web chat 2 width is set to 360px.
 * build873, monthly202406, stable, latest
     * fix: webchat2: fix tag search link.
 * build872, monthly202406, stable, latest
