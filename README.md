@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build875, monthly202406, stable, latest
+    * mod: webchat2: header area z-index: 0.
 * build874, monthly202406, stable, latest
     * mod: webchat2: web chat 2 width is set to 360px.
 * build873, monthly202406, stable, latest
