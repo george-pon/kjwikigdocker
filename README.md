@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build880, monthly202406, stable, latest
+    * mod: webchat2: modify css.
 * build879, monthly202406, stable, latest
     * mod: webchat2: modify css.
 * build878, monthly202406, stable, latest
