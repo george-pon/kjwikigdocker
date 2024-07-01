@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build882, monthly202407, stable, latest
+    * fix: formatter: null pointer exception in todolist.
 * build881, monthly202406, stable, latest
     * mod: webchat2: modify css.
 * build880, monthly202406, stable, latest
