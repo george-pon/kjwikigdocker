@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build883, monthly202407, stable, latest
+    * add: todo list: <todolist(before|after)> is implemented.
 * build882, monthly202407, stable, latest
     * fix: formatter: null pointer exception in todolist.
 * build881, monthly202406, stable, latest
