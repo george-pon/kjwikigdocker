@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build884, monthly202407, stable, latest
+    * fix: todo list: <todolist(before|after)> : when before/after is not set, default is before.
 * build883, monthly202407, stable, latest
     * add: todo list: <todolist(before|after)> is implemented.
 * build882, monthly202407, stable, latest
