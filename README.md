@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build885, monthly202407, stable, latest
+    * fix: todo list: when edit to do list , without check mark in line, null pointer exception.
 * build884, monthly202407, stable, latest
     * fix: todo list: <todolist(before|after)> : when before/after is not set, default is before.
 * build883, monthly202407, stable, latest
