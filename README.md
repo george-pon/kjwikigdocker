@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build887, monthly202407, stable, latest
+    * add: web chat bbs / web chat 2 bbs: add random display mode. URL is WebChatBbs/L20.
 * build886, monthly202407, stable, latest
     * add: pict bbs: add random display mode. URL is PictBbs/L20.
 * build885, monthly202407, stable, latest
