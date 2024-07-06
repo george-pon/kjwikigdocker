@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build886, monthly202407, stable, latest
+    * add: pict bbs: add random display mode. URL is PictBbs/L20.
 * build885, monthly202407, stable, latest
     * fix: todo list: when edit to do list , without check mark in line, null pointer exception.
 * build884, monthly202407, stable, latest
