@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build888, monthly202407, stable, latest
+    * add: randomlink(wiki-name-prefix,15) plugin. generates random link to wiki topic.
 * build887, monthly202407, stable, latest
     * add: web chat bbs / web chat 2 bbs: add random display mode. URL is WebChatBbs/L20.
 * build886, monthly202407, stable, latest
