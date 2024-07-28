@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build889, monthly202407, stable, latest
+    * mod: pictbbs: uploadfileref img src class is set to autoimagesize.
 * build888, monthly202407, stable, latest
     * add: randomlink(wiki-name-prefix,15) plugin. generates random link to wiki topic.
 * build887, monthly202407, stable, latest
