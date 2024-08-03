@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build890, monthly202408, stable, latest
+    * add: template: add simple markdown wiki page template.
 * build889, monthly202407, stable, latest
     * mod: pictbbs: uploadfileref img src class is set to autoimagesize.
 * build888, monthly202407, stable, latest
