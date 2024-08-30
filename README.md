@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build891, monthly202408, stable, latest
+    * mod: template: modify wiki template page.
 * build890, monthly202408, stable, latest
     * add: template: add simple markdown wiki page template.
 * build889, monthly202407, stable, latest
