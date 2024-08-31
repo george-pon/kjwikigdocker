@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build892, monthly202408, stable, latest
+    * mod: web.xml: session config: add cookie secure into session config.
 * build891, monthly202408, stable, latest
     * mod: template: modify wiki template page.
 * build890, monthly202408, stable, latest
