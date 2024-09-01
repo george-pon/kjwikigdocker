@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build893, monthly202409, stable, latest
+    * rev: web.xml: session config: remove cookie secure in session config.
 * build892, monthly202408, stable, latest
     * mod: web.xml: session config: add cookie secure into session config.
 * build891, monthly202408, stable, latest
