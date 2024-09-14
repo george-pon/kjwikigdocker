@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build895, monthly202409, stable, latest
+    * mod: webchat: image size is set 228px when no session info.
 * build893, monthly202409, stable, latest
     * rev: web.xml: session config: remove cookie secure in session config.
 * build892, monthly202408, stable, latest
