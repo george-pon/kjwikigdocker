@@ -47,6 +47,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build897, monthly202409, stable, latest
+    * mod: update axos, vue.
+* build896, monthly202409, stable, latest
+    * add: usemodwiki / markdown : pre calendar : add Japanese holiday calc.
 * build895, monthly202409, stable, latest
     * mod: webchat: image size is set 228px when no session info.
 * build893, monthly202409, stable, latest
