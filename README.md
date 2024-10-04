@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build898, monthly202410, stable, latest
+    * mod: webchat2: modify css for android web browser.
 * build897, monthly202409, stable, latest
     * mod: update axos, vue.
 * build896, monthly202409, stable, latest
