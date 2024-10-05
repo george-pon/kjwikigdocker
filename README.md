@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build899, monthly202410, stable, latest
+    * mod: webchat2: modify viewport for android web browser.
 * build898, monthly202410, stable, latest
     * mod: webchat2: modify css for android web browser.
 * build897, monthly202409, stable, latest
