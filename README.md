@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build900, monthly202411, stable, latest
+    * mod: update Vue 3.5.13
 * build899, monthly202410, stable, latest
     * mod: webchat2: modify viewport for android web browser.
 * build898, monthly202410, stable, latest
