@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build902, monthly202411, stable, latest
+    * mod: stop cache file read when initialize. read directory directly.
 * build900, monthly202411, stable, latest
     * mod: update Vue 3.5.13
 * build899, monthly202410, stable, latest
