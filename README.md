@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build904, monthly202412, stable, latest
+    * add: tag cache add for raw html file.
 * build902, monthly202411, stable, latest
     * mod: stop cache file read when initialize. read directory directly.
 * build900, monthly202411, stable, latest
