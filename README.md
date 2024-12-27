@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build905, monthly202412, stable, latest
+    * mod: calendar: set color today.
 * build904, monthly202412, stable, latest
     * add: tag cache add for raw html file.
 * build902, monthly202411, stable, latest
