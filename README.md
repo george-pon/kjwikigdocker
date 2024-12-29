@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build906, monthly202412, stable, latest
+    * add: add to do list calendar plugin {{todolist_calendar()}}.
 * build905, monthly202412, stable, latest
     * mod: calendar: set color today.
 * build904, monthly202412, stable, latest
