@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build914, monthly202501, stable, latest
+    * fix: jsp property access close tag.
 * build913, monthly202412, stable, latest
     * fix: do not check second session ID when digest search link.
     * fix: do not check second session ID when search link.
