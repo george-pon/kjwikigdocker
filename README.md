@@ -47,6 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build913, monthly202412, stable, latest
+    * fix: do not check second session ID when digest search link.
+    * fix: do not check second session ID when search link.
 * build911, monthly202412, stable, latest
     * fix: when web chat message edit, attached image file is not displaied.
 * build910, monthly202412, stable, latest
