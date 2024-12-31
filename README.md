@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build909, monthly202412, stable, latest
+    * add: add second session ID (generated at login) to form and check it form action season 2.
 * build907, monthly202412, stable, latest
     * mod: modify to do list calendar plugin.
 * build906, monthly202412, stable, latest
