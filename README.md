@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build911, monthly202412, stable, latest
+    * fix: when web chat message edit, attached image file is not displaied.
 * build910, monthly202412, stable, latest
     * add: add second session ID (generated at login) to form and check it form action season 3.
 * build909, monthly202412, stable, latest
