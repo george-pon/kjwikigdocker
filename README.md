@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build915, monthly202501, stable, latest
+    * mod: .jsp and .html format by eclipse.
 * build914, monthly202501, stable, latest
     * fix: jsp property access close tag.
 * build913, monthly202412, stable, latest
