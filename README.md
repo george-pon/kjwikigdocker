@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build916, monthly202501, stable, latest
+    * add: add default sub directory name to search.jsp and digest.jsp.
 * build915, monthly202501, stable, latest
     * mod: .jsp and .html format by eclipse.
 * build914, monthly202501, stable, latest
