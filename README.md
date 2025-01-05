@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build919, monthly202501, stable, latest
+    * fix: pomodoro timer sound flag.
 * build917, monthly202501, stable, latest
     * add: pomodoro_timer plugin to display simple timer vue3 app.
 * build916, monthly202501, stable, latest
