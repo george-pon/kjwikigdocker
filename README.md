@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build921, monthly202501, stable, latest
+    * add: pomodoro_timer plugin parameter blank add which mean do not write wiki.
 * build920, monthly202501, stable, latest
     * add: add to wiki a line comment (pomodoro_timer plugin result string).
 * build919, monthly202501, stable, latest
