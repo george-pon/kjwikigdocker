@@ -67,6 +67,7 @@ function f_docker_build() {
         for TAG_CAR in $TAG_LIST
         do
             export DOCKER_BUILDKIT=1
+            export COMPOSE_DOCKER_CLI_BUILD=1
             echo $SUDO_DOCKER docker buildx build $BUILD_OPT -t ${IMAGE_NAME}:${TAG_CAR} $PLATOPT --push  .
             $SUDO_DOCKER docker buildx build $BUILD_OPT -t ${IMAGE_NAME}:${TAG_CAR} $PLATOPT --push  .
             RC=$?
@@ -79,6 +80,7 @@ function f_docker_build() {
         done
     else
         export DOCKER_BUILDKIT=1
+        export COMPOSE_DOCKER_CLI_BUILD=1
         echo $SUDO_DOCKER docker build $BUILD_OPT -t ${IMAGE_NAME}:${TAG_CAR} .
         $SUDO_DOCKER docker build $BUILD_OPT -t ${IMAGE_NAME}:${TAG_CAR} .
         RC=$?
