@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build922, monthly202501, stable, latest
+    * add: holiday mark (H) is add to todolist_calendar.
 * build921, monthly202501, stable, latest
     * add: pomodoro_timer plugin parameter blank add which mean do not write wiki.
 * build920, monthly202501, stable, latest
