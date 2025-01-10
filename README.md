@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build923, monthly202501, stable, latest
+    * fix: to do list: yotei string output when date is set only.
 * build922, monthly202501, stable, latest
     * add: holiday mark (H) is add to todolist_calendar.
 * build921, monthly202501, stable, latest
