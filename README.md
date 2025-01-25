@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build924, monthly202501, stable, latest
+    * add: web chat random display mode : displays a random message per 3 seconds.
 * build923, monthly202501, stable, latest
     * fix: to do list: yotei string output when date is set only.
 * build922, monthly202501, stable, latest

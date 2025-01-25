@@ -2,6 +2,15 @@
 #
 # リリース前確認用シェル
 #
+
+function env_search() {
+    if [ $# -eq 0 ]; then
+        echo "NOT_FOUND"
+    fi
+    arg_name=$1
+    cat Dockerfile | sed -e 's%ENV '"$arg_name"'=%ENV '"$arg_name"' %g' | awk '/^ENV '"$arg_name"'[ ]/ {print $3;}'
+}
+
 while [ $# -gt 0 ]
 do
     if [ x"$1"x = x"--help"x ]; then
@@ -51,9 +60,9 @@ fi
 export FROM_IMAGE=$( cat Dockerfile | grep FROM | awk '{print $2}' )
 docker pull $FROM_IMAGE
 
-export IMAGE_BUILD_TAG=$( cat Dockerfile | grep ENV | grep  KJWIKIGDOCKER_VERSION | egrep -e  'build[0-9]+' | awk '{print $3}' )
+export IMAGE_BUILD_TAG=$( env_search KJWIKIGDOCKER_VERSION | egrep -e  'build[0-9]+' )
 export IMAGE_PREFIX=
-export IMAGE_NAME=${IMAGE_PREFIX}$(awk '/^ENV KJWIKIGDOCKER_IMAGE/ {print $3;}' Dockerfile)
+export IMAGE_NAME=${IMAGE_PREFIX}$( env_search KJWIKIGDOCKER_IMAGE )
 # use docker hub site
 # export IMAGE_PREFIX=georgesan/
 # export IMAGE_BUILD_TAG=latest
