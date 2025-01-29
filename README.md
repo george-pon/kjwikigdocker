@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build926, monthly202501, stable, latest
+    * mod: pomodoro timer: start stop button is continuas.
 * build925, monthly202501, stable, latest
     * fix: editfile: set second session id value.
 * build924, monthly202501, stable, latest
