@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build927, monthly202502, stable, latest
+    * mod: recent access file write debounced.
 * build926, monthly202501, stable, latest
     * mod: pomodoro timer: start stop button is continuas.
 * build925, monthly202501, stable, latest
