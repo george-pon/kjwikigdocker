@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build930, monthly202502, stable, latest
+    * mod: web chat bbs: change fetch message count from 3 to 1 when message write part 2.
 * build929, monthly202502, stable, latest
     * fix: recent access file : null pointer exception
 * build928, monthly202502, stable, latest
