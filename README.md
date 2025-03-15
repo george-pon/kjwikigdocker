@@ -47,6 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build933, monthly202503, stable, latest
+    * fix: webchat2: remove ConcurrentModificationException.
+    * add: webchat: add axios post error system message.
 * build932, monthly202503, stable, latest
     * add: add autostart option to pomodoro_timer plugin.
 * build931, monthly202502, stable, latest
