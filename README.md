@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build932, monthly202503, stable, latest
+    * add: add autostart option to pomodoro_timer plugin.
 * build931, monthly202502, stable, latest
     * mod: web chat bbs: random mode: in top view, random post started.
 * build930, monthly202502, stable, latest
