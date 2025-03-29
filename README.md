@@ -47,6 +47,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build935, monthly202503, stable, latest
+    * mod: modify top page.
+* build934, monthly202503, stable, latest
+    * add: webchat: add random bottom disp mode.
 * build933, monthly202503, stable, latest
     * fix: webchat2: remove ConcurrentModificationException.
     * add: webchat: add axios post error system message.
