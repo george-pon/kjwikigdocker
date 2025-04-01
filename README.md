@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build937, monthly202504, stable, latest
+    * mod: use openjdk24
 * build937, monthly202503, stable, latest
     * fix: todolist(recent2w) is now available.
     * add: add display option to todolist_calendar plugin like todolist_calendar(2w).

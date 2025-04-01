@@ -83,14 +83,16 @@ function f_docker_build() {
                 echo "ERROR: docker build failed."
                 return 1
             fi
-            sleep 3
+            echo "sleep 15 seconds..."
+            sleep 15
             docker buildx imagetools inspect ${IMAGE_NAME}:${TAG_CAR}
             RC=$?
             if [ $RC -ne 0 ]; then
                 echo "ERROR: docker build failed."
                 return 1
             fi
-            sleep 3
+            echo "sleep 15 seconds..."
+            sleep 15
         done
     else
         export DOCKER_BUILDKIT=1

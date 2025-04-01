@@ -1,4 +1,4 @@
-FROM georgesan/debiantomcat:debian12-temurinopenjdk23-tomcat10.1
+FROM georgesan/debiantomcat:debian12-temurinopenjdk24-tomcat10.1
 
 ENV KJWIKIGDOCKER_VERSION=build-target
 ENV KJWIKIGDOCKER_VERSION=latest

@@ -1,5 +1,12 @@
 #!/bin/bash
 
+function env_search() {
+    if [ $# -eq 0 ]; then
+        echo "NOT_FOUND"
+    fi
+    arg_name=$1
+    cat Dockerfile | sed -e 's%ENV '"$arg_name"'=%ENV '"$arg_name"' %g' | awk '/^ENV '"$arg_name"'[ ]/ {print $3;}'
+}
 
 function add-machine-suffix() {
     local i=
@@ -14,11 +21,9 @@ function add-machine-suffix() {
     done
 }
 
-
-
-TAG_LIST=$(awk '/^ENV KJWIKIGDOCKER_VERSION/ {print $3;}' Dockerfile)
+TAG_LIST=$( env_search KJWIKIGDOCKER_VERSION )
 TAG_LIST=$( add-machine-suffix $TAG_LIST )
-IMAGE_NAME=$(awk '/^ENV KJWIKIGDOCKER_IMAGE/ {print $3;}' Dockerfile)
+IMAGE_NAME=${IMAGE_PREFIX}$( env_search KJWIKIGDOCKER_IMAGE )
 
 REPO_SERV=georgesan/
 
