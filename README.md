@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build942, monthly202504, stable, latest
+    * add: pomodoro timer button to web chat.
 * build937, monthly202504, stable, latest
     * mod: use openjdk24
 * build937, monthly202503, stable, latest
