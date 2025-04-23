@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build944, monthly202504, stable, latest
+    * add: download servlet : cache thumbnail image data 3 minutes.
 * build942, monthly202504, stable, latest
     * add: pomodoro timer button to web chat.
 * build937, monthly202504, stable, latest
