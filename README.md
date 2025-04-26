@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build946, monthly202504, stable, latest
+    * fix: calendar: substitute holiday calculation.
 * build945, monthly202504, stable, latest
     * mod: download servlet : cache thumbnail image data 3 minutes. gabage collection when read and write.
 * build944, monthly202504, stable, latest
