@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build949, monthly202504, stable, latest
+    * mod: download servlet : cache thumbnail image data 3 minutes. little modify.
 * build948, monthly202504, stable, latest
     * mod: download servlet : cache thumbnail image data 3 minutes. gabage collection called in interval timer thread.
 * build947, monthly202504, stable, latest
