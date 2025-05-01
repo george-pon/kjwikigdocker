@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build950, monthly202505, stable, latest
+    * add: download thumbnail servlet : get image size from file attribute.
 * build949, monthly202504, stable, latest
     * mod: download servlet : cache thumbnail image data 3 minutes. little modify.
 * build948, monthly202504, stable, latest
