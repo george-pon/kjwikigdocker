@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build952, monthly202505, stable, latest
+    * add: webchat, webchat2, pictbbs, bbs: remember request URI when not login.
 * build951, monthly202505, stable, latest
     * add: markdown: strike through mark ~~ .
 * build950, monthly202505, stable, latest
