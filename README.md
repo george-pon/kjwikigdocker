@@ -47,6 +47,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build953, monthly202505, stable, latest
+    * fix: print css , side css : fix mojibake.
+    * mod: upload / post / comment plugin : remove table from form.
+    * fix: post plugin: remove needless p and /p tag.
 * build952, monthly202505, stable, latest
     * add: webchat, webchat2, pictbbs, bbs: remember request URI when not login.
 * build951, monthly202505, stable, latest
