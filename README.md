@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build954, monthly202505, stable, latest
+    * mod: bbs: remove table from form.
 * build953, monthly202505, stable, latest
     * fix: print css , side css : fix mojibake.
     * mod: upload / post / comment plugin : remove table from form.
