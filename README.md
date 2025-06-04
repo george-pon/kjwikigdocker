@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build956, monthly202506, stable, latest
+    * add: upload plugin: add pomodoro timer button.
 * build955, monthly202505, stable, latest
     * fix: webchat: displaying first element condition.
 * build954, monthly202505, stable, latest
