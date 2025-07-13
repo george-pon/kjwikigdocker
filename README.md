@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build957, monthly202507, stable, latest
+    * add: property isCheckSecondSessionID.
 * build956, monthly202506, stable, latest
     * add: upload plugin: add pomodoro timer button.
 * build955, monthly202505, stable, latest
