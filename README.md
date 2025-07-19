@@ -47,6 +47,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build958, monthly202507, stable, latest
+    - add: upload plugin option newpage. write to new wiki page.
+    - add: to do list plugin : add new page button.
+    - fix: correct link in subdirectory reserved word (AllPages, RecentPages, RecentAccessPages).
 * build957, monthly202507, stable, latest
     * add: property isCheckSecondSessionID.
 * build956, monthly202506, stable, latest
