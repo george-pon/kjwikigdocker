@@ -47,6 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build960, monthly202507, stable, latest
+    - add: upload form snipet.
+    - add: create page direct jump to target page.
 * build958, monthly202507, stable, latest
     - add: upload plugin option newpage. write to new wiki page.
     - add: to do list plugin : add new page button.
