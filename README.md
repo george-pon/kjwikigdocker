@@ -47,6 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build961, monthly202507, stable, latest
+    - add: upload form snipet / page edit snipet / sub page edit snipet.
+    - fix: usemodwiki: todolist: ol pattern time regex.
 * build960, monthly202507, stable, latest
     - add: upload form snipet.
     - add: create page direct jump to target page.
