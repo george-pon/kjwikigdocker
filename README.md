@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build962, monthly202508, stable, latest
+    - add: add todo button at wiki edit partial edit.
 * build961, monthly202507, stable, latest
     - add: upload form snipet / page edit snipet / sub page edit snipet.
     - fix: usemodwiki: todolist: ol pattern time regex.
