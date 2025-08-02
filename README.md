@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build963, monthly202508, stable, latest
+    - add: add raw html cache to latest/lastupdate/digest plugin.
 * build962, monthly202508, stable, latest
     - add: add todo button at wiki edit partial edit.
 * build961, monthly202507, stable, latest
