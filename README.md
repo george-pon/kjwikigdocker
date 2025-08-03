@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build964, monthly202508, stable, latest
+    - mod: todolist: rename memo button. new wiki name do not contain to do list message string.
 * build963, monthly202508, stable, latest
     - add: add raw html cache to latest/lastupdate/digest plugin.
 * build962, monthly202508, stable, latest
