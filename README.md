@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build966, monthly202508, stable, latest
+    - add: new_wiki_page plugin
 * build965, monthly202508, stable, latest
     - update: vue3.js 3.5.19
 * build964, monthly202508, stable, latest
