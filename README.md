@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build965, monthly202508, stable, latest
+    - update: vue3.js 3.5.19
 * build964, monthly202508, stable, latest
     - mod: todolist: rename memo button. new wiki name do not contain to do list message string.
 * build963, monthly202508, stable, latest
