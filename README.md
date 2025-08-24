@@ -47,6 +47,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build968, monthly202508, stable, latest
+    - mod: markdown / usemodwiki: modify normal template page.
+    - mod: new_wiki_page plugin button: use html form submit.
+    - add: rename wiki word.
 * build966, monthly202508, stable, latest
     - add: new_wiki_page plugin
 * build965, monthly202508, stable, latest
