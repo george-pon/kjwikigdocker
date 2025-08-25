@@ -2,8 +2,19 @@ apiVersion: v1
 entries:
   kjwikigdocker:
   - apiVersion: v1
+    appVersion: 0.0.969
+    created: "2025-08-25T09:59:29.2578759+09:00"
+    description: wiki on Tomcat 10.1 , data files stores into PVC
+    digest: 84094741fd0ec062fa6ebcac40c7bf78b5a6257f2101a6a3acc5c1df3ff470b1
+    keywords:
+    - wiki
+    name: kjwikigdocker
+    urls:
+    - https://raw.githubusercontent.com/george-pon/kjwikigdocker/master/helm-chart/charts/kjwikigdocker-0.0.969.tgz
+    version: 0.0.969
+  - apiVersion: v1
     appVersion: 0.0.968
-    created: "2025-08-24T14:08:18.549894+09:00"
+    created: "2025-08-25T09:59:29.2573408+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: 01fb1dd6128538117c133e819c1523b100e5098fc6ee86e2218876aa418adb38
     keywords:
@@ -14,7 +25,7 @@ entries:
     version: 0.0.968
   - apiVersion: v1
     appVersion: 0.0.967
-    created: "2025-08-24T14:08:18.549894+09:00"
+    created: "2025-08-25T09:59:29.2568116+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: 3ec9d3831cc1148ae90113e7c69c859d2f0d05d58bf58799eb2b35cee244a624
     keywords:
@@ -25,7 +36,7 @@ entries:
     version: 0.0.967
   - apiVersion: v1
     appVersion: 0.0.966
-    created: "2025-08-24T14:08:18.5493813+09:00"
+    created: "2025-08-25T09:59:29.2562772+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: ad352885f445b185862b821b955fd34837dc7cbd4c6985463ba35f37a003a62f
     keywords:
@@ -36,7 +47,7 @@ entries:
     version: 0.0.966
   - apiVersion: v1
     appVersion: 0.0.965
-    created: "2025-08-24T14:08:18.5483816+09:00"
+    created: "2025-08-25T09:59:29.2557439+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: b19f10c076db1b5591c3cf3153b4f850d62ca58c657ac27f6cb7758e9749ea49
     keywords:
@@ -47,7 +58,7 @@ entries:
     version: 0.0.965
   - apiVersion: v1
     appVersion: 0.0.964
-    created: "2025-08-24T14:08:18.5483816+09:00"
+    created: "2025-08-25T09:59:29.2541534+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: b10d5d14102718972bc97be4494748ddbda786866d19d526153d7673651edc8c
     keywords:
@@ -58,7 +69,7 @@ entries:
     version: 0.0.964
   - apiVersion: v1
     appVersion: 0.0.963
-    created: "2025-08-24T14:08:18.5473816+09:00"
+    created: "2025-08-25T09:59:29.2536128+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: b0609d7c89075eb4e7dc2e2cb43e94d540137c864f2bc0c14c97fc9f48790f4a
     keywords:
@@ -69,7 +80,7 @@ entries:
     version: 0.0.963
   - apiVersion: v1
     appVersion: 0.0.962
-    created: "2025-08-24T14:08:18.5473816+09:00"
+    created: "2025-08-25T09:59:29.2530907+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: f3be67f3def8c9af26db008245f10ee2afee7956a07d3c11dea6ce40d5cde3a3
     keywords:
@@ -80,7 +91,7 @@ entries:
     version: 0.0.962
   - apiVersion: v1
     appVersion: 0.0.961
-    created: "2025-08-24T14:08:18.5463693+09:00"
+    created: "2025-08-25T09:59:29.2525538+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: 38366cc020a12c18745b6c81cd5a9700a3fddd558fc871045f424069380523d2
     keywords:
@@ -91,7 +102,7 @@ entries:
     version: 0.0.961
   - apiVersion: v1
     appVersion: 0.0.960
-    created: "2025-08-24T14:08:18.5458445+09:00"
+    created: "2025-08-25T09:59:29.2520322+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: 6d4822b74b4a1df2ccb96c4b638a45359b9a4d0cb99f0308dbdbbe3300c7ca14
     keywords:
@@ -102,7 +113,7 @@ entries:
     version: 0.0.960
   - apiVersion: v1
     appVersion: 0.0.958
-    created: "2025-08-24T14:08:18.5443344+09:00"
+    created: "2025-08-25T09:59:29.2514938+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: 9772d74f7e6416138cbcc92ac2feb7ff7d723645752726858d06ad6a918c71cf
     keywords:
@@ -113,7 +124,7 @@ entries:
     version: 0.0.958
   - apiVersion: v1
     appVersion: 0.0.957
-    created: "2025-08-24T14:08:18.5443344+09:00"
+    created: "2025-08-25T09:59:29.2509551+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: 3070755db3d88430e3a6080fec9ddd3fac93f90d9b696c9a576429918384210b
     keywords:
@@ -124,7 +135,7 @@ entries:
     version: 0.0.957
   - apiVersion: v1
     appVersion: 0.0.956
-    created: "2025-08-24T14:08:18.5443344+09:00"
+    created: "2025-08-25T09:59:29.2504152+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: 25a5f51c7c583a0f8c84edc11ea146f92d799e9609494870f2040208e5630d4c
     keywords:
@@ -135,7 +146,7 @@ entries:
     version: 0.0.956
   - apiVersion: v1
     appVersion: 0.0.955
-    created: "2025-08-24T14:08:18.543335+09:00"
+    created: "2025-08-25T09:59:29.2498224+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: 0cbb475449e4171cc5014d90c63f624ae17df87c299648d11cb1d730239cb9e0
     keywords:
@@ -146,7 +157,7 @@ entries:
     version: 0.0.955
   - apiVersion: v1
     appVersion: 0.0.954
-    created: "2025-08-24T14:08:18.5423347+09:00"
+    created: "2025-08-25T09:59:29.2492859+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: 122a4fb1a8dd8bdbc87a09e842731234155212d95d2cc21418167fd0bcec8829
     keywords:
@@ -157,7 +168,7 @@ entries:
     version: 0.0.954
   - apiVersion: v1
     appVersion: 0.0.953
-    created: "2025-08-24T14:08:18.5423347+09:00"
+    created: "2025-08-25T09:59:29.2487559+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: 77937b8e43223ca1e5d1c636e8b76aad23b95c8cb5bd7c20f2396f1eeac4a97d
     keywords:
@@ -168,7 +179,7 @@ entries:
     version: 0.0.953
   - apiVersion: v1
     appVersion: 0.0.952
-    created: "2025-08-24T14:08:18.5413347+09:00"
+    created: "2025-08-25T09:59:29.2482249+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: dfe214a630228d9c52460c606855f496a380e62d1cb39f10bb9f23347b34d324
     keywords:
@@ -179,7 +190,7 @@ entries:
     version: 0.0.952
   - apiVersion: v1
     appVersion: 0.0.951
-    created: "2025-08-24T14:08:18.5413347+09:00"
+    created: "2025-08-25T09:59:29.2476904+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: b43b209368de9979a8d4d5c63688863f6f0eb5eba2d6ba752df66c5171ce8996
     keywords:
@@ -190,7 +201,7 @@ entries:
     version: 0.0.951
   - apiVersion: v1
     appVersion: 0.0.950
-    created: "2025-08-24T14:08:18.5403345+09:00"
+    created: "2025-08-25T09:59:29.2471556+09:00"
     description: wiki on Tomcat 10.1 , data files stores into PVC
     digest: c07671116a62070c6b87be9fdd2760e71f5912cdc172b1207d417b45f3593fa8
     keywords:
@@ -199,4 +210,4 @@ entries:
     urls:
     - https://raw.githubusercontent.com/george-pon/kjwikigdocker/master/helm-chart/charts/kjwikigdocker-0.0.950.tgz
     version: 0.0.950
-generated: "2025-08-24T14:08:18.5393292+09:00"
+generated: "2025-08-25T09:59:29.2460431+09:00"

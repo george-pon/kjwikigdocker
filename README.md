@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build969, monthly202508, stable, latest
+    - fix: postformat: not to convert new_wiki_page plugin in pre.
 * build968, monthly202508, stable, latest
     - mod: markdown / usemodwiki: modify normal template page.
     - mod: new_wiki_page plugin button: use html form submit.
