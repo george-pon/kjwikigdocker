@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build970, monthly202508, stable, latest
+    - fix: pictbbs / webchatbbs: delete attached file force.
 * build969, monthly202508, stable, latest
     - fix: postformat: not to convert new_wiki_page plugin in pre.
 * build968, monthly202508, stable, latest
