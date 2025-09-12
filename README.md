@@ -47,6 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build971, monthly202508, stable, latest
+    - add: add template snipet pomodoro_timer(after,number)
+    - mod: change sound pomodoro_timer
 * build970, monthly202508, stable, latest
     - fix: pictbbs / webchatbbs: delete attached file force.
 * build969, monthly202508, stable, latest
