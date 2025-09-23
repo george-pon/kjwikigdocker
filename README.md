@@ -47,7 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build971, monthly202508, stable, latest
+* build972, monthly202509, stable, latest
+    - mod: use ImageReader to get image size.
+* build971, monthly202509, stable, latest
     - add: add template snipet pomodoro_timer(after,number)
     - mod: change sound pomodoro_timer
 * build970, monthly202508, stable, latest
