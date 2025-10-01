@@ -47,6 +47,9 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build973, monthly202510, stable, latest
+    - fix: auto markdown formater detect at file ext has .md
+    - mod: pomodoro timer plugin : comment string uses start time
 * build972, monthly202509, stable, latest
     - mod: use ImageReader to get image size.
 * build971, monthly202509, stable, latest
