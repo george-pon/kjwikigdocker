@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build974, monthly202510, stable, latest
+    - update: Vue 3.5.22
 * build973, monthly202510, stable, latest
     - fix: auto markdown formater detect at file ext has .md
     - mod: pomodoro timer plugin : comment string uses start time
