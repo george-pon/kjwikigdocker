@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build977, monthly202510, stable, latest
+    - fix: latestlink plugin: sort order use create date.
 * build976, monthly202510, stable, latest
     - add: digestlink plugin: digestlink(tag:keyword, limit:30 , order:create:asc) option is available.
 * build975, monthly202510, stable, latest
