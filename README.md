@@ -47,7 +47,7 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
-* build979, monthly202510, stable, latest
+* build979, monthly202511, stable, latest
     - add: CalendarWiki: to store subdirectory Calendar data, write subDirectory/CalendarWiki in markdown format, write in todolist format.
 * build978, monthly202510, stable, latest
     - add: CalendarWiki: to store global Calendar data, write CalendarWiki in markdown format, write in todolist format.
