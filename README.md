@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build978, monthly202510, stable, latest
+    - add: CalendarWiki: to store global Calendar data, write in markdown format, write in todolist format.
 * build977, monthly202510, stable, latest
     - fix: latestlink plugin: sort order use create date.
 * build976, monthly202510, stable, latest
