@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build980, monthly202512, stable, latest
+    - add: pictbbs/webchat: when line starts with URL_TITLE: , line is recognized URL TITLE data line.
 * build979, monthly202511, stable, latest
     - add: CalendarWiki: to store subdirectory Calendar data, write subDirectory/CalendarWiki in markdown format, write in todolist format.
 * build978, monthly202510, stable, latest
