@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build982, monthly202512, stable, latest
+    - add: add status info data into wiki sub page edit mode.
 * build981, monthly202512, stable, latest
     - add: snipet: add title line string to pomodoro timer, to do list, upload form .
 * build980, monthly202512, stable, latest
