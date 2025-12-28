@@ -47,8 +47,10 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build984, monthly202512, stable, latest
+    - add: digestlink plugin: add search option status:initial,status:proceeding,status:done,status:abort,status:suspended.
 * build983, monthly202512, stable, latest
-    - add: latestlink, lastupdatelink, randomlink plugin: add search option status:initial,status:proceeding.
+    - add: latestlink, lastupdatelink, randomlink plugin: add search option status:initial,status:proceeding,status:done,status:abort,status:suspended.
     - mod: use debian:13 base.
 * build982, monthly202512, stable, latest
     - add: add status info data into wiki sub page edit mode.
