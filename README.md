@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build985, monthly202512, stable, latest
+    - add: latestlink, lastupdatelink, randomlink plugin: add search option. option:blog. to display blog entry (that is includes date and time in sub title)
 * build984, monthly202512, stable, latest
     - add: digestlink plugin: add search option status:initial,status:proceeding,status:done,status:abort,status:suspended.
 * build983, monthly202512, stable, latest
