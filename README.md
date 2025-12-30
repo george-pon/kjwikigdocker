@@ -47,6 +47,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build986, monthly202512, stable, latest
+    - add: latestlink, lastupdatelink, randomlink plugin: add search option:filedate. to wiki update/create time is taken from wiki file lastModified.
 * build985, monthly202512, stable, latest
     - add: latestlink, lastupdatelink, randomlink plugin: add search option. option:blog. to display blog entry (that is includes date and time in sub title)
 * build984, monthly202512, stable, latest
