@@ -21,6 +21,7 @@ docker run -d -p 8080:8080 georgesan/kjwikigdocker:stable
 * KJWikiG's wiki data stored in volume, so if you want to save wiki data, run below
 * for debian:11 before docker run, you must set volume owner to uid:998 ( chown -R 998:998 /var/lib/kjwikigdocker )
 * for debian:12 before docker run, you must set volume owner to uid:995 ( chown -R 995:995 /var/lib/kjwikigdocker )
+* for debian:13 before docker run, you must set volume owner to uid:995 ( chown -R 995:995 /var/lib/kjwikigdocker )
 ```
 docker run -d -p 8080:8080 -v /var/lib/kjwikigdocker:/var/lib/kjwikigdocker georgesan/kjwikigdocker:stable
 ```
@@ -47,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build987, monthly202601, stable, latest
+    - add: 2026 holiday data.
 * build986, monthly202512, stable, latest
     - add: latestlink, lastupdatelink, randomlink plugin: add search option:filedate. to wiki update/create time is taken from wiki file lastModified.
 * build985, monthly202512, stable, latest
