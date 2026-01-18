@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build989, monthly202601, stable, latest
+    - fix: webchat: catch exception from URLdecode when URL_TITLE: prefix.
 * build988, monthly202601, stable, latest
     - add: add status info data (status: obsolute, deprecated, cancel) into wiki sub page edit mode.
 * build987, monthly202601, stable, latest
