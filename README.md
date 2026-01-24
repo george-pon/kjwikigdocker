@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build991, monthly202601, stable, latest
+    - fix: image thumb nail: escape redirect image file name.
 * build990, monthly202601, stable, latest
     - add: image thumb nail: add last-modified to response header. to cache thumb nail image by browser.
 * build989, monthly202601, stable, latest
