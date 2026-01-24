@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build990, monthly202601, stable, latest
+    - add: image thumb nail: add last-modified to response header. to cache thumb nail image by browser.
 * build989, monthly202601, stable, latest
     - fix: webchat: catch exception from URLdecode when URL_TITLE: prefix.
 * build988, monthly202601, stable, latest
