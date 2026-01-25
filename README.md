@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build992, monthly202601, stable, latest
+    - add: image_pixel parameter to thumbnail image link.
 * build991, monthly202601, stable, latest
     - fix: image thumb nail: escape redirect image file name.
 * build990, monthly202601, stable, latest
