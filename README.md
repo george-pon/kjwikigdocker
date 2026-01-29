@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build994, monthly202601, stable, latest
+    - fix: todolist in usemodwiki/markdown: do not display null entry.
 * build993, monthly202601, stable, latest
     - mod: todolist in usemodwiki/markdown: do not clear calendar plan data.
     - del: remove global CalendarWiki map cache.
