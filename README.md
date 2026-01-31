@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build995, monthly202601, stable, latest
+    - fix: markdown: change regex for strong emphasis.
 * build994, monthly202601, stable, latest
     - fix: todolist in usemodwiki/markdown: do not display null entry.
 * build993, monthly202601, stable, latest
