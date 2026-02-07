@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build996, monthly202602, stable, latest
+    - mod: use Tomcat 11.0
 * build995, monthly202601, stable, latest
     - fix: markdown: change regex for strong emphasis.
 * build994, monthly202601, stable, latest
