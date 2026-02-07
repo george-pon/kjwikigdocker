@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build997, monthly202602, stable, latest
+    - add: to do list calendar: add hyper link to to do list item.
 * build996, monthly202602, stable, latest
     - mod: use Tomcat 11.0
 * build995, monthly202601, stable, latest
