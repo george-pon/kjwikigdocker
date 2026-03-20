@@ -73,11 +73,11 @@ function f_docker_build() {
             aarch64) PLATOPT='--platform=linux/amd64,linux/arm64' ;;
         esac
 
-	DOCKER_TAG_OPT=""
+        DOCKER_TAG_OPT=""
         for TAG_CAR in $TAG_LIST
         do
-	    DOCKER_TAG_OPT="${DOCKER_TAG_OPT} -t ${IMAGE_NAME}:${TAG_CAR}"
-	done
+            DOCKER_TAG_OPT="${DOCKER_TAG_OPT} -t ${IMAGE_NAME}:${TAG_CAR}"
+        done
         export DOCKER_BUILDKIT=1
         export COMPOSE_DOCKER_CLI_BUILD=1
         echo $SUDO_DOCKER docker buildx build $BUILD_OPT ${DOCKER_TAG_OPT} $PLATOPT --push  .
@@ -98,6 +98,7 @@ function f_docker_build() {
         echo "sleep 15 seconds..."
         sleep 15
     else
+        # USE BUILDX = yes ではない場合
         export DOCKER_BUILDKIT=1
         export COMPOSE_DOCKER_CLI_BUILD=1
         echo $SUDO_DOCKER docker build $BUILD_OPT -t ${IMAGE_NAME}:${TAG_CAR} .

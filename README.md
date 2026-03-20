@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build998, monthly202603, stable, latest
+    - mod: todolist_calendar plugin: display month/day at last day
 * build997, monthly202602, stable, latest
     - add: to do list calendar: add hyper link to to do list item.
 * build996, monthly202602, stable, latest

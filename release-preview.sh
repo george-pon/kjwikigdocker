@@ -11,6 +11,7 @@ function env_search() {
     cat Dockerfile | sed -e 's%ENV '"$arg_name"'=%ENV '"$arg_name"' %g' | awk '/^ENV '"$arg_name"'[ ]/ {print $3;}'
 }
 
+# 引数解析
 while [ $# -gt 0 ]
 do
     if [ x"$1"x = x"--help"x ]; then
@@ -34,6 +35,7 @@ do
 done
 
 
+# エディタ選択
 EDITOR=${EDITOR:-vi}
 if type $EDITOR ; then
     echo EDITOR is $EDITOR
@@ -42,6 +44,7 @@ elif type vim ; then
     echo EDITOR is $EDITOR
 fi
 
+# コマンド存在チェック
 set -eux
 echo "check ... docker / kubectl / helm"
 docker version
@@ -55,6 +58,16 @@ else
     # edit version number
     $EDITOR Dockerfile README.md helm-chart/kjwikigdocker/Chart.yaml
 fi
+
+
+# 実行中ならコンテナを止めてからイメージをビルドする
+pushd helm-chart
+    # check if kjwikigdocker is present.
+    if helm list | grep kjwikigdocker ; then
+        #
+        helm delete kjwikigdocker
+    fi
+popd
 
 # ベースイメージのpull
 export FROM_IMAGE=$( cat Dockerfile | grep FROM | awk '{print $2}' )
@@ -87,7 +100,7 @@ fi
 pushd helm-chart
     # check if kjwikigdocker is present.
     if helm list | grep kjwikigdocker ; then
-        # use local image name
+        # use local image name : image.pullPolicy=IfNotPresent
         helm upgrade kjwikigdocker kjwikigdocker \
             --set image.repository=$IMAGE_NAME \
             --set image.tag=$IMAGE_BUILD_TAG \
@@ -95,11 +108,11 @@ pushd helm-chart
             --set ingress.hosts="{localhost}" \
             --set replicaCount=1
     else
-        # use local image name
+        # use local image name : image.pullPolicy=IfNotPresent
         helm install kjwikigdocker kjwikigdocker \
             --set image.repository=$IMAGE_NAME \
             --set image.tag=$IMAGE_BUILD_TAG \
-            --set image.pullPolicy=IfNotPresent  \
+            --set image.pullPolicy=IfNotPresent \
             --set ingress.hosts="{localhost}" \
             --set replicaCount=1
     fi
