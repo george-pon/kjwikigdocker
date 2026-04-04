@@ -3,6 +3,7 @@
 # リリース前確認用シェル
 #
 
+# Dockerfile から ENV ABC=DEF を検索する
 function env_search() {
     if [ $# -eq 0 ]; then
         echo "NOT_FOUND"
@@ -20,6 +21,7 @@ do
         echo "    --help      print this."
         echo "    --no-edit   skip edit Dockerfile, etc."
         echo "    --no-chart  skip generate helm chart"
+        echo "    --no-build  skip docker build"
         exit 0
     fi
     if [ x"$1"x = x"--no-edit"x ]; then
@@ -32,6 +34,13 @@ do
         shift
         continue
     fi
+    if [ x"$1"x = x"--no-build"x ]; then
+        NO_BUILD=true
+        shift
+        continue
+    fi
+    echo "unknown option $1"
+    shift
 done
 
 
@@ -61,6 +70,7 @@ fi
 
 
 # 実行中ならコンテナを止めてからイメージをビルドする
+# ローカルで使用中のイメージはタグを打ってもdocker image ID が変化しないため
 pushd helm-chart
     # check if kjwikigdocker is present.
     if helm list | grep kjwikigdocker ; then
@@ -82,10 +92,15 @@ export IMAGE_NAME=${IMAGE_PREFIX}$( env_search KJWIKIGDOCKER_IMAGE )
 # export no_cache=
 # export no_cache=true
 
-# build image
-export USE_BUILDX=no
-export no_cache=true
-bash build-image.sh
+if [ x"$NO_BUILD"x = x"true"x ] ; then
+    echo "skip build image"
+else
+    # build image
+    # USE_BUILDX指定するとdocker hubへアップロードが起きるが、docker desktop 4.67.0 kuberentes v1.34.3 ではローカルimageからpod起動できないので仕方ない...
+    export USE_BUILDX=yes
+    export no_cache=true
+    bash build-image.sh
+fi
 
 if [ x"$NO_CHART"x = x"true"x ]; then
     echo "skip helm-chart package"
@@ -100,7 +115,7 @@ fi
 pushd helm-chart
     # check if kjwikigdocker is present.
     if helm list | grep kjwikigdocker ; then
-        # use local image name : image.pullPolicy=IfNotPresent
+        # to use local image name , set image.pullPolicy=IfNotPresent
         helm upgrade kjwikigdocker kjwikigdocker \
             --set image.repository=$IMAGE_NAME \
             --set image.tag=$IMAGE_BUILD_TAG \
@@ -108,7 +123,7 @@ pushd helm-chart
             --set ingress.hosts="{localhost}" \
             --set replicaCount=1
     else
-        # use local image name : image.pullPolicy=IfNotPresent
+        # to use local image name , set image.pullPolicy=IfNotPresent
         helm install kjwikigdocker kjwikigdocker \
             --set image.repository=$IMAGE_NAME \
             --set image.tag=$IMAGE_BUILD_TAG \
@@ -124,4 +139,5 @@ echo ""
 echo "Note"
 echo ""
 echo "1. access https://localhost/kjwikigdocker/"
+echo "1. access http://localhost/kjwikigdocker/"
 echo ""

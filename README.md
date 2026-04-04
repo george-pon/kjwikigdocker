@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build999, monthly202604, stable, latest
+    - mod: vite / npm library version up.
 * build998, monthly202603, stable, latest
     - mod: todolist_calendar plugin: display month/day at last day
 * build997, monthly202602, stable, latest

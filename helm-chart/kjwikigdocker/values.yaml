@@ -16,9 +16,12 @@ configmap:
   defaultWord: WelcomeVisitors
   dataStorePath: /var/lib/kjwikigdocker
   # for JDK 1.8
-  javaOpts: "-Xmx1000m -XX:+PrintFlagsFinal"
+  # javaOpts: "-Xmx1000m -XX:+PrintFlagsFinal"
   # for openJDK 11
   # javaOpts: "-XX:+UseContainerSupport  -XX:MaxRAMPercentage=75 -XX:+PrintFlagsFinal"
+  # for OpenJDK 25
+  javaOpts: ""
+
 
 image:
   repository: georgesan/kjwikigdocker
@@ -34,10 +37,11 @@ service:
 
 ingress:
   enabled: true
+  ingressClassName: nginx
   annotations:
     # see https://github.com/kubernetes/ingress-nginx
     # see https://github.com/kubernetes/ingress-nginx/blob/master/docs/user-guide/annotations.md
-    kubernetes.io/ingress.class: nginx
+    # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
 
     # sticky session の実現
@@ -78,7 +82,7 @@ persistence:
   ##
   # storageClass: "-"
   accessMode: ReadWriteOnce
-  size: 3Gi
+  size: 4Gi
   subPath:
   mountPath: /var/lib/kjwikigdocker
 
