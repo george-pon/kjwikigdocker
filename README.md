@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build1000, monthly202604, stable, latest
+    - mod: markdown: allow pre in numbered list
 * build999, monthly202604, stable, latest
     - mod: vite / npm library version up.
 * build998, monthly202603, stable, latest
