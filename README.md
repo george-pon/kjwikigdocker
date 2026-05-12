@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build1002, monthly202605, stable, latest
+    - mod: update axios
 * build1001, monthly202605, stable, latest
     - mod: usemodwiki: allow tri-bracket-pre in numbered list
 * build1000, monthly202604, stable, latest
