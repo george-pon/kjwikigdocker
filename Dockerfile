@@ -1,4 +1,4 @@
-FROM georgesan/debiantomcat:debian13-temurinopenjdk25-tomcat11.0
+FROM georgesan/debiantomcat:debian13-temurinopenjdk26-tomcat11.0
 
 ENV KJWIKIGDOCKER_VERSION=build1002
 ENV KJWIKIGDOCKER_VERSION=stable
