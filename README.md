@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build1003, monthly202606, stable, latest
+    - mod: remove URL_TITLE: string prefix from message in to do list post message
 * build1002, monthly202605, stable, latest
     - mod: update axios
 * build1001, monthly202605, stable, latest
