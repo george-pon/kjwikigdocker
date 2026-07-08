@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build1004, monthly202607, stable, latest
+    - mod: markdown formatter: emphasis _ needs white space both left and right
 * build1003, monthly202606, stable, latest
     - mod: remove URL_TITLE: string prefix from message in to do list post message
 * build1002, monthly202605, stable, latest
