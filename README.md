@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build1006, monthly202608, stable, latest
+    - update: npm audit fix.
 * build1005, monthly202607, stable, latest
     - mod: wikiword rename: rename history file, too.
 * build1004, monthly202607, stable, latest

@@ -1,6 +1,6 @@
 FROM georgesan/debiantomcat:debian13-temurinopenjdk26-tomcat11.0
 
-ENV KJWIKIGDOCKER_VERSION=build1005
+ENV KJWIKIGDOCKER_VERSION=build1006
 ENV KJWIKIGDOCKER_VERSION=stable
 ENV KJWIKIGDOCKER_VERSION=latest
 ENV KJWIKIGDOCKER_IMAGE=georgesan/kjwikigdocker
