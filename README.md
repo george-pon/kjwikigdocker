@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build1007, monthly202608, stable, latest
+    - add: store diff format to wiki history file.
 * build1006, monthly202608, stable, latest
     - update: npm audit fix.
 * build1005, monthly202607, stable, latest
