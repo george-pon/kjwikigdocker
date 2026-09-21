@@ -48,6 +48,8 @@ kubectl rollout status deploy/kjwikigdocker
 
 ### tags
 
+* build1008, monthly202609, stable, latest
+    - mod: to do list: change key word from state to status
 * build1007, monthly202608, stable, latest
     - add: store diff format to wiki history file.
 * build1006, monthly202608, stable, latest
